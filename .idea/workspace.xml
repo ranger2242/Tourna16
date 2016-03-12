@@ -40,15 +40,12 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3051948">
+            <state vertical-scroll-proportion="0.30971992">
               <caret line="168" column="24" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
               <folding>
-                <element signature="imports" expanded="false" />
                 <element signature="docComment;class#MainWindow#0" expanded="false" />
                 <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
                 <element signature="class#2289:2417" expanded="false" />
-                <element signature="e#2360#2361#0" expanded="false" />
-                <element signature="e#2406#2407#0" expanded="false" />
                 <element signature="method#makePanels#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
                 <element signature="class#4615:5039" expanded="false" />
@@ -63,8 +60,6 @@
                 <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
                 <element signature="e#11249#11264#0" expanded="false" />
                 <element signature="e#13277#13320#0" expanded="false" />
-                <element signature="e#13471#13472#0" expanded="false" />
-                <element signature="e#13513#13514#0" expanded="false" />
                 <element signature="class#14853:15417" expanded="false" />
                 <element signature="method#mousePressed#0;class#14853:15417" expanded="false" />
                 <element signature="class#15465:15558" expanded="false" />
@@ -140,9 +135,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="y" value="152" />
     <option name="width" value="1378" />
-    <option name="height" value="754" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -169,9 +163,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,6 +203,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -514,8 +508,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="152" width="1378" height="754" extended-state="1" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1378" height="745" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -525,7 +519,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50073206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -581,12 +575,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="class#2289:2417" expanded="false" />
-            <element signature="e#2360#2361#0" expanded="false" />
-            <element signature="e#2406#2407#0" expanded="false" />
             <element signature="method#makePanels#0;class#MainWindow#0" expanded="false" />
             <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
             <element signature="class#4615:5039" expanded="false" />
@@ -601,8 +592,6 @@
             <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
             <element signature="e#11249#11264#0" expanded="false" />
             <element signature="e#13277#13320#0" expanded="false" />
-            <element signature="e#13471#13472#0" expanded="false" />
-            <element signature="e#13513#13514#0" expanded="false" />
             <element signature="class#14853:15417" expanded="false" />
             <element signature="method#mousePressed#0;class#14853:15417" expanded="false" />
             <element signature="class#15465:15558" expanded="false" />
@@ -652,6 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -659,6 +649,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -666,6 +657,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -673,6 +665,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -680,6 +673,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="101" column="27" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -726,15 +720,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3051948">
+        <state vertical-scroll-proportion="0.30971992">
           <caret line="168" column="24" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="class#2289:2417" expanded="false" />
-            <element signature="e#2360#2361#0" expanded="false" />
-            <element signature="e#2406#2407#0" expanded="false" />
             <element signature="method#makePanels#0;class#MainWindow#0" expanded="false" />
             <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
             <element signature="class#4615:5039" expanded="false" />
@@ -749,8 +740,6 @@
             <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
             <element signature="e#11249#11264#0" expanded="false" />
             <element signature="e#13277#13320#0" expanded="false" />
-            <element signature="e#13471#13472#0" expanded="false" />
-            <element signature="e#13513#13514#0" expanded="false" />
             <element signature="class#14853:15417" expanded="false" />
             <element signature="method#mousePressed#0;class#14853:15417" expanded="false" />
             <element signature="class#15465:15558" expanded="false" />
