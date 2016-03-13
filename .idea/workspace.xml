@@ -21,111 +21,79 @@
     <favorites_list name="Tourna16" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.4444447">
-                  <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#279#280#0" expanded="true" />
-                    <element signature="e#307#308#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="StartPopup.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/StartPopup.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.33333334">
-                  <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="docComment;class#MainWindow#0" expanded="false" />
-                    <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
-                    <element signature="class#2296:2424" expanded="false" />
-                    <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-                    <element signature="class#4622:5046" expanded="false" />
-                    <element signature="method#actionPerformed#0;class#4622:5046" expanded="false" />
-                    <element signature="class#5093:5281" expanded="false" />
-                    <element signature="method#mousePressed#0;class#5093:5281" expanded="false" />
-                    <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#loadBracket#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#printBracketInstructions#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#gameListRoundAnalysis#0;class#MainWindow#0" expanded="false" />
-                    <element signature="e#12545#12560#0" expanded="false" />
-                    <element signature="e#14573#14616#0" expanded="false" />
-                    <element signature="class#16149:16713" expanded="false" />
-                    <element signature="method#mousePressed#0;class#16149:16713" expanded="false" />
-                    <element signature="class#16761:16854" expanded="false" />
-                    <element signature="method#mousePressed#0;class#16761:16854" expanded="false" />
-                    <element signature="class#16902:16995" expanded="false" />
-                    <element signature="method#mousePressed#0;class#16902:16995" expanded="false" />
-                    <element signature="class#17046:17274" expanded="false" />
-                    <element signature="method#mousePressed#0;class#17046:17274" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="WizardPopup.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="22" column="13" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
-                  <folding>
-                    <element signature="docComment;class#WizardPopup#0" expanded="false" />
-                    <element signature="class#2400:2815" expanded="false" />
-                    <element signature="method#actionPerformed#0;class#2400:2815" expanded="false" />
-                    <element signature="class#2917:3173" expanded="false" />
-                    <element signature="method#actionPerformed#0;class#2917:3173" expanded="false" />
-                    <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
-                    <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
-                    <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
-                    <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
-                    <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
-                    <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
-                    <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
-                    <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
-                    <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Popups.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Popups.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.41666666">
-                  <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16666667">
+              <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#MainWindow#0" expanded="false" />
+                <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
+                <element signature="class#2577:2705" expanded="false" />
+                <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+                <element signature="class#4767:5191" expanded="false" />
+                <element signature="method#actionPerformed#0;class#4767:5191" expanded="false" />
+                <element signature="class#5238:5426" expanded="false" />
+                <element signature="method#mousePressed#0;class#5238:5426" expanded="false" />
+                <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#loadBracket#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#printBracketInstructions#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#gameListRoundAnalysis#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
+                <element signature="e#14753#14768#0" expanded="false" />
+                <element signature="e#16781#16824#0" expanded="false" />
+                <element signature="class#18357:18921" expanded="false" />
+                <element signature="method#mousePressed#0;class#18357:18921" expanded="false" />
+                <element signature="class#18969:19062" expanded="false" />
+                <element signature="method#mousePressed#0;class#18969:19062" expanded="false" />
+                <element signature="class#19110:19203" expanded="false" />
+                <element signature="method#mousePressed#0;class#19110:19203" expanded="false" />
+                <element signature="class#19254:19482" expanded="false" />
+                <element signature="method#mousePressed#0;class#19254:19482" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WizardPopup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="docComment;class#WizardPopup#0" expanded="false" />
+                <element signature="class#2400:2815" expanded="false" />
+                <element signature="method#actionPerformed#0;class#2400:2815" expanded="false" />
+                <element signature="class#2917:3173" expanded="false" />
+                <element signature="method#actionPerformed#0;class#2917:3173" expanded="false" />
+                <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,10 +121,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/WizardPopup.java" />
         <option value="$PROJECT_DIR$/src/TeamListImportPopup.java" />
-        <option value="$PROJECT_DIR$/src/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Popups.java" />
         <option value="$PROJECT_DIR$/src/StartPopup.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/MainWindow.java" />
       </list>
     </option>
   </component>
@@ -198,6 +166,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,8 +203,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -540,11 +508,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32608697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -557,7 +525,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -591,11 +559,8 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-          </folding>
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -607,27 +572,238 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#2296:2424" expanded="false" />
+            <element signature="class#2577:2705" expanded="false" />
             <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#4622:5046" expanded="false" />
-            <element signature="method#actionPerformed#0;class#4622:5046" expanded="false" />
-            <element signature="class#5093:5281" expanded="false" />
-            <element signature="method#mousePressed#0;class#5093:5281" expanded="false" />
+            <element signature="class#4767:5191" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4767:5191" expanded="false" />
+            <element signature="class#5238:5426" expanded="false" />
+            <element signature="method#mousePressed#0;class#5238:5426" expanded="false" />
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#loadBracket#0;class#MainWindow#0" expanded="false" />
             <element signature="method#printBracketInstructions#0;class#MainWindow#0" expanded="false" />
             <element signature="method#gameListRoundAnalysis#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#12545#12560#0" expanded="false" />
-            <element signature="e#14573#14616#0" expanded="false" />
-            <element signature="class#16149:16713" expanded="false" />
-            <element signature="method#mousePressed#0;class#16149:16713" expanded="false" />
-            <element signature="class#16761:16854" expanded="false" />
-            <element signature="method#mousePressed#0;class#16761:16854" expanded="false" />
-            <element signature="class#16902:16995" expanded="false" />
-            <element signature="method#mousePressed#0;class#16902:16995" expanded="false" />
-            <element signature="class#17046:17274" expanded="false" />
-            <element signature="method#mousePressed#0;class#17046:17274" expanded="false" />
+            <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#14753#14768#0" expanded="false" />
+            <element signature="e#16781#16824#0" expanded="false" />
+            <element signature="class#18357:18921" expanded="false" />
+            <element signature="method#mousePressed#0;class#18357:18921" expanded="false" />
+            <element signature="class#18969:19062" expanded="false" />
+            <element signature="method#mousePressed#0;class#18969:19062" expanded="false" />
+            <element signature="class#19110:19203" expanded="false" />
+            <element signature="method#mousePressed#0;class#19110:19203" expanded="false" />
+            <element signature="class#19254:19482" expanded="false" />
+            <element signature="method#mousePressed#0;class#19254:19482" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#WizardPopup#0" expanded="false" />
+            <element signature="class#2400:2815" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2400:2815" expanded="false" />
+            <element signature="class#2917:3173" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2917:3173" expanded="false" />
+            <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#2577:2705" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#4767:5191" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4767:5191" expanded="false" />
+            <element signature="class#5238:5426" expanded="false" />
+            <element signature="method#mousePressed#0;class#5238:5426" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#loadBracket#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#printBracketInstructions#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#gameListRoundAnalysis#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#14753#14768#0" expanded="false" />
+            <element signature="e#16781#16824#0" expanded="false" />
+            <element signature="class#18357:18921" expanded="false" />
+            <element signature="method#mousePressed#0;class#18357:18921" expanded="false" />
+            <element signature="class#18969:19062" expanded="false" />
+            <element signature="method#mousePressed#0;class#18969:19062" expanded="false" />
+            <element signature="class#19110:19203" expanded="false" />
+            <element signature="method#mousePressed#0;class#19110:19203" expanded="false" />
+            <element signature="class#19254:19482" expanded="false" />
+            <element signature="method#mousePressed#0;class#19254:19482" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#WizardPopup#0" expanded="false" />
+            <element signature="class#2400:2815" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2400:2815" expanded="false" />
+            <element signature="class#2917:3173" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2917:3173" expanded="false" />
+            <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StartPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#2577:2705" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#4767:5191" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4767:5191" expanded="false" />
+            <element signature="class#5238:5426" expanded="false" />
+            <element signature="method#mousePressed#0;class#5238:5426" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#loadBracket#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#printBracketInstructions#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#gameListRoundAnalysis#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#14753#14768#0" expanded="false" />
+            <element signature="e#16781#16824#0" expanded="false" />
+            <element signature="class#18357:18921" expanded="false" />
+            <element signature="method#mousePressed#0;class#18357:18921" expanded="false" />
+            <element signature="class#18969:19062" expanded="false" />
+            <element signature="method#mousePressed#0;class#18969:19062" expanded="false" />
+            <element signature="class#19110:19203" expanded="false" />
+            <element signature="method#mousePressed#0;class#19110:19203" expanded="false" />
+            <element signature="class#19254:19482" expanded="false" />
+            <element signature="method#mousePressed#0;class#19254:19482" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#WizardPopup#0" expanded="false" />
+            <element signature="class#2400:2815" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2400:2815" expanded="false" />
+            <element signature="class#2917:3173" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2917:3173" expanded="false" />
+            <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Popups.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#2577:2705" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#4767:5191" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4767:5191" expanded="false" />
+            <element signature="class#5238:5426" expanded="false" />
+            <element signature="method#mousePressed#0;class#5238:5426" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#loadBracket#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#printBracketInstructions#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#gameListRoundAnalysis#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#14753#14768#0" expanded="false" />
+            <element signature="e#16781#16824#0" expanded="false" />
+            <element signature="class#18357:18921" expanded="false" />
+            <element signature="method#mousePressed#0;class#18357:18921" expanded="false" />
+            <element signature="class#18969:19062" expanded="false" />
+            <element signature="method#mousePressed#0;class#18969:19062" expanded="false" />
+            <element signature="class#19110:19203" expanded="false" />
+            <element signature="method#mousePressed#0;class#19110:19203" expanded="false" />
+            <element signature="class#19254:19482" expanded="false" />
+            <element signature="method#mousePressed#0;class#19254:19482" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -659,10 +835,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -674,27 +847,28 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#2296:2424" expanded="false" />
+            <element signature="class#2577:2705" expanded="false" />
             <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#4622:5046" expanded="false" />
-            <element signature="method#actionPerformed#0;class#4622:5046" expanded="false" />
-            <element signature="class#5093:5281" expanded="false" />
-            <element signature="method#mousePressed#0;class#5093:5281" expanded="false" />
+            <element signature="class#4767:5191" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4767:5191" expanded="false" />
+            <element signature="class#5238:5426" expanded="false" />
+            <element signature="method#mousePressed#0;class#5238:5426" expanded="false" />
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#loadBracket#0;class#MainWindow#0" expanded="false" />
             <element signature="method#printBracketInstructions#0;class#MainWindow#0" expanded="false" />
             <element signature="method#gameListRoundAnalysis#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#12545#12560#0" expanded="false" />
-            <element signature="e#14573#14616#0" expanded="false" />
-            <element signature="class#16149:16713" expanded="false" />
-            <element signature="method#mousePressed#0;class#16149:16713" expanded="false" />
-            <element signature="class#16761:16854" expanded="false" />
-            <element signature="method#mousePressed#0;class#16761:16854" expanded="false" />
-            <element signature="class#16902:16995" expanded="false" />
-            <element signature="method#mousePressed#0;class#16902:16995" expanded="false" />
-            <element signature="class#17046:17274" expanded="false" />
-            <element signature="method#mousePressed#0;class#17046:17274" expanded="false" />
+            <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#14753#14768#0" expanded="false" />
+            <element signature="e#16781#16824#0" expanded="false" />
+            <element signature="class#18357:18921" expanded="false" />
+            <element signature="method#mousePressed#0;class#18357:18921" expanded="false" />
+            <element signature="class#18969:19062" expanded="false" />
+            <element signature="method#mousePressed#0;class#18969:19062" expanded="false" />
+            <element signature="class#19110:19203" expanded="false" />
+            <element signature="method#mousePressed#0;class#19110:19203" expanded="false" />
+            <element signature="class#19254:19482" expanded="false" />
+            <element signature="method#mousePressed#0;class#19254:19482" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -726,10 +900,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -741,27 +912,28 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#2296:2424" expanded="false" />
+            <element signature="class#2577:2705" expanded="false" />
             <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#4622:5046" expanded="false" />
-            <element signature="method#actionPerformed#0;class#4622:5046" expanded="false" />
-            <element signature="class#5093:5281" expanded="false" />
-            <element signature="method#mousePressed#0;class#5093:5281" expanded="false" />
+            <element signature="class#4767:5191" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4767:5191" expanded="false" />
+            <element signature="class#5238:5426" expanded="false" />
+            <element signature="method#mousePressed#0;class#5238:5426" expanded="false" />
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#loadBracket#0;class#MainWindow#0" expanded="false" />
             <element signature="method#printBracketInstructions#0;class#MainWindow#0" expanded="false" />
             <element signature="method#gameListRoundAnalysis#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#12545#12560#0" expanded="false" />
-            <element signature="e#14573#14616#0" expanded="false" />
-            <element signature="class#16149:16713" expanded="false" />
-            <element signature="method#mousePressed#0;class#16149:16713" expanded="false" />
-            <element signature="class#16761:16854" expanded="false" />
-            <element signature="method#mousePressed#0;class#16761:16854" expanded="false" />
-            <element signature="class#16902:16995" expanded="false" />
-            <element signature="method#mousePressed#0;class#16902:16995" expanded="false" />
-            <element signature="class#17046:17274" expanded="false" />
-            <element signature="method#mousePressed#0;class#17046:17274" expanded="false" />
+            <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#14753#14768#0" expanded="false" />
+            <element signature="e#16781#16824#0" expanded="false" />
+            <element signature="class#18357:18921" expanded="false" />
+            <element signature="method#mousePressed#0;class#18357:18921" expanded="false" />
+            <element signature="class#18969:19062" expanded="false" />
+            <element signature="method#mousePressed#0;class#18969:19062" expanded="false" />
+            <element signature="class#19110:19203" expanded="false" />
+            <element signature="method#mousePressed#0;class#19110:19203" expanded="false" />
+            <element signature="class#19254:19482" expanded="false" />
+            <element signature="method#mousePressed#0;class#19254:19482" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -821,40 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.41666666">
           <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#2296:2424" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#4622:5046" expanded="false" />
-            <element signature="method#actionPerformed#0;class#4622:5046" expanded="false" />
-            <element signature="class#5093:5281" expanded="false" />
-            <element signature="method#mousePressed#0;class#5093:5281" expanded="false" />
-            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#loadBracket#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#printBracketInstructions#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#gameListRoundAnalysis#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#12545#12560#0" expanded="false" />
-            <element signature="e#14573#14616#0" expanded="false" />
-            <element signature="class#16149:16713" expanded="false" />
-            <element signature="method#mousePressed#0;class#16149:16713" expanded="false" />
-            <element signature="class#16761:16854" expanded="false" />
-            <element signature="method#mousePressed#0;class#16761:16854" expanded="false" />
-            <element signature="class#16902:16995" expanded="false" />
-            <element signature="method#mousePressed#0;class#16902:16995" expanded="false" />
-            <element signature="class#17046:17274" expanded="false" />
-            <element signature="method#mousePressed#0;class#17046:17274" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,31 +1019,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/StartPopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.4444447">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.22077923">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Popups.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41666666">
+        <state vertical-scroll-proportion="0.35876623">
           <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartPopup.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16666667">
+          <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#2577:2705" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#4767:5191" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4767:5191" expanded="false" />
+            <element signature="class#5238:5426" expanded="false" />
+            <element signature="method#mousePressed#0;class#5238:5426" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#loadBracket#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#printBracketInstructions#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#gameListRoundAnalysis#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#placeGameModules#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#14753#14768#0" expanded="false" />
+            <element signature="e#16781#16824#0" expanded="false" />
+            <element signature="class#18357:18921" expanded="false" />
+            <element signature="method#mousePressed#0;class#18357:18921" expanded="false" />
+            <element signature="class#18969:19062" expanded="false" />
+            <element signature="method#mousePressed#0;class#18969:19062" expanded="false" />
+            <element signature="class#19110:19203" expanded="false" />
+            <element signature="method#mousePressed#0;class#19110:19203" expanded="false" />
+            <element signature="class#19254:19482" expanded="false" />
+            <element signature="method#mousePressed#0;class#19254:19482" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -17,12 +17,13 @@ public class MainWindow {
     static JLabel teamCountDisplay = new JLabel("Teams :--");
     static MigLayout layout = new MigLayout();
     static JPanel panel = new JPanel();
-    static JScrollPane scrollPane = new JScrollPane(panel);
+    static JScrollPane scrollPane = new JScrollPane(panel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
     static ArrayList instructions = new ArrayList();
     static ArrayList<Game> gameList = new ArrayList<>();
     static ArrayList<String> teamList = new ArrayList();
     static JFrame frame = new JFrame();
     static int[] gamesPerRound;
+    static boolean[] secRoundPlacementBools;
     static TeamListImportPopup tlimporter = new TeamListImportPopup();
     static JMenuBar mainMenuBar = new JMenuBar();
     static JMenu mnFile = new JMenu("File");
@@ -40,6 +41,9 @@ public class MainWindow {
     static JPanel losersBracketPanel = new JPanel();
 
     static JMenuItem mntm = new JMenuItem("");
+    static int[] case1={1,3,2,4};
+    static int[] case2={1,8,4,5,2,7,3,6};
+    static int[] case3={1,16,8,9,3,13,5,12,2,15,7,10,4,14,6,11};
 
 
     void onStart() {
@@ -77,13 +81,10 @@ public class MainWindow {
     public static void makePanels()
     {
         panel=new JPanel();
+        panel.setPreferredSize(new Dimension(1000,1000));
         panel.setLayout(null);
-        JLabel l=new JLabel("ENYEHTGSFDGYTHEGDFFNTHEGSd");
-        Insets insets = panel.getInsets();
-        Dimension size =l.getPreferredSize();
-        l.setBounds(30+insets.left,30+insets.top,size.width,size.height);
-        panel.add(l);
-        frame.add(panel);
+        scrollPane.getViewport().add(panel);
+        frame.add(scrollPane);
         frame.getContentPane().setBackground(Color.black);
         panel.repaint();
         frame.repaint();
@@ -150,6 +151,7 @@ public class MainWindow {
         int count=0;
         int pow2val=0;
         int overflow=0;
+        char gameLetter='A';
         while(Math.pow(2,count)<= teamCount){//gets 2^i limit
             pow2val=(int) Math.pow(2, count);
             count++;
@@ -158,7 +160,7 @@ public class MainWindow {
         overflow=teamCount-pow2val;
         Main.out(count+" "+pow2val+" "+ overflow);
         for(int i=0;i<teamCount;i++){//adds names to teamlist
-            teamList.add(""+(i+1));
+            teamList.add("Team "+(i+1));
         }
         //Collections.reverse(teamList);
 
@@ -171,7 +173,7 @@ public class MainWindow {
             String s=teamList.get(i-1);
             Main.out(s);
             JLabel l = new JLabel(s);
-            addLabel(l,i,col);
+            //addLabel(l,i,col);
             nameLabels.add(l);
             firstRound.add(l);
         }
@@ -180,42 +182,102 @@ public class MainWindow {
             String s=teamList.get(i);
             Main.out(s);
             JLabel l = new JLabel(s);
-            addLabel(l,i,col);
+            //addLabel(l,i,col);
             nameLabels.add(l);
             secRound.add(l);
         }
+
         if(overflow!=0){
             int maxGames=(int)Math.pow(2,count+1);
             int firstRoundTeams= overflow*2;
             int j=0;
             for(int i=0;i<overflow;i+=1){
-                Game g = new Game(""+i,firstRound.get(j).getText(),firstRound.get(j+1).getText());
+                Game g = new Game(""+gameLetter,firstRound.get(j).getText(),firstRound.get(j+1).getText());
+                gameLetter++;
                 j+=2;
                 Main.out("#"+firstRound.size());
                 gameList.add(g);
                 JPanel gamePanel = buildGameModule(g);
                 Insets insets = panel.getInsets();
                 Dimension size =gamePanel.getPreferredSize();
-                gamePanel.setBounds(30+insets.left,30+(i*(100))+insets.top,size.width,size.height);
+                gamePanel.setBounds(30+insets.left,30+(i*(60))+insets.top,size.width,size.height);
+                panel.add(gamePanel);
+                frame.getContentPane().revalidate();
+                frame.getContentPane().repaint();
+
+            }
+
+            secRoundPlacementBools = new boolean[pow2val];
+            for(int i=0;i<pow2val;i++){
+                secRoundPlacementBools[i]=false;
+            }
+
+            Main.out("overflow:"+overflow);
+            int[] compArr=null;
+            int x=teamList.size();
+            if(x<8){
+                compArr=case1;
+
+            }
+            if(x>8 && x<16) {
+                compArr=case2;
+
+            }
+            if(x>16 && x<32) {
+                compArr=case3;
+
+            }
+            Main.out(Arrays.toString(compArr));
+            for(int i=0;i<teamList.size()- (overflow*2);i++){
+                for(int k=0;k<compArr.length;k++){
+                    Main.out("%"+k+" "+compArr.length);
+                    if(compArr[k]==i+1){
+                        secRoundPlacementBools[k]=true;
+                    }
+                }
+            }
+            j=0;
+            char winLetter ='A';
+            for(int i=0;i<pow2val;i++){
+                String team1;
+                if(secRoundPlacementBools[i]){
+                    team1=secRound.get(j).getText();
+                    if(j<secRound.size()-1)
+                    j++;
+                }else{
+                    team1=""+winLetter;
+                    winLetter++;
+                }
+                String team2;
+                i++;
+                if(secRoundPlacementBools[i]){
+                    team2=secRound.get(j).getText();
+                    if(j<secRound.size()-1)
+                        j++;
+                }else{
+                    team2=""+winLetter;
+                    winLetter++;
+                }
+                Game g = new Game(""+gameLetter,team1,team2);
+                gameLetter++;
+                Main.out("#"+secRound.size());
+                gameList.add(g);
+                JPanel gamePanel = buildGameModule(g);
+                Insets insets = panel.getInsets();
+                Dimension size =gamePanel.getPreferredSize();
+                gamePanel.setBounds(250+insets.left,30+(i*(30))+insets.top,size.width,size.height);
                 panel.add(gamePanel);
                 frame.getContentPane().revalidate();
                 frame.getContentPane().repaint();
             }
-            boolean[] arr = new boolean[pow2val];
-            secondRoundCheck(arr,secRound.size(),0,arr.length);
+            Main.out(Arrays.toString(secRoundPlacementBools));
         }
         //calculate round 2 distribution
         for(int i=0;i<teamCount;i++){
             //if(Math.pow(2,i+1))
         }
     }
-    public void secondRoundCheck(boolean[] arr, int count, int min, int max){
-        boolean check[] =arr;
-        int mid=((min+max)/2)+1;
-        if(count>0){
-            arr[min]=true;
-
-        }
+    public void secondRoundCheck( ){
 
     }
     public void loadBracket() {
@@ -501,14 +563,14 @@ public class MainWindow {
         gbc.insets = new Insets(0, 3, 0, 0);
         gamePanel.add(winnerbutton2, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 2;
+        gbc.gridx = 4;
+        gbc.gridy = 0;
         gbc.gridwidth = 3;
         gbc.insets = new Insets(0, 4, 0, 0);
         gamePanel.add(timeLabel, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 3;
+        gbc.gridx = 4;
+        gbc.gridy = 1;
         gbc.gridwidth = 3;
         gbc.insets = new Insets(0, 4, 0, 0);
         gamePanel.add(locLabel, gbc);
