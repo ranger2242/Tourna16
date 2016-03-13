@@ -6,7 +6,7 @@ import javax.swing.border.EtchedBorder;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
-import java.util.ArrayList;
+import java.util.*;
 //Alex is high.
 /**
  * Created by Tom on 6/4/2015.
@@ -163,6 +163,9 @@ public class MainWindow {
         //Collections.reverse(teamList);
 
         ArrayList<JLabel> nameLabels = new ArrayList<>();
+        ArrayList<JLabel> firstRound = new ArrayList<>();
+        ArrayList<JLabel> secRound = new ArrayList<>();
+        ArrayList<Game> gameList = new ArrayList<>();
         int col=0;
         for(int i=teamList.size()-(overflow*2)+1;i<=teamList.size();i++){//add overflow to screen
             String s=teamList.get(i-1);
@@ -170,6 +173,7 @@ public class MainWindow {
             JLabel l = new JLabel(s);
             addLabel(l,i,col);
             nameLabels.add(l);
+            firstRound.add(l);
         }
         col++;
         for(int i=0; i< teamList.size()-(overflow*2);i++){//adds labels to screen
@@ -178,16 +182,41 @@ public class MainWindow {
             JLabel l = new JLabel(s);
             addLabel(l,i,col);
             nameLabels.add(l);
+            secRound.add(l);
         }
         if(overflow!=0){
-            while(count+1>0){
-
+            int maxGames=(int)Math.pow(2,count+1);
+            int firstRoundTeams= overflow*2;
+            int j=0;
+            for(int i=0;i<overflow;i+=1){
+                Game g = new Game(""+i,firstRound.get(j).getText(),firstRound.get(j+1).getText());
+                j+=2;
+                Main.out("#"+firstRound.size());
+                gameList.add(g);
+                JPanel gamePanel = buildGameModule(g);
+                Insets insets = panel.getInsets();
+                Dimension size =gamePanel.getPreferredSize();
+                gamePanel.setBounds(30+insets.left,30+(i*(100))+insets.top,size.width,size.height);
+                panel.add(gamePanel);
+                frame.getContentPane().revalidate();
+                frame.getContentPane().repaint();
             }
+            boolean[] arr = new boolean[pow2val];
+            secondRoundCheck(arr,secRound.size(),0,arr.length);
         }
         //calculate round 2 distribution
         for(int i=0;i<teamCount;i++){
             //if(Math.pow(2,i+1))
         }
+    }
+    public void secondRoundCheck(boolean[] arr, int count, int min, int max){
+        boolean check[] =arr;
+        int mid=((min+max)/2)+1;
+        if(count>0){
+            arr[min]=true;
+
+        }
+
     }
     public void loadBracket() {
         String fileName = "C:\\Users\\Tom\\Google Drive\\JAVA\\Tourna15\\data\\data" + teamCount + ".txt";
@@ -483,9 +512,12 @@ public class MainWindow {
         gbc.gridwidth = 3;
         gbc.insets = new Insets(0, 4, 0, 0);
         gamePanel.add(locLabel, gbc);
+        panel.add(gamePanel);
+        panel.revalidate();
+        panel.repaint();
         panel.updateUI();
 
-        scrollPane.updateUI();
+        //scrollPane.updateUI();
         gamePanelY=gamePanel.getHeight();
         return gamePanel;
     }

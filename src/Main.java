@@ -13,8 +13,11 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		window.onStart();
-		wizard.onStart();
+		StartPopup p = new StartPopup();
+		p.onStart();
+		p.onStart2();
+		//window.onStart();
+		//wizard.onStart();
 		//gdp.onStart();
 
 	}

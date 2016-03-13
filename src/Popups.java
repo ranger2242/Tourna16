@@ -12,22 +12,20 @@ import java.awt.event.WindowEvent;
 public class Popups {
     static MainWindow window= null;
     JFrame frame = new JFrame();
-    JLabel titleLabel= new JLabel("");
+    JLabel titleLabel= new JLabel("TEST POPUP");
     JButton confirmButton = new JButton("Confirm");
-    MigLayout layout = new MigLayout("fill");
+    MigLayout layout = new MigLayout("debug , fill");
     static JPanel panel = new JPanel();
-
+    int frameWidth= 400;
+    int frameHeight= 400;
 
     void onStart() {
-
-
         frame.setResizable(false);
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 
         int screenHeight= (int) dimension.getHeight();
         int screenWidth= (int) dimension.getWidth();
-        int frameWidth= 400;
-        int frameHeight= 800;
+
 
         // This is an empty content area in the frame
         frame.setSize(new Dimension(frameWidth, frameHeight));
@@ -44,11 +42,12 @@ public class Popups {
 
             public void actionPerformed(ActionEvent e) {
                 onPopupComplete();
+
                 frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
             }
         });
         panel.add(titleLabel, "");
-        panel.add(confirmButton, "pushx,alignx right ");
+        panel.add(confirmButton, "pushx");
         Main.centreWindow(frame);
     }
 
