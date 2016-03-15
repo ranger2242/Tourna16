@@ -66,7 +66,7 @@ public class TeamListImportPopup{
         //window.setTeamList(teamList);
         window.panel.removeAll();
         window.makeMenuBar();
-        window.loadBracket();
+        //window.loadBracket();
 
         window.scrollPane.updateUI();
         window.frame.revalidate();

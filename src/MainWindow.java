@@ -1,69 +1,86 @@
-import net.miginfocom.swing.MigLayout;
-
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
-import java.util.*;
-//Alex is high.
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * Created by Tom on 6/4/2015.
  */
-public class MainWindow {
-    static int teamCount = 0;
-    static Bracket2 bracket2 = new Bracket2();
-    static JLabel teamCountDisplay = new JLabel("Teams :--");
-    static MigLayout layout = new MigLayout();
-    static JPanel panel = new JPanel();
-    static JScrollPane scrollPane = new JScrollPane(panel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
-    static ArrayList instructions = new ArrayList();
-    static ArrayList<Game> gameList = new ArrayList<>();
-    static ArrayList<String> teamList = new ArrayList();
-    static JFrame frame = new JFrame();
-    static int[] gamesPerRound;
-    static boolean[] secRoundPlacementBools;
-    static TeamListImportPopup tlimporter = new TeamListImportPopup();
-    static JMenuBar mainMenuBar = new JMenuBar();
-    static JMenu mnFile = new JMenu("File");
-    static JMenuItem mntmOpen = new JMenuItem("Open");
-    static JMenuItem mntmSave = new JMenuItem("Save");
-    static JMenuItem mntmSaveAs = new JMenuItem("Save As");
-    static JMenuItem mntmPref = new JMenuItem("Preferences");
-    static JMenuItem mntmExit = new JMenuItem("Exit");
-    static JMenu mnEdit = new JMenu("Edit");
-    static JMenu mnAbout = new JMenu("About");
-    static JMenuItem mntmTeamList = new JMenuItem("Team List Editior");
-    static int gamePanelY= 0;
-
-    static JPanel winnersBracketPanel = new JPanel();
-    static JPanel losersBracketPanel = new JPanel();
-
-    static JMenuItem mntm = new JMenuItem("");
+public class MainWindow implements  KeyListener{
+    static String sep="-----------------";
+    protected static int teamCount = 0;
+    protected static JLabel teamCountDisplay = new JLabel("Teams :--");
+    protected static JPanel panel = new JPanel();
+    protected static JPanel loserPanel= new JPanel();
+    protected static JScrollPane scrollPane = new JScrollPane(panel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+    protected static ArrayList<Game> gameList = new ArrayList<>();
+    protected static ArrayList<String> teamList = new ArrayList();
+    protected static JFrame frame = new JFrame();
+    protected static boolean[] secRoundPlacementBools;
+    protected static TeamListImportPopup tlimporter = new TeamListImportPopup();
+    protected static JMenuBar mainMenuBar = new JMenuBar();
+    protected static JMenu mnFile = new JMenu("File");
+    protected static JMenuItem mntmOpen = new JMenuItem("Open");
+    protected static JMenuItem mntmSave = new JMenuItem("Save");
+    protected static JMenuItem mntmSaveAs = new JMenuItem("Save As");
+    protected static JMenuItem mntmPref = new JMenuItem("Preferences");
+    protected static JMenuItem mntmExit = new JMenuItem("Exit");
+    protected static JMenu mnEdit = new JMenu("Edit");
+    protected static JMenu mnAbout = new JMenu("About");
+    protected static JMenuItem mntmTeamList = new JMenuItem("Team List Editior");
+    protected static int gamePanelY= 0;
     static int[] case1={1,3,2,4};
     static int[] case2={1,8,4,5,2,7,3,6};
     static int[] case3={1,16,8,9,3,13,5,12,2,15,7,10,4,14,6,11};
+    int power;//highest power of 2^i <= n teams
 
-
+    static int nthPower2;
+    int overflow;
+    char gameLetter;
+    char winLetter;
+    int teamsRound1Count;
+    int teamsRound2Count;
+    int gamesRound1Count;
+    int gamesRound2Count;
+    ArrayList<JLabel> nameLabels = new ArrayList<>();
+    ArrayList<JLabel> firstRound = new ArrayList<>();
+    ArrayList<String> firstRoundTeams=new ArrayList<>();
+    ArrayList<String> secRoundTeams=new ArrayList<>();
+    ArrayList<JLabel> secRound = new ArrayList<>();
+    static int height =0;
+    static int gameBlockHeight=0;
     void onStart() {
         makeFrame();
         makeMenuBar();
         makePanels();
+        height=panel.getPreferredSize().height;
+        KeyboardFocusManager.getCurrentKeyboardFocusManager()
+                .addKeyEventDispatcher(new KeyEventDispatcher() {
+                    @Override
+                    public boolean dispatchKeyEvent(KeyEvent e) {
+                        if(e.getKeyCode()==KeyEvent.VK_TAB){
+                            //Main.wizard.frame.getContentPane().revalidate();
+
+                            //Main.wizard.frame.getContentPane().repaint();
+                            Main.wizard.frame.setVisible(true);
+                            //Main.wizard.onStart();
+
+
+                        }
+                        return false;
+                    }
+                });
+        panel.addKeyListener(this);
+        generate();
         frame.setJMenuBar(mainMenuBar);
         frame.invalidate();
         panel.invalidate();
         panel.setVisible(true);
         frame.setVisible(true);
-    }
-    void addLabel(JLabel l, int i, int col){
-        Insets insets = panel.getInsets();
-        Dimension size =l.getPreferredSize();
-        l.setBounds(30+(col*30)+insets.left,100+(i*10)+insets.top,size.width,size.height);
-        panel.add(l);
-        frame.getContentPane().revalidate();
-        frame.getContentPane().repaint();
-
     }
     public static void makeFrame() {
         frame.addWindowListener(new WindowAdapter() {
@@ -78,34 +95,19 @@ public class MainWindow {
         centreWindow(frame);
 
     }
-    public static void makePanels()
-    {
+    public static void makePanels() {
+        Border lineBorder= BorderFactory.createTitledBorder("Winners");
         panel=new JPanel();
-        panel.setPreferredSize(new Dimension(1000,1000));
+        panel.setPreferredSize(new Dimension(2000,700));
         panel.setLayout(null);
+        panel.setBorder(lineBorder);
         scrollPane.getViewport().add(panel);
         frame.add(scrollPane);
-        frame.getContentPane().setBackground(Color.black);
+        //frame.getContentPane().setBackground(Color.blue);
         panel.repaint();
         frame.repaint();
         panel.revalidate();
         frame.revalidate();
-        /*
-        TitledBorder title = BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black),"Winners" );
-        winnersBracketPanel.setBorder(title);
-        title = BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black),"Losers" );
-        losersBracketPanel.setBorder(title);
-        winnersBracketPanel.setLayout(new MigLayout("debug"));
-        losersBracketPanel.setLayout(new MigLayout("debug"));
-
-        int winnerBracketPanelHeight = (frame.getHeight()/4);
-        int losersBracketPanelHeight = (frame.getHeight()/4);
-
-        winnersBracketPanel.setPreferredSize(new Dimension(frame.getWidth()-10, winnerBracketPanelHeight));
-        losersBracketPanel.setPreferredSize(new Dimension(frame.getWidth() - 10, losersBracketPanelHeight));
-        winnersBracketPanel.setSize(frame.getWidth() - 10, winnerBracketPanelHeight);
-        losersBracketPanel.setSize(frame.getWidth() - 10, losersBracketPanelHeight);
-    */
     }
     public static void makeMenuBar() {
         mntmTeamList.setFont(Main.robotoThin);
@@ -148,318 +150,221 @@ public class MainWindow {
         teamCountDisplay.setText("Teams :" + teamCount);
     }
     public void generate(){
-        int count=0;
-        int pow2val=0;
-        int overflow=0;
-        char gameLetter='A';
-        while(Math.pow(2,count)<= teamCount){//gets 2^i limit
-            pow2val=(int) Math.pow(2, count);
-            count++;
+        initVariableSet();
+        Main.out("POW:"+power+" RND2:"+nthPower2+" OVFL:"+ overflow);
+        createTeamList();
+        printTeams();
+        createSeedRounds();
+        if(overflow!=0){
+            int j=0;
+            createOverflowGames();
+            calculatePositioningArray();
+            createOverflowRound2Games();
+            //resize panel
+            if(gamesRound1Count>gamesRound2Count){
+                //init gameBlockHeight
+                Game g= new Game("-");
+                buildGameModule(g,0,0);
+                panel.removeAll();
+                Main.out(gameBlockHeight+"");
+                int height=(gameBlockHeight*gamesRound1Count)+(20*(gamesRound1Count));
+                panel.setPreferredSize(new Dimension(1500,height));
+            }
+            j=0;
+            for(int i=0; i<nthPower2;i++){//build first round games
+                if(!secRoundPlacementBools[i]){
+                    Game g = gameList.get(j);
+                    double weight = (double)panel.getPreferredSize().height/ (double)(Math.pow(2,power));
+                    Main.out("weight"+weight+" height"+height+" nth"+nthPower2);
+                    buildGameModule(g,30,(int)(i*weight));
+
+                    j++;
+                }
+            }
+            j=overflow;
+            for(int i=0;i<nthPower2/2;i++){//build second round games
+                Game g = gameList.get(j);
+                double weight = panel.getPreferredSize().getHeight()/(nthPower2/2);
+                buildGameModule(g,250,(gameBlockHeight)/2+(i*((int)weight)));
+                j++;
+            }
+
+        }else{  //no overflow
+            int j=0;
+            for(int i=0;i<teamCount/2;i++){
+                Game g=new Game(""+gameLetter, teamList.get(j),teamList.get(j+1));
+                gameList.add(g);
+                j+=2;
+                gameLetter++;
+            }
+            j=0;
+            for(int i=0; i<nthPower2/2;i++){//place first round games
+                    Game g = gameList.get(j);
+                double weight =  panel.getPreferredSize().getHeight()/(nthPower2);
+                buildGameModule(g,30,30+(i*((int)weight)));
+                    j++;
+            }
         }
-        count--;
-        overflow=teamCount-pow2val;
-        Main.out(count+" "+pow2val+" "+ overflow);
+        int j=power-1;
+        int index=0;
+        index=gameList.size();
+
+        while(j>=0) {//create remaining games.
+            for(int i=0;i<Math.pow(2,j)/2;i++){
+                Game g= new Game(""+gameLetter,""+(winLetter),""+(char)(winLetter+1));
+                gameList.add(g);
+                gameLetter++;
+                winLetter+=2;
+            }
+            j--;
+        }
+        j=power-1;
+        while(j>=0) {//fill remaining games.
+            for (int i = 0; i < Math.pow(2, j) / 2; i++) {
+                try {
+                Game g = gameList.get(index);
+                    int coloffset = 0;
+                    if (overflow != 0) coloffset = 1;
+                    double weight =  panel.getPreferredSize().getHeight() / ((Math.pow(2, j)/2));
+                    Main.out("weight"+weight+" height"+height+" nth"+Math.pow(2, j));
+
+                    buildGameModule(g,250 + 250 * (power - 1 + coloffset - j),((gameBlockHeight)*(power-j+1))+ (i * ((int) weight)));
+                index++;}
+                catch (IndexOutOfBoundsException e){
+                    Main.out("!!!!!_____INDEXOUTOFBOUNDSEXCEPTION");
+                }
+            }
+            j--;
+        }
+
+    }
+    //////////////////////////////////////////////////////////////////
+    //Generator functions
+    void initVariableSet(){
+        teamList.clear();
+        secRoundPlacementBools=null;
+        power=power2();//highest power of 2^i <= n teams
+        nthPower2=(int)Math.pow(2,power);
+        overflow=teamCount-nthPower2;
+        gameLetter='A';
+        winLetter ='A';
+        teamsRound1Count=overflow*2;
+        teamsRound2Count=teamCount-teamsRound1Count;
+        gamesRound1Count=overflow;
+        gamesRound2Count=nthPower2/2;
+        nameLabels = new ArrayList<>();
+        firstRound = new ArrayList<>();
+        firstRoundTeams=new ArrayList<>();
+        secRound = new ArrayList<>();
+        secRoundTeams=new ArrayList<>();
+        gameList = new ArrayList<>();
+    }
+    int power2(){
+        int power=0;
+        while(Math.pow(2,power)<= teamCount){//gets 2^i limit
+           // pow2val=(int) Math.pow(2, power);
+            power++;
+        }
+        power--;
+        return power;
+    }
+    void createTeamList(){
+        teamList.clear();
         for(int i=0;i<teamCount;i++){//adds names to teamlist
             teamList.add("Team "+(i+1));
         }
-        //Collections.reverse(teamList);
-
-        ArrayList<JLabel> nameLabels = new ArrayList<>();
-        ArrayList<JLabel> firstRound = new ArrayList<>();
-        ArrayList<JLabel> secRound = new ArrayList<>();
-        ArrayList<Game> gameList = new ArrayList<>();
-        int col=0;
-        for(int i=teamList.size()-(overflow*2)+1;i<=teamList.size();i++){//add overflow to screen
-            String s=teamList.get(i-1);
-            Main.out(s);
-            JLabel l = new JLabel(s);
-            //addLabel(l,i,col);
-            nameLabels.add(l);
-            firstRound.add(l);
-        }
-        col++;
-        for(int i=0; i< teamList.size()-(overflow*2);i++){//adds labels to screen
+    }
+    void createSeedRounds(){
+        Main.out("----Placing Teams----");
+        for(int i=teamsRound2Count;i<teamCount;i++){//add round 1 teams to  list
             String s=teamList.get(i);
-            Main.out(s);
-            JLabel l = new JLabel(s);
-            //addLabel(l,i,col);
-            nameLabels.add(l);
-            secRound.add(l);
+            Main.out(s+" selected for Round 1");
+            firstRoundTeams.add(s);
         }
+        for(int i=0;i<teamsRound2Count;i++){
+            String s=teamList.get(i);
+            Main.out(s+" selected for Round 2");
+            secRoundTeams.add(s);
+        }
+        Main.out(sep);
+    }
+    void createOverflowGames(){
+        int j=0;
+        Main.out("----Placing Games----");
+        for(int i=0;i<overflow;i+=1){
+            Game g = new Game(""+gameLetter,firstRoundTeams.get(j),firstRoundTeams.get(j+1));
+            gameLetter++;
+            j+=2;
+            gameList.add(g);
+            Main.out("Game "+g.getGameNumber()+" added to round 1");
+        }
+        Main.out(sep);
 
-        if(overflow!=0){
-            int maxGames=(int)Math.pow(2,count+1);
-            int firstRoundTeams= overflow*2;
-            int j=0;
-            for(int i=0;i<overflow;i+=1){
-                Game g = new Game(""+gameLetter,firstRound.get(j).getText(),firstRound.get(j+1).getText());
-                gameLetter++;
-                j+=2;
-                Main.out("#"+firstRound.size());
-                gameList.add(g);
-                JPanel gamePanel = buildGameModule(g);
-                Insets insets = panel.getInsets();
-                Dimension size =gamePanel.getPreferredSize();
-                gamePanel.setBounds(30+insets.left,30+(i*(60))+insets.top,size.width,size.height);
-                panel.add(gamePanel);
-                frame.getContentPane().revalidate();
-                frame.getContentPane().repaint();
+    }
+    void calculatePositioningArray(){
+        int[] compArr=null;
+        int x=teamList.size();
+        if(x<8){compArr=case1;}
+        else if(x>8 && x<16) {compArr=case2;}
+        else if(x>16 && x<32) {compArr=case3;}
 
-            }
-
-            secRoundPlacementBools = new boolean[pow2val];
-            for(int i=0;i<pow2val;i++){
-                secRoundPlacementBools[i]=false;
-            }
-
-            Main.out("overflow:"+overflow);
-            int[] compArr=null;
-            int x=teamList.size();
-            if(x<8){
-                compArr=case1;
-
-            }
-            if(x>8 && x<16) {
-                compArr=case2;
-
-            }
-            if(x>16 && x<32) {
-                compArr=case3;
-
-            }
-            Main.out(Arrays.toString(compArr));
-            for(int i=0;i<teamList.size()- (overflow*2);i++){
-                for(int k=0;k<compArr.length;k++){
-                    Main.out("%"+k+" "+compArr.length);
-                    if(compArr[k]==i+1){
-                        secRoundPlacementBools[k]=true;
-                    }
+        secRoundPlacementBools = new boolean[compArr.length];
+        for(int i=0;i<compArr.length;i++){
+            secRoundPlacementBools[i]=false;
+        }
+        Main.out(Arrays.toString(compArr));
+        for(int i=0;i<teamsRound2Count;i++){
+            for(int k=0;k<compArr.length;k++){
+                //Main.out("%"+k+" "+compArr.length);
+                if(compArr[k]==i+1){
+                    //Main.out("** "+secRoundPlacementBools.length);
+                    secRoundPlacementBools[k]=true;
                 }
             }
-            j=0;
-            char winLetter ='A';
-            for(int i=0;i<pow2val;i++){
-                String team1;
-                if(secRoundPlacementBools[i]){
-                    team1=secRound.get(j).getText();
-                    if(j<secRound.size()-1)
+        }
+        Main.out(Arrays.toString(secRoundPlacementBools));
+    }
+    void createOverflowRound2Games(){
+        int j=0;
+        for(int i=0;i<nthPower2;i++){
+            String team1;
+            if(secRoundPlacementBools[i]){
+                team1=secRoundTeams.get(j);
+                if(j<secRoundTeams.size()-1)
                     j++;
-                }else{
-                    team1=""+winLetter;
-                    winLetter++;
-                }
-                String team2;
-                i++;
-                if(secRoundPlacementBools[i]){
-                    team2=secRound.get(j).getText();
-                    if(j<secRound.size()-1)
-                        j++;
-                }else{
-                    team2=""+winLetter;
-                    winLetter++;
-                }
-                Game g = new Game(""+gameLetter,team1,team2);
-                gameLetter++;
-                Main.out("#"+secRound.size());
-                gameList.add(g);
-                JPanel gamePanel = buildGameModule(g);
-                Insets insets = panel.getInsets();
-                Dimension size =gamePanel.getPreferredSize();
-                gamePanel.setBounds(250+insets.left,30+(i*(30))+insets.top,size.width,size.height);
-                panel.add(gamePanel);
-                frame.getContentPane().revalidate();
-                frame.getContentPane().repaint();
+            }else{
+                team1=""+winLetter;
+                winLetter++;
             }
-            Main.out(Arrays.toString(secRoundPlacementBools));
-        }
-        //calculate round 2 distribution
-        for(int i=0;i<teamCount;i++){
-            //if(Math.pow(2,i+1))
+            String team2;
+            i++;
+            if(secRoundPlacementBools[i]){
+                team2=secRoundTeams.get(j);
+                if(j<secRoundTeams.size()-1)
+                    j++;
+            }else{
+                team2=""+winLetter;
+                winLetter++;
+            }
+            Game g = new Game(""+gameLetter,team1,team2);
+            gameLetter++;
+            gameList.add(g);
+            Main.out("Game "+g.gameNumber+" added to round 2");
+
         }
     }
-    public void secondRoundCheck( ){
+    void calculateRound1OverflowGamePosition(){
 
     }
-    public void loadBracket() {
-        String fileName = "C:\\Users\\Tom\\Google Drive\\JAVA\\Tourna15\\data\\data" + teamCount + ".txt";
-        try {
-            String s;
-            FileReader fileReader = new FileReader(fileName);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            while ((s = bufferedReader.readLine()) != null) {
-                instructions.add(s);
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+    /////////////////////////////////////////////////////////////////
+    void printTeams(){
+        Main.out("----Team List----");
+        for(String s:teamList){
+            Main.out(s);
         }
-        printBracketInstructions();
-        bracket2.setInstructions(instructions);
-        bracket2.makeBracketGames();
-        bracket2.printGameList();
-        gameList = bracket2.getGamesList();
-
-        gameListRoundAnalysis();
-       // setTeamsFromList();
-        placeGameModules();
+        Main.out(sep);
     }
-    public void printBracketInstructions() {
-        for (int i = 0; i < instructions.size(); i++) {
-            System.out.println(instructions.get(i));
-        }
-    }
-    public void gameListRoundAnalysis() {
-        String totalRounds = null;
-        totalRounds = gameList.get(gameList.size() - 1).getRound();
-        int[] rounds = new int[Integer.parseInt(totalRounds)];
-        String previousRound = null;
-        int count = 0;
-
-        for (int i = 0; i < gameList.size(); i++) {
-            String a = gameList.get(i).getRound();
-            if (i == 0) {
-                previousRound = a;
-            }
-            if (!previousRound.equals(a)) {
-                rounds[Integer.parseInt(previousRound) - 1] = count;
-                count = 0;
-                previousRound = a;
-            }
-            count++;
-        }
-        rounds[rounds.length - 1] = 1;
-        gamesPerRound = rounds;
-        for (int i = 0; i < gamesPerRound.length; i++)
-            System.out.println(rounds[i]);
-    }
-    static public void placeGameModules() {
-        frame.setJMenuBar(mainMenuBar);
-
-        int count = 0;
-        String previousRound = null;
-        int gamesWc = 0;
-        int[] gamesW= new int[10];
-        int gamesLc = 0;
-        int[] gamesL= new int[10];
-
-        int totalGames = 0;
-        int f=0;
-
-        for (int i = 0; i < gameList.size(); i++) {
-
-            String a = gameList.get(i).getRound();
-            String gameBracket = gameList.get(i).getBracket();
-            if (i == 0) {
-                previousRound = a;
-            }
-            if (!previousRound.equals(a)) {
-                count = 0;
-                gamesW[(Integer.parseInt(previousRound))-1]= gamesWc;
-                gamesL[(Integer.parseInt(previousRound))-1]= gamesLc;
-                gamesWc=0;
-                gamesLc=0;
-                previousRound = a;
-            }
-            if(gameBracket.equals("Winners"))
-            {
-                gamesWc++;
-            }
-            if(gameBracket.equals("Losers"))
-            {
-                gamesLc++;
-            }
-        }
-        System.out.println("Games1W:"+gamesWc);
-        System.out.println("Games1L:"+gamesLc);
-        for (int i=0; i<gamesW.length; i++)
-        {
-            System.out.print(gamesW[i]+" ");
-        }
-
-        int lcount =0;
-
-        for (int i = 0; i < gameList.size(); i++) {
-            String a = gameList.get(i).getRound();
-            String gameBracket = gameList.get(i).getBracket();
-            JPanel gameModule = buildGameModule(gameList.get(i));
-
-
-            if (i == 0) {
-                previousRound = a;
-            }
-            if (!previousRound.equals(a)) {
-                count = 0;
-                previousRound = a;
-            }
-
-            int frameWidth = frame.getWidth();
-            int frameHeight=frame.getHeight()/2;
-            int gamesThisRound = Integer.parseInt(previousRound);
-            int totalRounds = gamesPerRound.length;
-            int xspacing = (frameWidth / totalRounds) / 2;
-           // int yspacing = (winnersBracketPanel.getHeight()/gamesW[Integer.parseInt(previousRound)]);
-            int posx = (((frameWidth / totalRounds) * gamesThisRound)) - (frameWidth / totalRounds);
-            //int posx = 0;
-           // int posy= (((frameHeight / gamesPerRound[gamesThisRound - 1]) * count) );
-            int posy=0;
-
-            if(!a.equals("1"))
-            {
-             // posy +=yspacing;
-            }
-
-            System.out.println("pr"+previousRound+ " "+gamesW[Integer.parseInt(previousRound)-1]+" "+gamesL[Integer.parseInt(previousRound)-1]);
-
-            if(gameBracket.equals("Winners"))
-            {
-                if(gamesW[Integer.parseInt(previousRound)]==0)
-                {
-                    posy=0;
-                }
-                else{
-                    posy=(winnersBracketPanel.getHeight()/gamesW[Integer.parseInt(previousRound)])*count;
-                }
-                String constraint = "pos " + posx + " " + posy+",wrap";
-                winnersBracketPanel.add(gameModule, constraint);
-                winnersBracketPanel.updateUI();
-            }
-            else if(gameBracket.equals("Losers"))
-            {
-                if(gamesL[Integer.parseInt(previousRound)]==0)
-                {
-                    posy=0;
-                }
-                else{
-                    if(lcount ==gamesL[Integer.parseInt(previousRound)])
-                    {
-                        lcount=0;
-                    }
-                    posy=(losersBracketPanel.getHeight()/gamesL[Integer.parseInt(previousRound)])*lcount;
-                    lcount++;
-                }
-                String constraint = "pos " + posx + " " + posy+",wrap";
-                losersBracketPanel.add(gameModule, constraint);
-                losersBracketPanel.updateUI();
-            }
-            /*
-            else if(gameBracket.equals("Losers"))
-            {
-                //posy=(winnersBracketPanel.getHeight()/gamesPerRound[gamesThisRound -1]*count+(frameHeight/2));
-                String constraint = "pos " + posx + " " + posy;
-                losersBracketPanel.add(gameModule, constraint);
-            }*/
-            String constraints = "pos 0 "+(frame.getHeight()/2);
-            //panel.add(winnersBracketPanel,"pos 0 0");
-            //panel.add(losersBracketPanel,constraints);
-            count++;
-        }
-    }
-    public static JPanel buildWinnerBracketModule()
-    {
-        return winnersBracketPanel;
-    }
-    public static JPanel buildGameModule(Game g) {
+    public static void buildGameModule(Game g, int xoffset, int yoffset) {
         Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
         JPanel gamePanel = new JPanel();
         GridBagConstraints gbc = new GridBagConstraints();
@@ -579,58 +484,28 @@ public class MainWindow {
         panel.repaint();
         panel.updateUI();
 
-        //scrollPane.updateUI();
         gamePanelY=gamePanel.getHeight();
-        return gamePanel;
+        Insets insets = panel.getInsets();
+        Dimension size =gamePanel.getPreferredSize();
+        gameBlockHeight=size.height;
+        gamePanel.setBounds(xoffset+insets.left,yoffset+insets.top,size.width,size.height);
+        panel.add(gamePanel);
+        frame.getContentPane().revalidate();
+        frame.getContentPane().repaint();
     }
-/*
-    public static void paint(Graphics g)
-    {
-        g.drawLine(0,0,200,200);
+    public void refresh(){
+        panel.removeAll();
+        panel.revalidate();
+        panel.repaint();
+        generate();
     }
+    public void keyTyped(KeyEvent e) {
 
-    public static void recieveTeamListPopup(TeamListImportPopup tlimp) {
-        tlimporter=tlimp;
-        tlimporter.onStart();
-        teamList=tlimporter.getTeamList();
     }
+    public void keyPressed(KeyEvent e) {
 
-    public static void setTeamsFromList() {
-        System.out.println("TeamList Size: " + teamList.size());
-        System.out.println("GameList Size: "+gameList.size());
-
-        for(int i=0; i<gameList.size(); i++)
-        {
-            String team1 = gameList.get(i).getTeam1();
-            int pos = 0;
-            if(team1.charAt(0)=='T')
-            {
-                team1=team1.replaceAll("\\s+","");
-                pos=Integer.parseInt(team1.substring(4));
-                if(Math.signum(pos)<0)
-                {
-                    pos*= -1;
-                }
-                gameList.get(i).setTeam1(teamList.get(pos-1));
-            }
-            String team2 = gameList.get(i).getTeam2();
-            if(team2.charAt(0)=='T')
-            {
-                team2=team2.replaceAll("\\s+","");
-                pos=Integer.parseInt(team2.substring(4));
-                if(Math.signum(pos)<0)
-                {
-                    pos*= -1;
-                }
-                gameList.get(i).setTeam2(teamList.get(pos-1));
-            }
-
-        }
     }
+    public void keyReleased(KeyEvent e) {
 
-    public static void setTeamList(ArrayList<String> arrayList)
-    {
-        teamList=arrayList;
     }
-    */
 }

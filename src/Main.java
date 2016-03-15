@@ -13,11 +13,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-
-		window.onStart();
 		wizard.onStart();
-		//gdp.onStart();
-
 	}
 	public static void setFont()
 	{

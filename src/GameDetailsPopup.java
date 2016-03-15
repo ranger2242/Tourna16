@@ -100,7 +100,6 @@ public class GameDetailsPopup{
                 }
                 game.setLocation(location.getText());
                 MainWindow.panel.removeAll();
-                MainWindow.placeGameModules();
                 MainWindow.panel.updateUI();
                 System.out.println(Integer.parseInt(score1.getText()));
             }

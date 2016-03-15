@@ -15,16 +15,18 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
     static MainWindow window= null;
 
 
-    JScrollBar teamCountSelector = new JScrollBar(JScrollBar.HORIZONTAL, 8,1,6,33);
-    JFrame frame = new JFrame();
-    JLabel titleLabel= new JLabel("Tourna 16");
-    JLabel textOutput1= new JLabel("Enter number of teams: "+teamCount);
-    JButton confirmButton = new JButton("Confirm");
-    MigLayout layout = new MigLayout("fill");
-    static boolean pressed= false;
-    static int teamCount=8;
-    static Font systemFont;
-    static Font systemFontSmall;
+    protected JScrollBar teamCountSelector = new JScrollBar(JScrollBar.HORIZONTAL, 8,1,6,33);
+    protected static JFrame frame = new JFrame();
+    protected JLabel titleLabel= new JLabel("Tourna 16");
+    protected JLabel textOutput1= new JLabel("Enter number of teams: "+teamCount);
+    protected JButton confirmButton = new JButton("Confirm");
+    protected MigLayout layout = new MigLayout("fill");
+    protected static boolean pressed= false;
+    protected static int teamCount=8;
+    protected static Font systemFont;
+    protected static Font systemFontSmall;
+    public WizardPopup(){
+    }
 
     void onStart() {
         frame.setResizable(false);
@@ -75,12 +77,14 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         confirmButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onWizardComplete();
-                frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
+                //frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
                 pressed = true;
             }
         });
 
         Main.centreWindow(frame);
+        //frame.getContentPane().repaint();
+        //frame.getContentPane().revalidate();
     }
     public static void loadFontFromFile()
     {
@@ -105,16 +109,11 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
     }
 
     public static void onWizardComplete() {
-
-        //TeamListImportPopup teamListimporter= new TeamListImportPopup();
-        //window.recieveTeamListPopup(teamListimporter);
-        MainWindow.teamCount=teamCount;
-        window =Main.getWindow();
-        window.setTeamCount(teamCount);
-//        Main.window.loadBracket();
-        Main.window.generate();
-        Main.setWindow(window);
-        //System.exit(0);
+        Main.wizard.frame.setVisible(false);
+        Main.window=new MainWindow();
+        Main.window.setTeamCount(teamCount);
+        Main.window.onStart();
+//        Main.window.refresh();
     }
 
     @Override
