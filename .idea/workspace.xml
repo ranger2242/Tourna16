@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f731a5d3-2b2c-44b2-96ff-069b386afb53" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BinaryNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Traversal.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/tree/AbstractBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tree/AbstractTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tree/BinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tree/LinkedBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tree/Position.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tree/Tree.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/Bracket2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/Bracket2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/Game.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/Main.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/TeamListImportPopup.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/TeamListImportPopup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bracket2.java" afterPath="$PROJECT_DIR$/src/Bracket2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.java" afterPath="$PROJECT_DIR$/src/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameDetailsPopup.java" afterPath="$PROJECT_DIR$/src/GameDetailsPopup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainWindow.java" afterPath="$PROJECT_DIR$/src/MainWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TeamListImportPopup.java" afterPath="$PROJECT_DIR$/src/TeamListImportPopup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WizardPopup.java" afterPath="$PROJECT_DIR$/src/WizardPopup.java" />
     </list>
     <ignored path="Tourna16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +28,7 @@
       <file leaf-file-name="WizardPopup.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="480">
               <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -71,51 +46,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="20">
               <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinaryNode.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="300" column="21" selection-start-line="300" selection-start-column="21" selection-end-line="300" selection-end-column="21" />
-              <folding>
-                <element signature="docComment;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;field#flipper#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
-                <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#BinaryNode#1;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#getValue#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#getLeftChild#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#getRightChild#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
-                <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#setRightChild#0;class#BinaryNode#0" expanded="false" />
-                <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#setValue#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#isLeaf#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#equals#0;class#BinaryNode#0" expanded="false" />
-                <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#equals#1;class#BinaryNode#0" expanded="false" />
-                <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#contains#0;class#BinaryNode#0" expanded="false" />
-                <element signature="method#contains#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#toString#0;class#BinaryNode#0" expanded="false" />
-                <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#hashCode#0;class#BinaryNode#0" expanded="false" />
-                <element signature="method#hashCode#0;class#BinaryNode#0" expanded="false" />
-                <element signature="docComment;method#print#0;class#BinaryNode#0" expanded="false" />
-                <element signature="method#print#1;class#BinaryNode#0" expanded="false" />
-                <element signature="method#store#0;class#BinaryNode#0" expanded="false" />
-                <element signature="method#printLay#0;class#BinaryNode#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -133,7 +69,7 @@
       <file leaf-file-name="GameDetailsPopup.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1360">
+            <state relative-caret-position="600">
               <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
               <folding />
             </state>
@@ -143,7 +79,7 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
+            <state relative-caret-position="1160">
               <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
               <folding />
             </state>
@@ -247,11 +183,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tourna16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tourna16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tourna16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tourna16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tourna16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
@@ -733,7 +700,8 @@
       <workItem from="1478467892167" duration="197000" />
       <workItem from="1478468743426" duration="4149000" />
       <workItem from="1478478333036" duration="2466000" />
-      <workItem from="1478484032083" duration="27310000" />
+      <workItem from="1478484032083" duration="27424000" />
+      <workItem from="1478549485484" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="added trees">
       <created>1478486587395</created>
@@ -742,32 +710,37 @@
       <option name="project" value="LOCAL" />
       <updated>1478486587395</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="more tree fixes">
+      <created>1478544802881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1478544802881</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38703000" />
+    <option name="totallyTimeSpent" value="39129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32283464" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32142857" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31987578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31987578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18228404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18228404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -777,7 +750,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -821,7 +796,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added trees" />
-    <option name="LAST_COMMIT_MESSAGE" value="added trees" />
+    <MESSAGE value="more tree fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="more tree fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -901,9 +877,8 @@
         <state relative-caret-position="0">
           <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="class#2602:3017" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2602:3017" expanded="false" />
             <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -930,9 +905,8 @@
         <state relative-caret-position="0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="class#2602:3017" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2602:3017" expanded="false" />
             <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -1048,9 +1022,8 @@
         <state relative-caret-position="0">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="class#2602:3017" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2602:3017" expanded="false" />
             <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -1121,9 +1094,8 @@
         <state relative-caret-position="0">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="class#2602:3017" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2602:3017" expanded="false" />
             <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -1194,9 +1166,8 @@
         <state relative-caret-position="0">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="class#2602:3017" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2602:3017" expanded="false" />
             <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -1274,9 +1245,8 @@
         <state relative-caret-position="0">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="class#2602:3017" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2602:3017" expanded="false" />
             <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -1354,9 +1324,8 @@
         <state relative-caret-position="0">
           <caret line="114" column="31" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="class#2602:3017" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2602:3017" expanded="false" />
             <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -1427,9 +1396,8 @@
         <state relative-caret-position="0">
           <caret line="114" column="31" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="class#2602:3017" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2602:3017" expanded="false" />
             <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -1500,9 +1468,8 @@
         <state relative-caret-position="0">
           <caret line="114" column="31" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="class#2602:3017" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2602:3017" expanded="false" />
             <element signature="method#loadFontFromFile#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -1594,57 +1561,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/AbstractTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/AbstractBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/LinkedBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/AbstractTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/tree/BinaryTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/tree/Position.java" />
+    <entry file="file://$PROJECT_DIR$/src/tree/Tree.java" />
+    <entry file="file://$PROJECT_DIR$/src/tree/LinkedBinaryTree.java" />
     <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="480">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1663,7 +1587,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
+        <state relative-caret-position="1160">
           <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
           <folding />
         </state>
@@ -1671,7 +1595,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1360">
+        <state relative-caret-position="600">
           <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
           <folding />
         </state>
@@ -1685,18 +1609,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/tree/AbstractBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="136">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="300" column="21" selection-start-line="300" selection-start-column="21" selection-end-line="300" selection-end-column="21" />
+        <state relative-caret-position="80">
+          <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
           <folding>
             <element signature="docComment;class#BinaryNode#0" expanded="false" />
             <element signature="docComment;field#flipper#0;class#BinaryNode#0" expanded="false" />
@@ -1727,6 +1651,14 @@
             <element signature="method#store#0;class#BinaryNode#0" expanded="false" />
             <element signature="method#printLay#0;class#BinaryNode#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
