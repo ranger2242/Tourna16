@@ -16,7 +16,6 @@ import java.util.Date;
 public class GameDetailsPopup{
 
     static MainWindow window= null;
-
     JScrollBar teamCountSelector = new JScrollBar(JScrollBar.HORIZONTAL, 16,1,6,33);
     JFrame frame = new JFrame();
     JLabel titleLabel= new JLabel("Tourna 15");
@@ -155,14 +154,14 @@ public class GameDetailsPopup{
 
     public static void onPopupComplete()
     {
-        window =Main.getWindow();
-        window.panel.removeAll();
+        //window =Main.getWindow();
+        //window.panel.removeAll();
 
         //window.loadBracket();
         window.scrollPane.updateUI();
         window.frame.revalidate();
 
-        Main.setWindow(window);
+        //Main.setWindow(window);
     }
 }
 

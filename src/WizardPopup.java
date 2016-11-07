@@ -43,7 +43,7 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         int frameHeight= 200;
 
         panel.setLayout(layout);
-
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(new Dimension(frameWidth, frameHeight));
         frame.getContentPane().add(panel, BorderLayout.CENTER);
         //frame.pack();
@@ -123,8 +123,6 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
 
     @Override
     public void mousePressed(MouseEvent e) {
-
-
 
     }
 

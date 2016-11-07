@@ -14,11 +14,15 @@ public class MainWindow implements  KeyListener{
     static String sep="-----------------";
     protected static int teamCount = 0;
     protected static JLabel teamCountDisplay = new JLabel("Teams :--");
+    static JPanel rootPanel = new JPanel();
     protected static JPanel panel = new JPanel();
     protected static JPanel loserPanel= new JPanel();
     protected static JScrollPane scrollPane = new JScrollPane(panel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
-    protected static ArrayList<Game> gameList = new ArrayList<>();
-    protected static ArrayList<String> teamList = new ArrayList();
+    static ArrayList<Game> gameList = new ArrayList<>();
+    static ArrayList<Game> loserGameList=new ArrayList<>();
+    static ArrayList<JPanel> roundPanelListW=new ArrayList<>();
+    static ArrayList<String> teamList = new ArrayList();
+    static ArrayList<String> loserInstList= new ArrayList<>();
     protected static JFrame frame = new JFrame();
     protected static boolean[] secRoundPlacementBools;
     protected static TeamListImportPopup tlimporter = new TeamListImportPopup();
@@ -39,13 +43,16 @@ public class MainWindow implements  KeyListener{
     int power;//highest power of 2^i <= n teams
 
     static int nthPower2;
+    int loserPosArr[]={1,1,2,2,4,8};
     int overflow;
+    char gameLetterPre='A';
     char gameLetter;
     char winLetter;
     int teamsRound1Count;
     int teamsRound2Count;
     int gamesRound1Count;
     int gamesRound2Count;
+    boolean gameNumPrefix=false;
     ArrayList<JLabel> nameLabels = new ArrayList<>();
     ArrayList<JLabel> firstRound = new ArrayList<>();
     ArrayList<String> firstRoundTeams=new ArrayList<>();
@@ -53,7 +60,9 @@ public class MainWindow implements  KeyListener{
     ArrayList<JLabel> secRound = new ArrayList<>();
     static int height =0;
     static int gameBlockHeight=0;
+    static int gameBlockWidth=0;
     void onStart() {
+        initLoserList();
         makeFrame();
         makeMenuBar();
         makePanels();
@@ -83,6 +92,7 @@ public class MainWindow implements  KeyListener{
         frame.setVisible(true);
     }
     public static void makeFrame() {
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 System.exit(0);
@@ -96,12 +106,22 @@ public class MainWindow implements  KeyListener{
 
     }
     public static void makePanels() {
+        rootPanel.setLayout(new GridLayout(2,1));
+
         Border lineBorder= BorderFactory.createTitledBorder("Winners");
         panel=new JPanel();
         panel.setPreferredSize(new Dimension(2000,700));
+        loserPanel.setPreferredSize(new Dimension(2000,700));
+
         panel.setLayout(null);
+        loserPanel.setLayout(null);
         panel.setBorder(lineBorder);
-        scrollPane.getViewport().add(panel);
+        lineBorder= BorderFactory.createTitledBorder("Losers");
+        loserPanel.setBorder(lineBorder);
+        rootPanel.add(panel);
+
+        rootPanel.add(loserPanel);
+        scrollPane.getViewport().add(rootPanel);
         frame.add(scrollPane);
         //frame.getContentPane().setBackground(Color.blue);
         panel.repaint();
@@ -145,6 +165,35 @@ public class MainWindow implements  KeyListener{
 
         frame.setLocation(x, y);
     }
+    void initLoserList(){
+        loserInstList.add("DA-CB-HI-EJ");
+        loserInstList.add("BC-EA-DI-JK-FL");
+        loserInstList.add("AB-CD-FJ-EF-LM-GN");
+        loserInstList.add("EA-DK-CB-FL-GM-NO-HP");
+        loserInstList.add("FA-DB-EL-CM-GN-HO-PQ-IR");
+        loserInstList.add("GA-EB-DC-FM-NO-HP-IQ-RS-JT");
+        loserInstList.add("HA-GB-FG-ED-NO-PQ-IR-JS-TU-KV");
+        loserInstList.add("BC-IA-HO-GD-FE-PQ-RS-JT-KU-VW-LX");
+        loserInstList.add("BC-EF-JA-IP-HD-GQ-RS-TU-KV-LW-XY-MZ");
+        loserInstList.add("BC-DE-FG-KA-JQ-IR-HS-XU-VW-LX-MY-Z*AA-N*AB");
+        loserInstList.add("AB-CD-EF-GH-LR-KS-JT-IU-VW-XY-MZ-N*AA-*AB*AC-O*AD");
+        loserInstList.add("");//17
+        loserInstList.add("JA=FB=IT-HG-EU-DC-LV-KW-NX-MY-Z*AA-*AB*AC-P*AD-O*AE-*AF*AG-Q*AH");
+        loserInstList.add("KA-GB-EC-JA-IH-FV-DW-MX-LY-OZ-N*AA-*AB*AC-*AD*AE-Q*AF-P*AG-*AH*AI-R*AJ");
+        loserInstList.add("LA-JB-HC-FD-KV-IW-GX-EY-NZ-M*AA-P*AB-O*AC-*AD*AE-*AF*AG-R*AH-Q*AI-*AJ*AK-S*AL");
+        loserInstList.add("MA-KB-JC-ID-GE-LW-XY-MZ-P*AA-O*AB-N*AC-O*AD-P*AE-*AF*AG-*AH*AI-S*AJ-R*AK-*AL*AM-T*AN");
+        loserInstList.add("NA-LB-KC-JD-HE-GF-MX-YZ-I*AA-*AB*AC-P*AD-O*AE-R*AF-Q*AG-*AH*AI-*AJ*AK-T*AL-S*AM-*AN*AO-U*AP");//22
+        loserInstList.add("OA-MB-LC-KD-JE-IF-HG-NY-Z*AA-*AB*AC-*AD*AE-Q*AF-P*AG-S*AH-R*AI-*AJ*AK-*AL*AM-U*AN-T*AO-*AP*AQ-V*AR");
+        loserInstList.add("PA-OB-NC-MD-LE-KF-JG-IH-Z*AA-*AB*AC-*AD*AE-*AF*AG-R*AH-Q*AI-T*AJ-S*AK-*AL*AM-*AN*AO-V*AP-U*AQ-*AR*AS-W*AT");
+        loserInstList.add("BC-QA-P*AA-OD-ND-MF-LG-KH-JI-*AB*AC-*AD*AE-*AF*AG-*AH*AI-S*AJ-R*AK-U*AL-T*AM-*AN*AO-*AP*AQ-W*AR-V*AS-*AT*AU-X*AV");
+        loserInstList.add("BC-GH-RA-Q*AB-PD-OE-NF-M*AC-LI-KJ-*AD*AE-*AF*AG-*AH*AI-*AJ*AK-T*AL-S*AM-V*AN-U*AO-*AP*AQ-*AR*AS-X*AT-W*AU-*AV*AW-Y*AX");
+        loserInstList.add("BC-GH-JK-SA-R*AC-QD-PC-OF-N*AD-MI-L*AR-*AF*AG-*AH*AI-*AJ*AK-*AL*AM-U*AN-T*AO-W*AP-V*AQ-*AR*AS-*AT*AU-Y*AV-X*AW-*AX*AY-Z*AZ");
+        loserInstList.add("BC-EF-HI-KL-TA-S*AD-RD-Q*AE-PG-O*AF-NJ-M*AG-*AH*AI-*AJ*AK-*AL*AM-*AN*AO-V*AP-U*AQ-X*AR-W*AS-*AT*AU-*AV*AW-Z*AX-Y*AY-*AZ*BA-*AA*BB");
+        loserInstList.add("BC-DE-FG-IJ-LM-UA-T*AE-S*AF-R*AG-QH-P*AH-QK-N*AI-*AJ*AK-*AL*AM-*AN*AO-*AP*AQ-W-*AM-V*AS-Y*AT-X*AU-*AV*AW-*AX*AY-*AA*AZ-Z*BA-*BB*BC-*AB*BE");
+        loserInstList.add("");
+        loserInstList.add("");
+        loserInstList.add("");
+    }
     public void setTeamCount(int tc) {
         teamCount = tc;
         teamCountDisplay.setText("Teams :" + teamCount);
@@ -164,10 +213,10 @@ public class MainWindow implements  KeyListener{
             if(gamesRound1Count>gamesRound2Count){
                 //init gameBlockHeight
                 Game g= new Game("-");
-                buildGameModule(g,0,0);
+                buildGameModule(panel,g,0,0);
                 panel.removeAll();
                 Main.out(gameBlockHeight+"");
-                int height=(gameBlockHeight*gamesRound1Count)+(20*(gamesRound1Count));
+                int height=(gameBlockHeight*gamesRound1Count);
                 panel.setPreferredSize(new Dimension(1500,height));
             }
             j=0;
@@ -176,7 +225,7 @@ public class MainWindow implements  KeyListener{
                     Game g = gameList.get(j);
                     double weight = (double)panel.getPreferredSize().height/ (double)(Math.pow(2,power));
                     Main.out("weight"+weight+" height"+height+" nth"+nthPower2);
-                    buildGameModule(g,30,(int)(i*weight));
+                    buildGameModule(panel,g,30,(int)(i*weight));
 
                     j++;
                 }
@@ -185,14 +234,14 @@ public class MainWindow implements  KeyListener{
             for(int i=0;i<nthPower2/2;i++){//build second round games
                 Game g = gameList.get(j);
                 double weight = panel.getPreferredSize().getHeight()/(nthPower2/2);
-                buildGameModule(g,250,(gameBlockHeight)/2+(i*((int)weight)));
+                buildGameModule(panel,g,0,(gameBlockHeight)/2+(i*((int)weight)));
                 j++;
             }
 
         }else{  //no overflow
             int j=0;
             for(int i=0;i<teamCount/2;i++){
-                Game g=new Game(""+gameLetter, teamList.get(j),teamList.get(j+1));
+                Game g=new Game(checkGameNumber(gameLetter), teamList.get(j),teamList.get(j+1));
                 gameList.add(g);
                 j+=2;
                 gameLetter++;
@@ -201,7 +250,7 @@ public class MainWindow implements  KeyListener{
             for(int i=0; i<nthPower2/2;i++){//place first round games
                     Game g = gameList.get(j);
                 double weight =  panel.getPreferredSize().getHeight()/(nthPower2);
-                buildGameModule(g,30,30+(i*((int)weight)));
+                buildGameModule(panel, g,30,30+(i*((int)weight)));
                     j++;
             }
         }
@@ -211,7 +260,7 @@ public class MainWindow implements  KeyListener{
 
         while(j>=0) {//create remaining games.
             for(int i=0;i<Math.pow(2,j)/2;i++){
-                Game g= new Game(""+gameLetter,""+(winLetter),""+(char)(winLetter+1));
+                Game g= new Game(checkGameNumber(gameLetter),("Winner "+checkGameNumber(winLetter)),("Winner "+checkGameNumber((char)(winLetter+1))));
                 gameList.add(g);
                 gameLetter++;
                 winLetter+=2;
@@ -228,7 +277,7 @@ public class MainWindow implements  KeyListener{
                     double weight =  panel.getPreferredSize().getHeight() / ((Math.pow(2, j)/2));
                     Main.out("weight"+weight+" height"+height+" nth"+Math.pow(2, j));
 
-                    buildGameModule(g,250 + 250 * (power - 1 + coloffset - j),((gameBlockHeight)*(power-j+1))+ (i * ((int) weight)));
+                    buildGameModule(panel, g,250 + 250 * (power - 1 + coloffset - j),((gameBlockHeight)*(power-j+1))+ (i * ((int) weight))+50);
                 index++;}
                 catch (IndexOutOfBoundsException e){
                     Main.out("!!!!!_____INDEXOUTOFBOUNDSEXCEPTION");
@@ -236,7 +285,10 @@ public class MainWindow implements  KeyListener{
             }
             j--;
         }
-
+        //////////////////////////////////////////////////////
+        //Losers Bracket
+        createLosersBracket();
+        frame.pack();
     }
     //////////////////////////////////////////////////////////////////
     //Generator functions
@@ -292,7 +344,7 @@ public class MainWindow implements  KeyListener{
         int j=0;
         Main.out("----Placing Games----");
         for(int i=0;i<overflow;i+=1){
-            Game g = new Game(""+gameLetter,firstRoundTeams.get(j),firstRoundTeams.get(j+1));
+            Game g = new Game(checkGameNumber(gameLetter),firstRoundTeams.get(j),firstRoundTeams.get(j+1));
             gameLetter++;
             j+=2;
             gameList.add(g);
@@ -333,7 +385,7 @@ public class MainWindow implements  KeyListener{
                 if(j<secRoundTeams.size()-1)
                     j++;
             }else{
-                team1=""+winLetter;
+                team1=""+checkGameNumber(winLetter);
                 winLetter++;
             }
             String team2;
@@ -343,18 +395,148 @@ public class MainWindow implements  KeyListener{
                 if(j<secRoundTeams.size()-1)
                     j++;
             }else{
-                team2=""+winLetter;
+                team2=""+checkGameNumber(winLetter);
                 winLetter++;
             }
-            Game g = new Game(""+gameLetter,team1,team2);
+            Game g = new Game(checkGameNumber(gameLetter),team1,team2);
             gameLetter++;
             gameList.add(g);
             Main.out("Game "+g.gameNumber+" added to round 2");
 
         }
     }
-    void calculateRound1OverflowGamePosition(){
+    void createLoserOverflowGames(){
 
+    }
+    void createLosersBracket(){
+        loserGameList.clear();
+
+        String s = loserInstList.get(teamCount-6);
+        int pos=0;
+        gameLetter++;
+        char base=gameLetter;
+        for(int i=0;i<=gameList.size()-3;i++){
+            String team1="";
+            try{
+            char temp=s.charAt(pos);
+            if(temp !='*' && temp !='-' ) {
+                if (temp < base){
+                    team1="Loser "+temp;
+                }
+                else{
+                    team1="Winner "+temp;
+                }
+                pos++;
+            }
+            else if(temp =='*'){
+                pos++;
+                team1="Winner "+s.charAt(pos)+""+s.charAt(pos+1);
+                pos++;
+            }
+            String team2="";
+            temp=s.charAt(pos);
+            if(temp !='*' && temp !='-' ) {
+                if (temp < base){
+                    team2="Loser "+temp;
+                }
+                else{
+                    team2="Winner "+temp;
+                }
+                pos++;
+                }
+                else if(temp =='*'){
+                    pos++;
+                    team2="Winner "+s.charAt(pos)+""+s.charAt(pos+1);
+                    pos++;
+                }
+                temp = s.charAt(pos);
+                if (temp == '-') {
+                    pos++;
+                }
+                Game g= new Game(checkGameNumber(gameLetter),team1,team2);
+                loserGameList.add(g);
+                Main.out("Game "+g.gameNumber+" added to losers list");
+                Main.out("Len:"+s.length()+" pos:"+pos);
+                gameLetter++;
+            }
+            catch (StringIndexOutOfBoundsException e){
+
+            }
+
+        }
+        int total=0;
+        int arrPos=0;
+        int ovf=0;
+        boolean flag=false;
+        int tempTotal=0;
+        for(int i=0;i<loserPosArr.length;i++){
+            total+=loserPosArr[i];
+            if(total>=loserGameList.size() && !flag){
+                arrPos=i;
+                flag=true;
+                ovf=loserGameList.size()-tempTotal;
+            }
+            else if(total<loserGameList.size()){
+                tempTotal+=loserPosArr[i];
+            }
+        }
+        Main.out(" arrPos"+arrPos+" loserList size"+loserGameList.size());
+        Main.out("ovf"+ovf);
+
+        //calc loser positions and add to panel
+        int count=0;
+        if(ovf>0)
+        for(int i=0;i<ovf;i++){
+            Main.out("x"+loserPosArr[arrPos]+" count"+count+" ovf"+ovf);
+            int y = (gameBlockHeight+30) * (i);
+            int x = ((gameBlockWidth+30) * 0);
+            //if(count<loserGameList.size()) {
+                buildGameModule(loserPanel, loserGameList.get(count), x, y);
+                Main.out("Module added to losers panel at x:"+x+" y:"+y);
+            //}
+            count++;
+        }
+
+        if(ovf!=0){
+            arrPos--;
+        }
+            for (int j = 0; j < loserGameList.size()-ovf &&arrPos>=0; j++) {
+                for (int i = 0; i < loserPosArr[arrPos]; i++) {
+                    Main.out("x"+loserPosArr[arrPos]+" count"+count+" j"+j);
+                    int xmod=j;
+                    if(ovf !=0){
+                        xmod=j+1;
+                    }
+                    int y = (gameBlockHeight+30) * (i);
+                    int x = ((gameBlockWidth+30) * xmod);
+                    if(count<loserGameList.size()) {
+                        buildGameModule(loserPanel, loserGameList.get(count), x, y);
+                        Main.out("Module added to losers panel at x:" + x + " y:" + y);
+
+                        count++;
+                    }
+                }
+                arrPos--;
+            }
+
+    }
+    String  checkGameNumber(char letter){
+        int ovf=0;
+        String num;
+        if(letter>'Z' || gameNumPrefix){
+            ovf=letter-'Z';
+            letter=(char)('A'+(ovf%26));
+            if(gameList.size()>52){
+                gameLetterPre++;
+            }
+            num=gameLetterPre+""+letter;
+            gameNumPrefix=true;
+
+        }
+        else{
+            num=""+letter;
+        }
+        return num;
     }
     /////////////////////////////////////////////////////////////////
     void printTeams(){
@@ -364,7 +546,7 @@ public class MainWindow implements  KeyListener{
         }
         Main.out(sep);
     }
-    public static void buildGameModule(Game g, int xoffset, int yoffset) {
+    public static void buildGameModule(JPanel pnl, Game g, int xoffset, int yoffset) {
         Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
         JPanel gamePanel = new JPanel();
         GridBagConstraints gbc = new GridBagConstraints();
@@ -447,12 +629,12 @@ public class MainWindow implements  KeyListener{
         gbc.gridy = 0;
         gbc.insets = new Insets(0, 3, 0, 0);
         gamePanel.add(score1, gbc);
-
+/*
         gbc.gridx = 3;
         gbc.gridy = 0;
         gbc.insets = new Insets(0, 3, 0, 0);
         gamePanel.add(winnerbutton1, gbc);
-
+*/
         gbc.gridx = 1;
         gbc.gridy = 1;
         gbc.insets = new Insets(0, 3, 0, 0);
@@ -462,7 +644,7 @@ public class MainWindow implements  KeyListener{
         gbc.gridy = 1;
         gbc.insets = new Insets(0, 3, 0, 0);
         gamePanel.add(score2, gbc);
-
+/*
         gbc.gridx = 3;
         gbc.gridy = 1;
         gbc.insets = new Insets(0, 3, 0, 0);
@@ -479,17 +661,19 @@ public class MainWindow implements  KeyListener{
         gbc.gridwidth = 3;
         gbc.insets = new Insets(0, 4, 0, 0);
         gamePanel.add(locLabel, gbc);
-        panel.add(gamePanel);
-        panel.revalidate();
-        panel.repaint();
-        panel.updateUI();
+        */
+        pnl.add(gamePanel);
+        pnl.revalidate();
+        pnl.repaint();
+        pnl.updateUI();
 
         gamePanelY=gamePanel.getHeight();
-        Insets insets = panel.getInsets();
+        Insets insets = pnl.getInsets();
         Dimension size =gamePanel.getPreferredSize();
         gameBlockHeight=size.height;
+        gameBlockWidth=size.width;
         gamePanel.setBounds(xoffset+insets.left,yoffset+insets.top,size.width,size.height);
-        panel.add(gamePanel);
+        //pnl.add(gamePanel);
         frame.getContentPane().revalidate();
         frame.getContentPane().repaint();
     }
