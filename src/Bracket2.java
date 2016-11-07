@@ -7,7 +7,7 @@ public class Bracket2 {
 
     static ArrayList<String> instructions = new ArrayList<>();
     static ArrayList<List<String>> listOfRounds = new ArrayList<List<String>>();
-    static ArrayList<Game> gamesList = new ArrayList();
+    private static ArrayList<Game> gamesList = new ArrayList<>();
     Game tempGame = new Game();
 
     public ArrayList<Game> getGamesList()

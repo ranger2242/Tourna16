@@ -19,11 +19,8 @@ class Game
 	int posy;
 
 	Game()
-	{}
-
-	Game(String g)
 	{
-		gameNumber=g;
+		gameNumber= "-";
 	}
 	Game(String g, String teamA, String teamB)
 	{
@@ -31,6 +28,7 @@ class Game
 		team2=teamB;
 		gameNumber=g;
 	}
+	int depth = 0;
 	String getTeam1() {return team1;}
 	String getTeam2() {return team2;}
 	String getGameNumber() {return gameNumber;}
@@ -90,7 +88,7 @@ class Game
 
 	void printGame()
 	{
-		System.out.println("\n"+bracket + " Round "+ round);
+		System.out.println("D:\n"+depth + " Round "+ round);
 		System.out.println("Game"+gameNumber+" "+team1+" "+ team2);
 	}
 }

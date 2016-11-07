@@ -29,6 +29,8 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
     }
 
     void onStart() {
+
+
         frame.setResizable(false);
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         CC componentConstraints = new CC();
@@ -109,7 +111,7 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
     }
 
     public static void onWizardComplete() {
-        Main.wizard.frame.setVisible(false);
+        frame.setVisible(false);
         Main.window=new MainWindow();
         Main.window.setTeamCount(teamCount);
         Main.window.onStart();

@@ -13,12 +13,21 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
+		BinaryNode gameTree= new BinaryNode(new Game("0","0","0"));
+		for(int i=0;i<23;i++){
+			gameTree.add(gameTree,new Game(""+i,"",""));
+
+		}
+		gameTree.store();
+		gameTree.breadth(gameTree);
+		gameTree.printByLevel(gameTree,1);
+		gameTree.printLay();
 		wizard.onStart();
 	}
 	public static void setFont()
 	{
-		robotoThin =wizard.getFont();
-		robotoThinSmall = wizard.getFontSmall();
+		robotoThin = WizardPopup.getFont();
+		robotoThinSmall = WizardPopup.getFontSmall();
 	}
 
 	public static MainWindow getWindow()

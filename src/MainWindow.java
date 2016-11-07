@@ -21,7 +21,7 @@ public class MainWindow implements  KeyListener{
     static ArrayList<Game> gameList = new ArrayList<>();
     static ArrayList<Game> loserGameList=new ArrayList<>();
     static ArrayList<JPanel> roundPanelListW=new ArrayList<>();
-    static ArrayList<String> teamList = new ArrayList();
+    static ArrayList<String> teamList = new ArrayList<>();
     static ArrayList<String> loserInstList= new ArrayList<>();
     protected static JFrame frame = new JFrame();
     protected static boolean[] secRoundPlacementBools;
@@ -75,7 +75,7 @@ public class MainWindow implements  KeyListener{
                             //Main.wizard.frame.getContentPane().revalidate();
 
                             //Main.wizard.frame.getContentPane().repaint();
-                            Main.wizard.frame.setVisible(true);
+                            WizardPopup.frame.setVisible(true);
                             //Main.wizard.onStart();
 
 
@@ -212,7 +212,7 @@ public class MainWindow implements  KeyListener{
             //resize panel
             if(gamesRound1Count>gamesRound2Count){
                 //init gameBlockHeight
-                Game g= new Game("-");
+                Game g= new Game();
                 buildGameModule(panel,g,0,0);
                 panel.removeAll();
                 Main.out(gameBlockHeight+"");

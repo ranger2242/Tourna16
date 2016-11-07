@@ -40,8 +40,8 @@ public class GameDetailsPopup{
         timeEditor.getTextField().setText(game.getTime());
 
         JPanel panel = new JPanel();
-        JLabel team1 = new JLabel(game.getTeam1());;
-        JLabel team2 = new JLabel(game.getTeam2());;
+        JLabel team1 = new JLabel(game.getTeam1());
+        JLabel team2 = new JLabel(game.getTeam2());
         JLabel time = new JLabel(game.getTime());
         JTextField location = new JTextField(game.getLocation());
         JTextField score1 = new JFormattedTextField(integerFormat);
@@ -94,7 +94,7 @@ public class GameDetailsPopup{
                     errPanel.add(label);
                     JOptionPane jp = new JOptionPane();
                     UIManager.put("OptionPane.messageFont", Main.robotoThin);
-                    jp.showMessageDialog(jp,"Score values must be numbers.\nChanges to score will revert.");
+                    JOptionPane.showMessageDialog(jp,"Score values must be numbers.\nChanges to score will revert.");
 
                 }
                 game.setLocation(location.getText());
@@ -158,8 +158,8 @@ public class GameDetailsPopup{
         //window.panel.removeAll();
 
         //window.loadBracket();
-        window.scrollPane.updateUI();
-        window.frame.revalidate();
+        MainWindow.scrollPane.updateUI();
+        MainWindow.frame.revalidate();
 
         //Main.setWindow(window);
     }

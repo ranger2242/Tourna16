@@ -64,12 +64,12 @@ public class TeamListImportPopup{
     {
         window =Main.getWindow();
         //window.setTeamList(teamList);
-        window.panel.removeAll();
-        window.makeMenuBar();
+        MainWindow.panel.removeAll();
+        MainWindow.makeMenuBar();
         //window.loadBracket();
 
-        window.scrollPane.updateUI();
-        window.frame.revalidate();
+        MainWindow.scrollPane.updateUI();
+        MainWindow.frame.revalidate();
         //window.paint(window.panel.getGraphics());
         Main.setWindow(window);
         frame.setVisible(false);
