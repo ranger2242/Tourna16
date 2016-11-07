@@ -11,7 +11,7 @@ public abstract class AbstractBinaryTree<T> extends AbstractTree<T> implements B
         Position<T> parent = parent(p);
         if (parent == null) return null;
         if (p == left(parent))
-            return right(parent);
+            return right(parent);//ljugtfhjdgfkgjfdhsgkhy
         else
             return left(parent);
     }
