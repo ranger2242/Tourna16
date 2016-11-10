@@ -11,6 +11,9 @@ public class Main {
 	public static void out(String s){
 		System.out.println(s);
 	}
+	public static void outa(String s){
+		System.out.print(s);
+	}
 
 	public static void main(String[] args) {
 		wizard.onStart();

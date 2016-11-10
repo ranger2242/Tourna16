@@ -116,14 +116,18 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
        //Main.window.setTeamCount(teamCount);
        // Main.window.onStart();
         BinaryNode tournament = new BinaryNode(new Game("0","0","0"));
+        BinaryNode finals2 = new BinaryNode(new Game("0","0","0"));
         BinaryNode finals = new BinaryNode(new Game("0","0","0"));
         BinaryNode finalsl = new BinaryNode(new Game("0","0","0"));
         BinaryNode winnerTree= makeBracket(teamCount-2);
         BinaryNode loserTree= makeBracket(teamCount-4);
-        finalsl.setLeftChild(loserTree);
+       // finalsl.setLeftChild(loserTree);
         finals.setLeftChild(winnerTree);
         finals.setRightChild(finalsl);
-        tournament.setLeftChild(finals);
+        finals2.setLeftChild(finals);
+        tournament.setLeftChild(finals2);
+        tournament.labelWinnerBracket(tournament);
+        BinaryNode.printReverseLevelOrder(tournament);
         printBT(tournament);
     }
     static BinaryNode makeBracket(int n){
