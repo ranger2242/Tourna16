@@ -112,19 +112,31 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
 
     public static void onWizardComplete() {
         frame.setVisible(false);
-        Main.window=new MainWindow();
-        Main.window.setTeamCount(teamCount);
-        Main.window.onStart();
-        BinaryNode gameTree= new BinaryNode(new Game("0","0","0"));
-        for(int i=0;i<teamCount-2;i++){
-            gameTree.add(gameTree,new Game(""+i,"",""),1);
-
-        }
-        gameTree.store();
-        gameTree.breadth(gameTree);
-        gameTree.printByLevel(gameTree,1);
-        gameTree.printLay();
-//        Main.window.refresh();
+       // Main.window=new MainWindow();
+       //Main.window.setTeamCount(teamCount);
+       // Main.window.onStart();
+        BinaryNode tournament = new BinaryNode(new Game("0","0","0"));
+        BinaryNode finals = new BinaryNode(new Game("0","0","0"));
+        BinaryNode finalsl = new BinaryNode(new Game("0","0","0"));
+        BinaryNode winnerTree= makeBracket(teamCount-2);
+        BinaryNode loserTree= makeBracket(teamCount-4);
+        finalsl.setLeftChild(loserTree);
+        finals.setLeftChild(winnerTree);
+        finals.setRightChild(finalsl);
+        tournament.setLeftChild(finals);
+        printBT(tournament);
+    }
+    static BinaryNode makeBracket(int n){
+        BinaryNode tree= new BinaryNode(new Game("0","0","0"));
+        for(int i=0;i<n;i++)
+            tree.add(tree,new Game(""+i,"",""),1);
+        return tree;
+    }
+    static void printBT(BinaryNode tree){
+        tree.store();
+        tree.breadth(tree);
+        tree.printByLevel(tree,1);
+        tree.printLay();
     }
 
     @Override
