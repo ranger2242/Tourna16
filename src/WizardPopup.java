@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Created by Tom on 6/4/2015.
@@ -124,7 +125,7 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
     static BinaryTree makeBracket(int n){
         BinaryTree tree= new BinaryTree();
         for(int i=0;i<n;i++)
-            tree.addBalancedLeaf(new BinaryNode());
+            BinaryTree.addBalancedLeaf(tree.getRoot());
         return tree;
     }
     static void printBT(BinaryTree tree){
@@ -132,6 +133,15 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         BinaryTree.breadthTraverse(tree.getRoot());
         tree.printByLevel(tree.getRoot(),1);
         tree.printLay();
+        Main.out("");
+        ArrayList<ArrayList<Game>> list=BinaryTree.split();
+        for(int i=0;i<list.size();i++){
+            Main.outa((list.size()-i)+":");
+            for(int j=0;j<list.get(i).size();j++){
+                Main.outa(list.get(i).get(j).getGameNumber());
+            }
+            Main.out("");
+        }
     }
 
     @Override

@@ -6,6 +6,8 @@ import java.util.ArrayList;
 public class BinaryTree {
     static char letter='A';
     BinaryNode root;
+    static ArrayList<ArrayList<Game>> list = new ArrayList<>();
+
     public BinaryTree(){
         root=new BinaryNode();
     }
@@ -15,13 +17,16 @@ public class BinaryTree {
     BinaryNode getRoot(){
         return root;
     }
-    public int getSize(BinaryNode root){
+    public void setRoot(BinaryNode b){
+        root=b;
+    }
+    public static int getSize(BinaryNode root){
         if(root==null){
             return 0;
         }
         return 1 + getSize(root.getLeftChild()) + getSize(root.getRightChild());
     }
-    public void addBalancedLeaf(BinaryNode bt) {
+    public static void addBalancedLeaf(BinaryNode bt) {
         int a=getSize(bt.getLeftChild());
         int b=getSize(bt.getRightChild());
         if(a+b==0){
@@ -33,7 +38,6 @@ public class BinaryTree {
             else addBalancedLeaf(bt.getLeftChild());
         }
     }
-
     public void add(BinaryNode bt, Game g, int d) {
         int a=getSize(bt.getLeftChild());
         int b=getSize(bt.getRightChild());
@@ -127,7 +131,6 @@ public class BinaryTree {
         breadthTraverse(root.getLeftChild());
         breadthTraverse(root.getRightChild());
     }
-
     public void printByLevel(BinaryNode b, int i) {
         if (b.getLeftChild() != null) {
             printByLevel(b.getLeftChild(), i + 1);
@@ -138,6 +141,7 @@ public class BinaryTree {
         try {
             String s = lay.get(i - 1);
             s += b.getValue().getGameNumber();
+            list.get(i-1).add(b.getValue());
             lay.set(i - 1, s);
         } catch (IndexOutOfBoundsException e) {
         }
@@ -155,5 +159,8 @@ public class BinaryTree {
         BinaryNode b1= root;
         root=b;
         root.setLeftChild(b1);
+    }
+    public static ArrayList<ArrayList<Game>> split(){
+        return list;
     }
 }
