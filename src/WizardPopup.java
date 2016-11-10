@@ -115,31 +115,22 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
        // Main.window=new MainWindow();
        //Main.window.setTeamCount(teamCount);
        // Main.window.onStart();
-        BinaryNode tournament = new BinaryNode(new Game("0","0","0"));
-        BinaryNode finals2 = new BinaryNode(new Game("0","0","0"));
-        BinaryNode finals = new BinaryNode(new Game("0","0","0"));
-        BinaryNode finalsl = new BinaryNode(new Game("0","0","0"));
-        BinaryNode winnerTree= makeBracket(teamCount-2);
-        BinaryNode loserTree= makeBracket(teamCount-4);
-       // finalsl.setLeftChild(loserTree);
-        finals.setLeftChild(winnerTree);
-        finals.setRightChild(finalsl);
-        finals2.setLeftChild(finals);
-        tournament.setLeftChild(finals2);
-        tournament.labelWinnerBracket(tournament);
-        BinaryNode.printReverseLevelOrder(tournament);
-        printBT(tournament);
+        BinaryTree winnerBracket = makeBracket(teamCount-2);
+        winnerBracket.insertRootLeft(new BinaryNode());
+        winnerBracket.insertRootLeft(new BinaryNode());
+        winnerBracket.labelWinnerBracket(winnerBracket.getRoot());
+        printBT(winnerBracket);
     }
-    static BinaryNode makeBracket(int n){
-        BinaryNode tree= new BinaryNode(new Game("0","0","0"));
+    static BinaryTree makeBracket(int n){
+        BinaryTree tree= new BinaryTree();
         for(int i=0;i<n;i++)
-            tree.add(tree,new Game(""+i,"",""),1);
+            tree.addBalancedLeaf(new BinaryNode());
         return tree;
     }
-    static void printBT(BinaryNode tree){
-        tree.store();
-        tree.breadth(tree);
-        tree.printByLevel(tree,1);
+    static void printBT(BinaryTree tree){
+        tree.clearLay();
+        BinaryTree.breadthTraverse(tree.getRoot());
+        tree.printByLevel(tree.getRoot(),1);
         tree.printLay();
     }
 
