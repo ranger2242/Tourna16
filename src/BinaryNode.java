@@ -20,6 +20,7 @@ public class BinaryNode {
 
     private BinaryNode leftChild;
     private BinaryNode rightChild;
+    static char letter='A';
 
     /**
      * Constructor for BinaryTree.
@@ -270,12 +271,62 @@ public class BinaryNode {
         }
     }
 
+    static void printReverseLevelOrder(BinaryNode b){
+        int h = height(b);
+        int i;
+        for(i=h;i>=1;i--)
+            printLevel(b,i);
+    }
+    static void printLevel(BinaryNode b, int l){
+        if(b==null){
+            return;
+        }if(l==1)
+            Main.outa(b.getValue().getGameNumber());
+        else if(l >1){
+            printLevel(b.getLeftChild(), l-1);
+            printLevel(b.getRightChild(), l-1);
+        }
+    }
+    static void labelByLevel(BinaryNode b, int l){
+        if(b==null){
+            return;
+        }if(l==1) {
+            b.setValue(new Game(letter + "", "", ""));
+            letter++;
+        }
+        else if(l >1){
+            labelByLevel(b.getLeftChild(), l-1);
+            labelByLevel(b.getRightChild(), l-1);
+        }
+    }
+    static int height(BinaryNode b){
+        if(b==null){
+            return 0;
+        }else{
+            int hr= height(b.getLeftChild());
+            int hl=height(b.getRightChild());
+            if(hl>hr) return hl+1;
+            else return hr+1;
+        }
+    }
     void printLay() {
         System.out.println("-----------------");
         for (String s : lay)
             System.out.println(s);
         System.out.println("-----------------");
 
+    }
+    void labelWinnerBracket(BinaryNode b){//
+        int h = height(b);
+        int i;
+        for(i=h;i>=1;i--)
+            labelByLevel(b,i);
+    }
+    static void printPostOrder(BinaryNode b){
+        printPostOrder(b.getLeftChild());
+        printPostOrder(b.getRightChild());
+        b.setValue(new Game(letter+"","",""));
+        letter++;
     }
     public void breadth(BinaryNode root){
         if (root == null)
@@ -295,7 +346,7 @@ public class BinaryNode {
         }
         try {
             String s = lay.get(i - 1);
-            s += "o";
+            s += b.getValue().getGameNumber();
             lay.set(i - 1, s);
         } catch (IndexOutOfBoundsException e) {
         }
