@@ -115,6 +115,15 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         Main.window=new MainWindow();
         Main.window.setTeamCount(teamCount);
         Main.window.onStart();
+        BinaryNode gameTree= new BinaryNode(new Game("0","0","0"));
+        for(int i=0;i<teamCount-2;i++){
+            gameTree.add(gameTree,new Game(""+i,"",""),1);
+
+        }
+        gameTree.store();
+        gameTree.breadth(gameTree);
+        gameTree.printByLevel(gameTree,1);
+        gameTree.printLay();
 //        Main.window.refresh();
     }
 

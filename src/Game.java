@@ -88,7 +88,7 @@ class Game
 
 	void printGame()
 	{
-		System.out.println("D:\n"+depth + " Round "+ round);
+		System.out.println("\nD:"+depth + " Round "+ round);
 		System.out.println("Game"+gameNumber+" "+team1+" "+ team2);
 	}
 }

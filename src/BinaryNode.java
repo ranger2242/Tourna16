@@ -16,7 +16,7 @@ public class BinaryNode {
      */
     static boolean flipper = false;
     public Game value;
-   // private BinaryNode root;
+    private BinaryNode root;
 
     private BinaryNode leftChild;
     private BinaryNode rightChild;
@@ -116,16 +116,17 @@ public class BinaryNode {
         rightChild = subtree;
     }
 
-    public void add(BinaryNode bt, Game g) {
+    public void add(BinaryNode bt, Game g, int d) {
         int a=getSize(bt.leftChild);
         int b=getSize(bt.rightChild);
+        g.depth=d;
         if(a+b==0){
             bt.setLeftChild(new BinaryNode(g));
         }else if(a+b==1){
             bt.setRightChild(new BinaryNode(g));
         }else{
-            if(b<a)add(bt.getRightChild(),g);
-            else add(bt.getLeftChild(),g);
+            if(b<a)add(bt.getRightChild(),g,d+1);
+            else add(bt.getLeftChild(),g,d+1);
         }
     }
 
