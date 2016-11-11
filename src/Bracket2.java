@@ -84,12 +84,13 @@ public class Bracket2 {
     }
 
     public static boolean isNumeric(String str) {
-        try {double d = Double.parseDouble(str);}
+        try {}
         catch(NumberFormatException nfe) {return false;}
         return true;
     }
 
     public void setInstructions(ArrayList arrayList) {
+        //noinspection unchecked
         instructions.addAll(arrayList);
     }
 

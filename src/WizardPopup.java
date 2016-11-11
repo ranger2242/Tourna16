@@ -6,27 +6,27 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  * Created by Tom on 6/4/2015.
  */
-public class WizardPopup implements Runnable, MouseListener, AdjustmentListener, ActionListener{
+public class WizardPopup implements Runnable, MouseListener, AdjustmentListener, ActionListener {
 
-    static MainWindow window= null;
+    static MainWindow window = null;
 
 
-    protected JScrollBar teamCountSelector = new JScrollBar(JScrollBar.HORIZONTAL, 8,1,6,33);
+    protected JScrollBar teamCountSelector = new JScrollBar(JScrollBar.HORIZONTAL, 8, 1, 6, 33);
     protected static JFrame frame = new JFrame();
-    protected JLabel titleLabel= new JLabel("Tourna 16");
-    protected JLabel textOutput1= new JLabel("Enter number of teams: "+teamCount);
+    protected JLabel titleLabel = new JLabel("Tourna 16");
+    protected JLabel textOutput1 = new JLabel("Enter number of teams: " + teamCount);
     protected JButton confirmButton = new JButton("Confirm");
     protected MigLayout layout = new MigLayout("fill");
-    protected static boolean pressed= false;
-    protected static int teamCount=8;
+    protected static boolean pressed = false;
+    protected static int teamCount = 8;
     protected static Font systemFont;
     protected static Font systemFontSmall;
-    public WizardPopup(){
+
+    public WizardPopup() {
     }
 
     void onStart() {
@@ -40,10 +40,10 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         JMenuItem mntmOpen = new JMenuItem("Open");
         JMenuItem mntmRecent = new JMenuItem("Recent");
         JPanel panel = new JPanel();
-        int screenHeight= (int) dimension.getHeight();
-        int screenWidth= (int) dimension.getWidth();
-        int frameWidth= 200;
-        int frameHeight= 200;
+        int screenHeight = (int) dimension.getHeight();
+        //int screenWidth= (int) dimension.getWidth();
+        int frameWidth = 200;
+        int frameHeight = 200;
 
         panel.setLayout(layout);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -61,8 +61,8 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         panel.add(titleLabel, componentConstraints);
         panel.add(new JSeparator(JSeparator.HORIZONTAL), "growx, wrap");
         panel.add(textOutput1, "growx,wrap");
-        panel.add(teamCountSelector,"growx,wrap");
-        panel.add( new  JSeparator(JSeparator.HORIZONTAL), "growx, wrap");
+        panel.add(teamCountSelector, "growx,wrap");
+        panel.add(new JSeparator(JSeparator.HORIZONTAL), "growx, wrap");
         panel.add(confirmButton, "pushx,alignx right ");
 
         titleLabel.setFont(new Font("robotoThin", Font.PLAIN, 40));
@@ -70,10 +70,10 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         mntmOpen.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser fc = new JFileChooser();
-                Action details = fc.getActionMap().get("viewTypeDetails");			//set the default view of fc to detailed view
+                Action details = fc.getActionMap().get("viewTypeDetails");            //set the default view of fc to detailed view
                 details.actionPerformed(null);
                 fc.showOpenDialog(frame);
-                File file = fc.getSelectedFile();
+                //File file = fc.getSelectedFile();
             }
         });
         teamCountSelector.addAdjustmentListener(this);
@@ -89,60 +89,34 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         //frame.getContentPane().repaint();
         //frame.getContentPane().revalidate();
     }
-    public static void loadFontFromFile()
-    {
+
+    public static void loadFontFromFile() {
         Font robotoThin;
         try {
             robotoThin = Font.createFont(Font.TRUETYPE_FONT, new File("C:\\Users\\Tom\\Google Drive\\JAVA\\Tournament Builder\\fonts\\Roboto-Thin.ttf"));
-            systemFont=robotoThin;
-            systemFontSmall=new Font("robotoThin", Font.PLAIN, 3);
-        } catch (IOException |FontFormatException e) {
+            systemFont = robotoThin;
+            systemFontSmall = new Font("robotoThin", Font.PLAIN, 3);
+        } catch (IOException | FontFormatException e) {
             //Handle exception
         }
     }
 
-    public static Font getFont()
-    {
+    public static Font getFont() {
         return systemFont;
     }
 
-    public static Font getFontSmall()
-    {
+    public static Font getFontSmall() {
         return systemFontSmall;
     }
 
     public static void onWizardComplete() {
         frame.setVisible(false);
-       // Main.window=new MainWindow();
-       //Main.window.setTeamCount(teamCount);
-       // Main.window.onStart();
-        BinaryTree winnerBracket = makeBracket(teamCount-2);
-        winnerBracket.insertRootLeft(new BinaryNode());
-        winnerBracket.insertRootLeft(new BinaryNode());
-        winnerBracket.labelWinnerBracket(winnerBracket.getRoot());
-        printBT(winnerBracket);
+        Main.window = new MainWindow();
+        Main.window.setTeamCount(teamCount);
+        Main.window.onStart();
+
     }
-    static BinaryTree makeBracket(int n){
-        BinaryTree tree= new BinaryTree();
-        for(int i=0;i<n;i++)
-            BinaryTree.addBalancedLeaf(tree.getRoot());
-        return tree;
-    }
-    static void printBT(BinaryTree tree){
-        tree.clearLay();
-        BinaryTree.breadthTraverse(tree.getRoot());
-        tree.printByLevel(tree.getRoot(),1);
-        tree.printLay();
-        Main.out("");
-        ArrayList<ArrayList<Game>> list=BinaryTree.split();
-        for(int i=0;i<list.size();i++){
-            Main.outa((list.size()-i)+":");
-            for(int j=0;j<list.get(i).size();j++){
-                Main.outa(list.get(i).get(j).getGameNumber());
-            }
-            Main.out("");
-        }
-    }
+
 
     @Override
     public void mouseClicked(MouseEvent e) {
@@ -171,7 +145,6 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
 
     @Override
     public void adjustmentValueChanged(AdjustmentEvent e) {
-        Adjustable source = e.getAdjustable();
         int type = e.getAdjustmentType();
         switch (type) {
             case AdjustmentEvent.UNIT_INCREMENT:
@@ -186,16 +159,12 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
                 break;
         }
         teamCount = e.getValue();
-        textOutput1.setText("Enter number of teams: "+teamCount);
+        textOutput1.setText("Enter number of teams: " + teamCount);
         frame.invalidate();
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JButton source= (JButton) e.getSource();
-
-
-
     }
 
     @Override

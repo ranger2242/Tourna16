@@ -3,7 +3,6 @@ import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -62,6 +61,12 @@ public class MainWindow implements  KeyListener{
     static int gameBlockHeight=0;
     static int gameBlockWidth=0;
     void onStart() {
+        BinaryTree winnerBracket = BinaryTree.makeBracket(teamCount-2);
+        winnerBracket.insertRootLeft(new BinaryNode());
+        winnerBracket.insertRootLeft(new BinaryNode());
+        winnerBracket.labelWinnerBracket(winnerBracket.getRoot());
+        BinaryTree.printBT(winnerBracket);
+
         initLoserList();
         makeFrame();
         makeMenuBar();
@@ -146,13 +151,14 @@ public class MainWindow implements  KeyListener{
                 Action details = fc.getActionMap().get("viewTypeDetails");            //set the default view of fc to detailed view
                 details.actionPerformed(null);
                 fc.showOpenDialog(frame);
-                File file = fc.getSelectedFile();
+            //    File file = fc.getSelectedFile();
             }
         });
 
         mntmTeamList.addMouseListener((new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
                 tlimporter = new TeamListImportPopup();
+                tlimporter.onStart();
                 tlimporter.onReopen();
             }
         }));
@@ -223,7 +229,7 @@ public class MainWindow implements  KeyListener{
             for(int i=0; i<nthPower2;i++){//build first round games
                 if(!secRoundPlacementBools[i]){
                     Game g = gameList.get(j);
-                    double weight = (double)panel.getPreferredSize().height/ (double)(Math.pow(2,power));
+                    double weight = (double)panel.getPreferredSize().height/ Math.pow(2,power);
                     Main.out("weight"+weight+" height"+height+" nth"+nthPower2);
                     buildGameModule(panel,g,30,(int)(i*weight));
 
@@ -546,6 +552,102 @@ public class MainWindow implements  KeyListener{
         }
         Main.out(sep);
     }
+    public JPanel getGameModule(Game g) {
+        Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
+        JPanel gamePanel = new JPanel();
+        GridBagConstraints gbc = new GridBagConstraints();
+        JRadioButton winnerbutton1 = new JRadioButton();
+        JRadioButton winnerbutton2 = new JRadioButton();
+        JLabel team1 = new JLabel(g.getTeam1());
+        JLabel team2 = new JLabel(g.getTeam2());
+        JLabel score1 = new JLabel("" + g.getScore1());
+        JLabel score2 = new JLabel("" + g.getScore2());
+        JLabel timeLabel = new JLabel(g.getTime() + " " + g.getDate());
+        JLabel locLabel = new JLabel(g.getLocation());
+        JButton gameNumberButton = new JButton(g.getGameNumber());
+        ButtonGroup buttonGroup = new ButtonGroup();
+        JPopupMenu gameMenuPopup = new JPopupMenu();
+        JMenuItem mntmGameOptions = new JMenuItem("Game Options");
+        // JPanel lineToNextGame = new JPanel();
+
+
+        gameNumberButton.setFont(new Font("robotoThin", Font.PLAIN, 8));
+        team2.setFont(Main.robotoThin);
+        team1.setFont(Main.robotoThin);
+        timeLabel.setFont(Main.robotoThin);
+        locLabel.setFont(Main.robotoThin);
+        score1.setFont(Main.robotoThin);
+        score2.setFont(Main.robotoThin);
+
+        mntmGameOptions.addMouseListener((new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+                GameDetailsPopup gameDetailsPopup = new GameDetailsPopup();
+                String s = gameNumberButton.getText();
+                Game g = new Game();
+                for (int i = 0; i < gameList.size(); i++) {
+                    if (s.equals(gameList.get(i).getGameNumber())) {
+                        g = gameList.get(i);
+                    }
+                }
+                gameDetailsPopup.setGame(g);
+                gameDetailsPopup.onStart();
+            }
+        }));
+        winnerbutton1.addMouseListener((new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+            }
+        }));
+        winnerbutton2.addMouseListener((new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+            }
+        }));
+        gameNumberButton.addMouseListener((new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+                gameMenuPopup.show(e.getComponent(), gameNumberButton.getX(), gameNumberButton.getY() + gameNumberButton.getHeight());
+            }
+        }));
+
+        gamePanel.setLayout(new GridBagLayout());
+        gamePanel.setBorder(border);
+        buttonGroup.add(winnerbutton1);
+        buttonGroup.add(winnerbutton2);
+        gameMenuPopup.add(mntmGameOptions);
+
+        gbc.fill = GridBagConstraints.VERTICAL;
+        gbc.gridheight = 2;
+        gbc.gridy = 0;
+        gbc.weightx = 1;
+        gbc.insets = new Insets(5, 5, 3, 3);
+        gamePanel.add(gameNumberButton, gbc);
+        gameNumberButton.setMargin(new Insets(0, 0, 0, 0));
+        gameNumberButton.setPreferredSize(new Dimension(20, 20));
+        gamePanel.updateUI();
+
+        gbc = new GridBagConstraints();
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        gbc.gridx = 1;
+        gbc.gridy = 0;
+        gbc.insets = new Insets(0, 3, 0, 0);
+        gamePanel.add(team1, gbc);
+
+
+        gbc.gridx = 2;
+        gbc.gridy = 0;
+        gbc.insets = new Insets(0, 3, 0, 0);
+        gamePanel.add(score1, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.insets = new Insets(0, 3, 0, 0);
+        gamePanel.add(team2, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 1;
+        gbc.insets = new Insets(0, 3, 0, 0);
+        gamePanel.add(score2, gbc);
+
+        return gamePanel;
+    }
     public static void buildGameModule(JPanel pnl, Game g, int xoffset, int yoffset) {
         Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
         JPanel gamePanel = new JPanel();
@@ -562,7 +664,7 @@ public class MainWindow implements  KeyListener{
         ButtonGroup buttonGroup = new ButtonGroup();
         JPopupMenu gameMenuPopup = new JPopupMenu();
         JMenuItem mntmGameOptions = new JMenuItem("Game Options");
-        JPanel lineToNextGame = new JPanel();
+       // JPanel lineToNextGame = new JPanel();
 
 
         gameNumberButton.setFont(new Font("robotoThin", Font.PLAIN, 8));

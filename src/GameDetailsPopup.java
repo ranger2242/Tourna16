@@ -59,7 +59,7 @@ public class GameDetailsPopup{
 
 
         int screenHeight= (int) dimension.getHeight();
-        int screenWidth= (int) dimension.getWidth();
+      //  int screenWidth= (int) dimension.getWidth();
         int frameWidth= 400;
         int frameHeight= 800;
 

@@ -8,20 +8,17 @@
  * @version Jan 25, 2004
  */
 public class BinaryNode {
-    public Game value;
+    private Game value;
     private BinaryNode leftChild;
     private BinaryNode rightChild;
 
-    public BinaryNode(Game value, BinaryNode leftChild, BinaryNode rightChild) {
-        this.value = value;
-        this.leftChild = leftChild;
-        this.rightChild = rightChild;
-    }
     public BinaryNode(Game value) {
-        this(value, null, null);
+        this.value = value;
+        this.leftChild = null;
+        this.rightChild = null;
     }
     public BinaryNode(){
-        this(null,null,null);
+        this(null);
     }
     public boolean isFull() {
         return leftChild != null && rightChild != null;

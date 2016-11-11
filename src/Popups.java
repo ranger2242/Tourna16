@@ -24,7 +24,7 @@ public class Popups {
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 
         int screenHeight= (int) dimension.getHeight();
-        int screenWidth= (int) dimension.getWidth();
+       // int screenWidth= (int) dimension.getWidth();
 
 
         // This is an empty content area in the frame

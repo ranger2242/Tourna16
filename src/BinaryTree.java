@@ -1,12 +1,13 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by Chris Cavazos on 11/10/2016.
  */
-public class BinaryTree {
-    static char letter='A';
-    BinaryNode root;
-    static ArrayList<ArrayList<Game>> list = new ArrayList<>();
+class BinaryTree {
+    private static char letter='A';
+    private BinaryNode root;
+    private static ArrayList<ArrayList<Game>> list = new ArrayList<>();
 
     public BinaryTree(){
         root=new BinaryNode();
@@ -38,19 +39,6 @@ public class BinaryTree {
             else addBalancedLeaf(bt.getLeftChild());
         }
     }
-    public void add(BinaryNode bt, Game g, int d) {
-        int a=getSize(bt.getLeftChild());
-        int b=getSize(bt.getRightChild());
-        g.depth=d;
-        if(a+b==0){
-            bt.setLeftChild(new BinaryNode(g));
-        }else if(a+b==1){
-            bt.setRightChild(new BinaryNode(g));
-        }else{
-            if(b<a)add(bt.getRightChild(),g,d+1);
-            else add(bt.getLeftChild(),g,d+1);
-        }
-    }
     static boolean contains(BinaryNode tree, BinaryNode targetNode) {
         if (tree == null)
             return false;
@@ -59,8 +47,12 @@ public class BinaryTree {
         return contains(targetNode, tree.getLeftChild())
                 || contains(targetNode, tree.getRightChild());
     }
-    ArrayList<String> lay = new ArrayList<>();
+    private ArrayList<String> lay = new ArrayList<>();
     void clearLay() {
+        list.clear();
+        for(int i=0;i<10;i++){
+            list.add(new ArrayList<>());
+        }
         lay.clear();
         for (int i = 0; i < 10; i++) {
             lay.add("");
@@ -161,6 +153,33 @@ public class BinaryTree {
         root.setLeftChild(b1);
     }
     public static ArrayList<ArrayList<Game>> split(){
+        for(int i=list.size()-1;i>0;i--){
+            if(list.get(i).isEmpty()){
+                list.remove(i);
+            }
+        }
+        Collections.reverse(list);
         return list;
+    }
+    static BinaryTree makeBracket(int n){
+        BinaryTree tree= new BinaryTree();
+        for(int i=0;i<n;i++)
+            BinaryTree.addBalancedLeaf(tree.getRoot());
+        return tree;
+    }
+    static void printBT(BinaryTree tree){
+        tree.clearLay();
+        BinaryTree.breadthTraverse(tree.getRoot());
+        tree.printByLevel(tree.getRoot(),1);
+        tree.printLay();
+        Main.out("");
+        ArrayList<ArrayList<Game>> list=BinaryTree.split();
+        for(int i=0;i<list.size();i++){
+            Main.outa((list.size()-i)+":");
+            for(int j=0;j<list.get(i).size();j++){
+                Main.outa(list.get(i).get(j).getGameNumber());
+            }
+            Main.out("");
+        }
     }
 }

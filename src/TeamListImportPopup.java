@@ -9,6 +9,7 @@ import java.util.ArrayList;
 /**
  * Created by Tom on 6/4/2015.
  */
+@SuppressWarnings("unchecked")
 public class TeamListImportPopup{
     static MainWindow window= null;
     static JFrame frame = new JFrame();
@@ -28,7 +29,7 @@ public class TeamListImportPopup{
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 
         int screenHeight= (int) dimension.getHeight();
-        int screenWidth= (int) dimension.getWidth();
+        //int screenWidth= (int) dimension.getWidth();
         int frameWidth= 400;
         int frameHeight= 800;
 
@@ -38,7 +39,7 @@ public class TeamListImportPopup{
 
 
         panel.setLayout(layout);
-        frame.pack();
+        //frame.pack();
         frame.setMinimumSize(new Dimension(170, 300));
         frame.setMaximumSize(new Dimension(400, screenHeight));
         frame.setVisible(true);
