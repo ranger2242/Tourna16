@@ -4,6 +4,7 @@ import java.util.Collections;
 /**
  * Created by Chris Cavazos on 11/10/2016.
  */
+@SuppressWarnings("WeakerAccess")
 class BinaryTree {
     private static char letter='A';
     private BinaryNode root;
@@ -124,17 +125,22 @@ class BinaryTree {
         breadthTraverse(root.getRightChild());
     }
     public void printByLevel(BinaryNode b, int i) {
+        String s="";
         if (b.getLeftChild() != null) {
             printByLevel(b.getLeftChild(), i + 1);
+        }else if(height(root)-1==i && b.getLeftChild()==null){
+            s="-";
         }
         if (b.getRightChild() != null) {
             printByLevel(b.getRightChild(), i + 1);
+        }else if(height(root)-1==i && b.getRightChild()==null){
+            s="-";
         }
         try {
-            String s = lay.get(i - 1);
-            s += b.getValue().getGameNumber();
+            String s2 = lay.get(i - 1);
+            s2 += b.getValue().getGameNumber();
             list.get(i-1).add(b.getValue());
-            lay.set(i - 1, s);
+            lay.set(i - 1, s2);
         } catch (IndexOutOfBoundsException e) {
         }
         b.getValue().depth=i;
@@ -173,7 +179,6 @@ class BinaryTree {
         tree.printByLevel(tree.getRoot(),1);
         tree.printLay();
         Main.out("");
-        ArrayList<ArrayList<Game>> list=BinaryTree.split();
         for(int i=0;i<list.size();i++){
             Main.outa((list.size()-i)+":");
             for(int j=0;j<list.get(i).size();j++){

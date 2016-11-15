@@ -7,6 +7,7 @@
  * @author David Matuszek
  * @version Jan 25, 2004
  */
+@SuppressWarnings("WeakerAccess")
 public class BinaryNode {
     private Game value;
     private BinaryNode leftChild;

@@ -67,6 +67,8 @@ public class MainWindow implements  KeyListener{
         winnerBracket.labelWinnerBracket(winnerBracket.getRoot());
         BinaryTree.printBT(winnerBracket);
 
+        ArrayList<ArrayList<Game>> list=BinaryTree.split();
+
         initLoserList();
         makeFrame();
         makeMenuBar();
@@ -89,12 +91,27 @@ public class MainWindow implements  KeyListener{
                     }
                 });
         panel.addKeyListener(this);
-        generate();
+        //generate();
         frame.setJMenuBar(mainMenuBar);
+        placeGames(list);
+       // panel.;
         frame.invalidate();
         panel.invalidate();
         panel.setVisible(true);
         frame.setVisible(true);
+    }
+    public void placeGames(ArrayList<ArrayList<Game>> list){
+
+        for(int i=0;i<list.size();i++){
+            for(int j=0;j<list.get(i).size();j++){
+                JPanel gamep=getGameModule(list.get(i).get(j));
+                Insets insets = panel.getInsets();
+                Dimension size= gamep.getPreferredSize();
+                int yoff=panel.getPreferredSize().height/(list.get(i).size()+1);
+                gamep.setBounds(20+(i*100)+(insets.left),((j+1)*(yoff))+(insets.top),size.width,size.height);
+                panel.add(gamep);
+            }
+        }
     }
     public static void makeFrame() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -115,8 +132,8 @@ public class MainWindow implements  KeyListener{
 
         Border lineBorder= BorderFactory.createTitledBorder("Winners");
         panel=new JPanel();
-        panel.setPreferredSize(new Dimension(2000,700));
-        loserPanel.setPreferredSize(new Dimension(2000,700));
+        panel.setPreferredSize(new Dimension(700,300));
+        loserPanel.setPreferredSize(new Dimension(700,300));
 
         panel.setLayout(null);
         loserPanel.setLayout(null);
