@@ -21,7 +21,7 @@ public class MainWindow implements  KeyListener{
     static ArrayList<Game> loserGameList=new ArrayList<>();
     static ArrayList<JPanel> roundPanelListW=new ArrayList<>();
     static ArrayList<String> teamList = new ArrayList<>();
-    static ArrayList<String> loserInstList= new ArrayList<>();
+    //static ArrayList<String> loserInstList= new ArrayList<>();
     protected static JFrame frame = new JFrame();
     protected static boolean[] secRoundPlacementBools;
     protected static TeamListImportPopup tlimporter = new TeamListImportPopup();
@@ -65,11 +65,10 @@ public class MainWindow implements  KeyListener{
         winnerBracket.insertRootLeft(new BinaryNode());
         winnerBracket.insertRootLeft(new BinaryNode());
         winnerBracket.labelWinnerBracket(winnerBracket.getRoot());
-        BinaryTree.printBT(winnerBracket);
+        BinaryTree losersBracket= Bracket.createLoserBracket(teamCount-2);
+        //BinaryTree.printBT(losersBracket);
 
-        ArrayList<ArrayList<Game>> list=BinaryTree.split();
-
-        initLoserList();
+        //initLoserList();
         makeFrame();
         makeMenuBar();
         makePanels();
@@ -93,23 +92,28 @@ public class MainWindow implements  KeyListener{
         panel.addKeyListener(this);
         //generate();
         frame.setJMenuBar(mainMenuBar);
-        placeGames(list);
+
+        ArrayList<ArrayList<Game>> list=losersBracket.split();
+        placeGames(list,loserPanel);
+        list.clear();
+        list=winnerBracket.split();
+        placeGames(list,panel);
        // panel.;
         frame.invalidate();
         panel.invalidate();
         panel.setVisible(true);
         frame.setVisible(true);
     }
-    public void placeGames(ArrayList<ArrayList<Game>> list){
+    public void placeGames(ArrayList<ArrayList<Game>> list, JPanel p){
 
         for(int i=0;i<list.size();i++){
             for(int j=0;j<list.get(i).size();j++){
                 JPanel gamep=getGameModule(list.get(i).get(j));
-                Insets insets = panel.getInsets();
+                Insets insets = p.getInsets();
                 Dimension size= gamep.getPreferredSize();
-                int yoff=panel.getPreferredSize().height/(list.get(i).size()+1);
+                int yoff=p.getPreferredSize().height/(list.get(i).size()+1);
                 gamep.setBounds(20+(i*100)+(insets.left),((j+1)*(yoff))+(insets.top),size.width,size.height);
-                panel.add(gamep);
+                p.add(gamep);
             }
         }
     }
@@ -188,35 +192,6 @@ public class MainWindow implements  KeyListener{
 
         frame.setLocation(x, y);
     }
-    void initLoserList(){
-        loserInstList.add("DA-CB-HI-EJ");
-        loserInstList.add("BC-EA-DI-JK-FL");
-        loserInstList.add("AB-CD-FJ-EF-LM-GN");
-        loserInstList.add("EA-DK-CB-FL-GM-NO-HP");
-        loserInstList.add("FA-DB-EL-CM-GN-HO-PQ-IR");
-        loserInstList.add("GA-EB-DC-FM-NO-HP-IQ-RS-JT");
-        loserInstList.add("HA-GB-FG-ED-NO-PQ-IR-JS-TU-KV");
-        loserInstList.add("BC-IA-HO-GD-FE-PQ-RS-JT-KU-VW-LX");
-        loserInstList.add("BC-EF-JA-IP-HD-GQ-RS-TU-KV-LW-XY-MZ");
-        loserInstList.add("BC-DE-FG-KA-JQ-IR-HS-XU-VW-LX-MY-Z*AA-N*AB");
-        loserInstList.add("AB-CD-EF-GH-LR-KS-JT-IU-VW-XY-MZ-N*AA-*AB*AC-O*AD");
-        loserInstList.add("");//17
-        loserInstList.add("JA=FB=IT-HG-EU-DC-LV-KW-NX-MY-Z*AA-*AB*AC-P*AD-O*AE-*AF*AG-Q*AH");
-        loserInstList.add("KA-GB-EC-JA-IH-FV-DW-MX-LY-OZ-N*AA-*AB*AC-*AD*AE-Q*AF-P*AG-*AH*AI-R*AJ");
-        loserInstList.add("LA-JB-HC-FD-KV-IW-GX-EY-NZ-M*AA-P*AB-O*AC-*AD*AE-*AF*AG-R*AH-Q*AI-*AJ*AK-S*AL");
-        loserInstList.add("MA-KB-JC-ID-GE-LW-XY-MZ-P*AA-O*AB-N*AC-O*AD-P*AE-*AF*AG-*AH*AI-S*AJ-R*AK-*AL*AM-T*AN");
-        loserInstList.add("NA-LB-KC-JD-HE-GF-MX-YZ-I*AA-*AB*AC-P*AD-O*AE-R*AF-Q*AG-*AH*AI-*AJ*AK-T*AL-S*AM-*AN*AO-U*AP");//22
-        loserInstList.add("OA-MB-LC-KD-JE-IF-HG-NY-Z*AA-*AB*AC-*AD*AE-Q*AF-P*AG-S*AH-R*AI-*AJ*AK-*AL*AM-U*AN-T*AO-*AP*AQ-V*AR");
-        loserInstList.add("PA-OB-NC-MD-LE-KF-JG-IH-Z*AA-*AB*AC-*AD*AE-*AF*AG-R*AH-Q*AI-T*AJ-S*AK-*AL*AM-*AN*AO-V*AP-U*AQ-*AR*AS-W*AT");
-        loserInstList.add("BC-QA-P*AA-OD-ND-MF-LG-KH-JI-*AB*AC-*AD*AE-*AF*AG-*AH*AI-S*AJ-R*AK-U*AL-T*AM-*AN*AO-*AP*AQ-W*AR-V*AS-*AT*AU-X*AV");
-        loserInstList.add("BC-GH-RA-Q*AB-PD-OE-NF-M*AC-LI-KJ-*AD*AE-*AF*AG-*AH*AI-*AJ*AK-T*AL-S*AM-V*AN-U*AO-*AP*AQ-*AR*AS-X*AT-W*AU-*AV*AW-Y*AX");
-        loserInstList.add("BC-GH-JK-SA-R*AC-QD-PC-OF-N*AD-MI-L*AR-*AF*AG-*AH*AI-*AJ*AK-*AL*AM-U*AN-T*AO-W*AP-V*AQ-*AR*AS-*AT*AU-Y*AV-X*AW-*AX*AY-Z*AZ");
-        loserInstList.add("BC-EF-HI-KL-TA-S*AD-RD-Q*AE-PG-O*AF-NJ-M*AG-*AH*AI-*AJ*AK-*AL*AM-*AN*AO-V*AP-U*AQ-X*AR-W*AS-*AT*AU-*AV*AW-Z*AX-Y*AY-*AZ*BA-*AA*BB");
-        loserInstList.add("BC-DE-FG-IJ-LM-UA-T*AE-S*AF-R*AG-QH-P*AH-QK-N*AI-*AJ*AK-*AL*AM-*AN*AO-*AP*AQ-W-*AM-V*AS-Y*AT-X*AU-*AV*AW-*AX*AY-*AA*AZ-Z*BA-*BB*BC-*AB*BE");
-        loserInstList.add("");
-        loserInstList.add("");
-        loserInstList.add("");
-    }
     public void setTeamCount(int tc) {
         teamCount = tc;
         teamCountDisplay.setText("Teams :" + teamCount);
@@ -234,7 +209,6 @@ public class MainWindow implements  KeyListener{
             createOverflowRound2Games();
             //resize panel
             if(gamesRound1Count>gamesRound2Count){
-                //init gameBlockHeight
                 Game g= new Game();
                 buildGameModule(panel,g,0,0);
                 panel.removeAll();
@@ -310,7 +284,7 @@ public class MainWindow implements  KeyListener{
         }
         //////////////////////////////////////////////////////
         //Losers Bracket
-        createLosersBracket();
+        //createLosersBracket();
         frame.pack();
     }
     //////////////////////////////////////////////////////////////////
@@ -431,118 +405,7 @@ public class MainWindow implements  KeyListener{
     void createLoserOverflowGames(){
 
     }
-    void createLosersBracket(){
-        loserGameList.clear();
 
-        String s = loserInstList.get(teamCount-6);
-        int pos=0;
-        gameLetter++;
-        char base=gameLetter;
-        for(int i=0;i<=gameList.size()-3;i++){
-            String team1="";
-            try{
-            char temp=s.charAt(pos);
-            if(temp !='*' && temp !='-' ) {
-                if (temp < base){
-                    team1="Loser "+temp;
-                }
-                else{
-                    team1="Winner "+temp;
-                }
-                pos++;
-            }
-            else if(temp =='*'){
-                pos++;
-                team1="Winner "+s.charAt(pos)+""+s.charAt(pos+1);
-                pos++;
-            }
-            String team2="";
-            temp=s.charAt(pos);
-            if(temp !='*' && temp !='-' ) {
-                if (temp < base){
-                    team2="Loser "+temp;
-                }
-                else{
-                    team2="Winner "+temp;
-                }
-                pos++;
-                }
-                else if(temp =='*'){
-                    pos++;
-                    team2="Winner "+s.charAt(pos)+""+s.charAt(pos+1);
-                    pos++;
-                }
-                temp = s.charAt(pos);
-                if (temp == '-') {
-                    pos++;
-                }
-                Game g= new Game(checkGameNumber(gameLetter),team1,team2);
-                loserGameList.add(g);
-                Main.out("Game "+g.gameNumber+" added to losers list");
-                Main.out("Len:"+s.length()+" pos:"+pos);
-                gameLetter++;
-            }
-            catch (StringIndexOutOfBoundsException e){
-
-            }
-
-        }
-        int total=0;
-        int arrPos=0;
-        int ovf=0;
-        boolean flag=false;
-        int tempTotal=0;
-        for(int i=0;i<loserPosArr.length;i++){
-            total+=loserPosArr[i];
-            if(total>=loserGameList.size() && !flag){
-                arrPos=i;
-                flag=true;
-                ovf=loserGameList.size()-tempTotal;
-            }
-            else if(total<loserGameList.size()){
-                tempTotal+=loserPosArr[i];
-            }
-        }
-        Main.out(" arrPos"+arrPos+" loserList size"+loserGameList.size());
-        Main.out("ovf"+ovf);
-
-        //calc loser positions and add to panel
-        int count=0;
-        if(ovf>0)
-        for(int i=0;i<ovf;i++){
-            Main.out("x"+loserPosArr[arrPos]+" count"+count+" ovf"+ovf);
-            int y = (gameBlockHeight+30) * (i);
-            int x = ((gameBlockWidth+30) * 0);
-            //if(count<loserGameList.size()) {
-                buildGameModule(loserPanel, loserGameList.get(count), x, y);
-                Main.out("Module added to losers panel at x:"+x+" y:"+y);
-            //}
-            count++;
-        }
-
-        if(ovf!=0){
-            arrPos--;
-        }
-            for (int j = 0; j < loserGameList.size()-ovf &&arrPos>=0; j++) {
-                for (int i = 0; i < loserPosArr[arrPos]; i++) {
-                    Main.out("x"+loserPosArr[arrPos]+" count"+count+" j"+j);
-                    int xmod=j;
-                    if(ovf !=0){
-                        xmod=j+1;
-                    }
-                    int y = (gameBlockHeight+30) * (i);
-                    int x = ((gameBlockWidth+30) * xmod);
-                    if(count<loserGameList.size()) {
-                        buildGameModule(loserPanel, loserGameList.get(count), x, y);
-                        Main.out("Module added to losers panel at x:" + x + " y:" + y);
-
-                        count++;
-                    }
-                }
-                arrPos--;
-            }
-
-    }
     String  checkGameNumber(char letter){
         int ovf=0;
         String num;
