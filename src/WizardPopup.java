@@ -30,8 +30,6 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
     }
 
     void onStart() {
-
-
         frame.setResizable(false);
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         CC componentConstraints = new CC();
