@@ -4,15 +4,11 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.File;
-import java.io.IOException;
 
 /**
  * Created by Tom on 6/4/2015.
  */
 public class WizardPopup implements Runnable, MouseListener, AdjustmentListener, ActionListener {
-
-    static MainWindow window = null;
 
 
     protected JScrollBar teamCountSelector = new JScrollBar(JScrollBar.HORIZONTAL, 8, 1, 6, 33);
@@ -23,8 +19,6 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
     protected MigLayout layout = new MigLayout("fill");
     protected static boolean pressed = false;
     protected static int teamCount = 8;
-    protected static Font systemFont;
-    protected static Font systemFontSmall;
 
     public WizardPopup() {
     }
@@ -86,25 +80,6 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         Main.centreWindow(frame);
         //frame.getContentPane().repaint();
         //frame.getContentPane().revalidate();
-    }
-
-    public static void loadFontFromFile() {
-        Font robotoThin;
-        try {
-            robotoThin = Font.createFont(Font.TRUETYPE_FONT, new File("C:\\Users\\Tom\\Google Drive\\JAVA\\Tournament Builder\\fonts\\Roboto-Thin.ttf"));
-            systemFont = robotoThin;
-            systemFontSmall = new Font("robotoThin", Font.PLAIN, 3);
-        } catch (IOException | FontFormatException e) {
-            //Handle exception
-        }
-    }
-
-    public static Font getFont() {
-        return systemFont;
-    }
-
-    public static Font getFontSmall() {
-        return systemFontSmall;
     }
 
     public static void onWizardComplete() {

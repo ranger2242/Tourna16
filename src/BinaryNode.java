@@ -87,7 +87,7 @@ public class BinaryNode {
             result += 3 * leftChild.hashCode();
         }
         if (rightChild != null) {
-            result += 7 * leftChild.hashCode();
+            result += 7 * (leftChild != null ? leftChild.hashCode() : 0);
         }
         return result;
     }
