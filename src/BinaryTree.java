@@ -124,7 +124,7 @@ class BinaryTree {
             }
         }
         Collections.reverse(list);
-        return list;
+        return list;//
     }
     public static BinaryTree createWinnerBracket(int n){
         BinaryTree tree= new BinaryTree();
