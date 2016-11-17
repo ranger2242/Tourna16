@@ -126,10 +126,12 @@ class BinaryTree {
         Collections.reverse(list);
         return list;
     }
-    public static BinaryTree makeBracket(int n){
+    public static BinaryTree createWinnerBracket(int n){
         BinaryTree tree= new BinaryTree();
         for(int i=0;i<n;i++)
             BinaryTree.addBalancedLeaf(tree.getRoot());
+        tree.insertRootLeft(new BinaryNode());
+        tree.insertRootLeft(new BinaryNode());
         return tree;
     }
     void clearLay() {

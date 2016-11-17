@@ -61,22 +61,13 @@ public class TeamListImportPopup{
         Main.centreWindow(frame);
     }
 
-    public void onPopupComplete()
-    {
+    public void onPopupComplete() {
         window =Main.getWindow();
-        //window.setTeamList(teamList);
-        MainWindow.panel.removeAll();
-        MainWindow.makeMenuBar();
-        //window.loadBracket();
-
+        MainWindow.winnerPanel.removeAll();
         MainWindow.scrollPane.updateUI();
-        MainWindow.frame.revalidate();
-        //window.paint(window.panel.getGraphics());
         Main.setWindow(window);
         frame.setVisible(false);
         frame.dispose();
-        //frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
-
     }
     static void drawTeamImportForm()
     {

@@ -13,16 +13,14 @@ public class MainWindow implements  KeyListener{
     static String sep="-----------------";
     protected static int teamCount = 0;
     protected static JLabel teamCountDisplay = new JLabel("Teams :--");
-    static JPanel rootPanel = new JPanel();
-    protected static JPanel panel = new JPanel();
-    protected static JPanel loserPanel= new JPanel();
-    protected static JScrollPane scrollPane = new JScrollPane(panel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+    static JPanel mainPanel = new JPanel();
+    static JPanel winnerPanel = new JPanel();
+    static JPanel loserPanel= new JPanel();
+    static JScrollPane scrollPane = new JScrollPane(winnerPanel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+
     static ArrayList<Game> gameList = new ArrayList<>();
-    static ArrayList<Game> loserGameList=new ArrayList<>();
-    static ArrayList<JPanel> roundPanelListW=new ArrayList<>();
     static ArrayList<String> teamList = new ArrayList<>();
-    //static ArrayList<String> loserInstList= new ArrayList<>();
-    protected static JFrame frame = new JFrame();
+    protected JFrame frame = new JFrame();
     protected static boolean[] secRoundPlacementBools;
     protected static TeamListImportPopup tlimporter = new TeamListImportPopup();
     protected static JMenuBar mainMenuBar = new JMenuBar();
@@ -61,50 +59,50 @@ public class MainWindow implements  KeyListener{
     static int gameBlockHeight=0;
     static int gameBlockWidth=0;
     void onStart() {
-        BinaryTree winnerBracket = BinaryTree.makeBracket(teamCount-2);
-        winnerBracket.insertRootLeft(new BinaryNode());
-        winnerBracket.insertRootLeft(new BinaryNode());
-        winnerBracket.labelWinnerBracket(winnerBracket.getRoot());
-        BinaryTree losersBracket= Bracket.createLoserBracket(teamCount-2);
-        //BinaryTree.printBT(losersBracket);
-
-        //initLoserList();
-        makeFrame();
         makeMenuBar();
-        makePanels();
-        height=panel.getPreferredSize().height;
+        frame= initFrame(frame);
+        winnerPanel = initGamePanel(winnerPanel,"Winners");
+        loserPanel=initGamePanel(loserPanel,"Losers");
+
+        mainPanel.setLayout(new GridLayout(2,1));
+        mainPanel.add(winnerPanel);
+        mainPanel.add(loserPanel);
+        scrollPane.getViewport().add(mainPanel);
+        frame.add(scrollPane);
+        frame.repaint();
+        frame.revalidate();
+
+        BinaryTree winnerBracket = BinaryTree.createWinnerBracket(teamCount-2);
+        BinaryTree losersBracket= Bracket.createLoserBracket(teamCount-2);
+        winnerBracket.labelWinnerBracket(winnerBracket.getRoot());
+        losersBracket.labelWinnerBracket(losersBracket.getRoot());
+
+        height= winnerPanel.getPreferredSize().height;
         KeyboardFocusManager.getCurrentKeyboardFocusManager()
                 .addKeyEventDispatcher(new KeyEventDispatcher() {
                     @Override
                     public boolean dispatchKeyEvent(KeyEvent e) {
                         if(e.getKeyCode()==KeyEvent.VK_TAB){
-                            //Main.wizard.frame.getContentPane().revalidate();
-
-                            //Main.wizard.frame.getContentPane().repaint();
-                            WizardPopup.frame.setVisible(true);
-                            //Main.wizard.onStart();
-
-
+                         WizardPopup.frame.setVisible(true);
                         }
                         return false;
                     }
                 });
-        panel.addKeyListener(this);
-        //generate();
+        winnerPanel.addKeyListener(this);
         frame.setJMenuBar(mainMenuBar);
 
         ArrayList<ArrayList<Game>> list=losersBracket.split();
         placeGames(list,loserPanel);
         list.clear();
         list=winnerBracket.split();
-        placeGames(list,panel);
-       // panel.;
+        placeGames(list, winnerPanel);
+
         frame.invalidate();
-        panel.invalidate();
-        panel.setVisible(true);
+        winnerPanel.invalidate();
+        winnerPanel.setVisible(true);
         frame.setVisible(true);
     }
-    public void placeGames(ArrayList<ArrayList<Game>> list, JPanel p){
+    void placeGames(ArrayList<ArrayList<Game>> list, JPanel p){
 
         for(int i=0;i<list.size();i++){
             for(int j=0;j<list.get(i).size();j++){
@@ -117,7 +115,7 @@ public class MainWindow implements  KeyListener{
             }
         }
     }
-    public static void makeFrame() {
+    JFrame initFrame(JFrame frame) {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
@@ -125,37 +123,21 @@ public class MainWindow implements  KeyListener{
             }
         });
         frame.getContentPane().add(scrollPane, BorderLayout.CENTER);
-        //panel.setLayout(layout);
         frame.setSize(new Dimension(800, 600));
         frame.setExtendedState(frame.getExtendedState() | JFrame.MAXIMIZED_BOTH);
         centreWindow(frame);
-
+        return frame;
     }
-    public static void makePanels() {
-        rootPanel.setLayout(new GridLayout(2,1));
-
-        Border lineBorder= BorderFactory.createTitledBorder("Winners");
+    JPanel initGamePanel(JPanel panel, String title){
         panel=new JPanel();
         panel.setPreferredSize(new Dimension(700,300));
-        loserPanel.setPreferredSize(new Dimension(700,300));
-
         panel.setLayout(null);
-        loserPanel.setLayout(null);
-        panel.setBorder(lineBorder);
-        lineBorder= BorderFactory.createTitledBorder("Losers");
-        loserPanel.setBorder(lineBorder);
-        rootPanel.add(panel);
-
-        rootPanel.add(loserPanel);
-        scrollPane.getViewport().add(rootPanel);
-        frame.add(scrollPane);
-        //frame.getContentPane().setBackground(Color.blue);
+        panel.setBorder(BorderFactory.createTitledBorder(title));
         panel.repaint();
-        frame.repaint();
         panel.revalidate();
-        frame.revalidate();
+        return panel;
     }
-    public static void makeMenuBar() {
+    public void makeMenuBar() {
         mntmTeamList.setFont(Main.robotoThin);
         mainMenuBar.add(mnFile);
         mainMenuBar.add(mnEdit);
@@ -207,22 +189,22 @@ public class MainWindow implements  KeyListener{
             createOverflowGames();
             calculatePositioningArray();
             createOverflowRound2Games();
-            //resize panel
+            //resize winnerPanel
             if(gamesRound1Count>gamesRound2Count){
                 Game g= new Game();
-                buildGameModule(panel,g,0,0);
-                panel.removeAll();
+                buildGameModule(winnerPanel,g,0,0);
+                winnerPanel.removeAll();
                 Main.out(gameBlockHeight+"");
                 int height=(gameBlockHeight*gamesRound1Count);
-                panel.setPreferredSize(new Dimension(1500,height));
+                winnerPanel.setPreferredSize(new Dimension(1500,height));
             }
             j=0;
             for(int i=0; i<nthPower2;i++){//build first round games
                 if(!secRoundPlacementBools[i]){
                     Game g = gameList.get(j);
-                    double weight = (double)panel.getPreferredSize().height/ Math.pow(2,power);
+                    double weight = (double) winnerPanel.getPreferredSize().height/ Math.pow(2,power);
                     Main.out("weight"+weight+" height"+height+" nth"+nthPower2);
-                    buildGameModule(panel,g,30,(int)(i*weight));
+                    buildGameModule(winnerPanel,g,30,(int)(i*weight));
 
                     j++;
                 }
@@ -230,8 +212,8 @@ public class MainWindow implements  KeyListener{
             j=overflow;
             for(int i=0;i<nthPower2/2;i++){//build second round games
                 Game g = gameList.get(j);
-                double weight = panel.getPreferredSize().getHeight()/(nthPower2/2);
-                buildGameModule(panel,g,0,(gameBlockHeight)/2+(i*((int)weight)));
+                double weight = winnerPanel.getPreferredSize().getHeight()/(nthPower2/2);
+                buildGameModule(winnerPanel,g,0,(gameBlockHeight)/2+(i*((int)weight)));
                 j++;
             }
 
@@ -246,8 +228,8 @@ public class MainWindow implements  KeyListener{
             j=0;
             for(int i=0; i<nthPower2/2;i++){//place first round games
                     Game g = gameList.get(j);
-                double weight =  panel.getPreferredSize().getHeight()/(nthPower2);
-                buildGameModule(panel, g,30,30+(i*((int)weight)));
+                double weight =  winnerPanel.getPreferredSize().getHeight()/(nthPower2);
+                buildGameModule(winnerPanel, g,30,30+(i*((int)weight)));
                     j++;
             }
         }
@@ -271,10 +253,10 @@ public class MainWindow implements  KeyListener{
                 Game g = gameList.get(index);
                     int coloffset = 0;
                     if (overflow != 0) coloffset = 1;
-                    double weight =  panel.getPreferredSize().getHeight() / ((Math.pow(2, j)/2));
+                    double weight =  winnerPanel.getPreferredSize().getHeight() / ((Math.pow(2, j)/2));
                     Main.out("weight"+weight+" height"+height+" nth"+Math.pow(2, j));
 
-                    buildGameModule(panel, g,250 + 250 * (power - 1 + coloffset - j),((gameBlockHeight)*(power-j+1))+ (i * ((int) weight))+50);
+                    buildGameModule(winnerPanel, g,250 + 250 * (power - 1 + coloffset - j),((gameBlockHeight)*(power-j+1))+ (i * ((int) weight))+50);
                 index++;}
                 catch (IndexOutOfBoundsException e){
                     Main.out("!!!!!_____INDEXOUTOFBOUNDSEXCEPTION");
@@ -528,7 +510,7 @@ public class MainWindow implements  KeyListener{
 
         return gamePanel;
     }
-    public static void buildGameModule(JPanel pnl, Game g, int xoffset, int yoffset) {
+    public void buildGameModule(JPanel pnl, Game g, int xoffset, int yoffset) {
         Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
         JPanel gamePanel = new JPanel();
         GridBagConstraints gbc = new GridBagConstraints();
@@ -660,9 +642,9 @@ public class MainWindow implements  KeyListener{
         frame.getContentPane().repaint();
     }
     public void refresh(){
-        panel.removeAll();
-        panel.revalidate();
-        panel.repaint();
+        winnerPanel.removeAll();
+        winnerPanel.revalidate();
+        winnerPanel.repaint();
         generate();
     }
     public void keyTyped(KeyEvent e) {

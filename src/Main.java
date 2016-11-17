@@ -18,12 +18,6 @@ public class Main {
 	public static void main(String[] args) {
 		wizard.onStart();
 	}
-	public static void setFont()
-	{
-		robotoThin = WizardPopup.getFont();
-		robotoThinSmall = WizardPopup.getFontSmall();
-	}
-
 	public static MainWindow getWindow()
 	{
 		return window;

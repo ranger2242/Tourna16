@@ -98,8 +98,8 @@ public class GameDetailsPopup{
 
                 }
                 game.setLocation(location.getText());
-                MainWindow.panel.removeAll();
-                MainWindow.panel.updateUI();
+                MainWindow.winnerPanel.removeAll();
+                MainWindow.winnerPanel.updateUI();
                 System.out.println(Integer.parseInt(score1.getText()));
             }
         });
@@ -152,16 +152,8 @@ public class GameDetailsPopup{
         game=g;
     }
 
-    public static void onPopupComplete()
-    {
-        //window =Main.getWindow();
-        //window.panel.removeAll();
-
-        //window.loadBracket();
+    public static void onPopupComplete() {
         MainWindow.scrollPane.updateUI();
-        MainWindow.frame.revalidate();
-
-        //Main.setWindow(window);
     }
 }
 
