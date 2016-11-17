@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * Created by Tom on 6/4/2015.
  */
 @SuppressWarnings("unchecked")
-public class TeamListImportPopup{
+public class TeamListImportPopup{//im in
     static MainWindow window= null;
     static JFrame frame = new JFrame();
     JLabel titleLabel= new JLabel("");
