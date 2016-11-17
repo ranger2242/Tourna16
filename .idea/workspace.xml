@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jcalendar_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/miglayout_4_0_swing.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$3.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$4.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$5.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$6.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$7.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$8.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainWindow.java" afterPath="$PROJECT_DIR$/src/MainWindow.java" />
     </list>
     <ignored path="Tourna16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,43 +74,24 @@
           <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+                <state relative-caret-position="300">
+                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding>
                     <element signature="docComment;class#MainWindow#0" expanded="false" />
-                    <element signature="class#3454:3798" expanded="false" />
-                    <element signature="method#dispatchKeyEvent#0;class#3454:3798" expanded="false" />
+                    <element signature="class#2497:2841" expanded="false" />
+                    <element signature="method#dispatchKeyEvent#0;class#2497:2841" expanded="false" />
                     <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
                     <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
                     <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-                    <element signature="class#6034:6460" expanded="false" />
-                    <element signature="method#actionPerformed#0;class#6034:6460" expanded="false" />
-                    <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+                    <element signature="class#5070:5496" expanded="false" />
+                    <element signature="method#actionPerformed#0;class#5070:5496" expanded="false" />
                     <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#generate#0;class#MainWindow#0" expanded="false" />
-                    <element signature="e#10819#10873#0" expanded="false" />
-                    <element signature="method#initVariableSet#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#power2#0;class#MainWindow#0" expanded="false" />
-                    <element signature="e#11826#11842#0" expanded="false" />
-                    <element signature="method#createTeamList#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#createSeedRounds#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#createOverflowGames#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#calculatePositioningArray#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#createOverflowRound2Games#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#createLoserOverflowGames#0;class#MainWindow#0" expanded="false" />
-                    <element signature="method#checkGameNumber#0;class#MainWindow#0" expanded="false" />
                     <element signature="method#printTeams#0;class#MainWindow#0" expanded="false" />
                     <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-                    <element signature="class#17454:17547" expanded="false" />
-                    <element signature="method#mousePressed#0;class#17454:17547" expanded="false" />
-                    <element signature="class#17595:17688" expanded="false" />
-                    <element signature="method#mousePressed#0;class#17595:17688" expanded="false" />
-                    <element signature="method#buildGameModule#0;class#MainWindow#0" expanded="false" />
-                    <element signature="class#21170:21263" expanded="false" />
-                    <element signature="method#mousePressed#0;class#21170:21263" expanded="false" />
-                    <element signature="class#21311:21404" expanded="false" />
-                    <element signature="method#mousePressed#0;class#21311:21404" expanded="false" />
-                    <element signature="method#refresh#0;class#MainWindow#0" expanded="false" />
+                    <element signature="class#8480:8573" expanded="false" />
+                    <element signature="method#mousePressed#0;class#8480:8573" expanded="false" />
+                    <element signature="class#8621:8714" expanded="false" />
+                    <element signature="method#mousePressed#0;class#8621:8714" expanded="false" />
                     <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
                     <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
                     <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -179,8 +168,8 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/TeamListImportPopup.java" />
         <option value="$PROJECT_DIR$/src/GameDetailsPopup.java" />
-        <option value="$PROJECT_DIR$/src/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/MainWindow.java" />
       </list>
     </option>
   </component>
@@ -623,7 +612,7 @@
       <workItem from="1479274908387" duration="13991000" />
       <workItem from="1479336952143" duration="82000" />
       <workItem from="1479337521384" duration="3311000" />
-      <workItem from="1479341392443" duration="660000" />
+      <workItem from="1479341392443" duration="2706000" />
     </task>
     <task id="LOCAL-00001" summary="finally with working bracket generation">
       <created>1479317015470</created>
@@ -660,11 +649,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479341926304</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="reupload">
+      <created>1479342065389</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1479342065389</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18044000" />
+    <option name="totallyTimeSpent" value="20090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
@@ -672,21 +668,21 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4941435" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.511713" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5146413" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.48535872" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.48535872" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4941435" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.48828697" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.48828697" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -713,6 +709,10 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -728,39 +728,20 @@
           <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="class#3454:3798" expanded="false" />
-            <element signature="method#dispatchKeyEvent#0;class#3454:3798" expanded="false" />
+            <element signature="class#2497:2841" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2497:2841" expanded="false" />
             <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
             <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#6034:6460" expanded="false" />
-            <element signature="method#actionPerformed#0;class#6034:6460" expanded="false" />
-            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5070:5496" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5070:5496" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#generate#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#10819#10873#0" expanded="false" />
-            <element signature="method#initVariableSet#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#power2#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#11826#11842#0" expanded="false" />
-            <element signature="method#createTeamList#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createSeedRounds#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createOverflowGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#calculatePositioningArray#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createOverflowRound2Games#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createLoserOverflowGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#checkGameNumber#0;class#MainWindow#0" expanded="false" />
             <element signature="method#printTeams#0;class#MainWindow#0" expanded="false" />
             <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#17454:17547" expanded="false" />
-            <element signature="method#mousePressed#0;class#17454:17547" expanded="false" />
-            <element signature="class#17595:17688" expanded="false" />
-            <element signature="method#mousePressed#0;class#17595:17688" expanded="false" />
-            <element signature="method#buildGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#21170:21263" expanded="false" />
-            <element signature="method#mousePressed#0;class#21170:21263" expanded="false" />
-            <element signature="class#21311:21404" expanded="false" />
-            <element signature="method#mousePressed#0;class#21311:21404" expanded="false" />
-            <element signature="method#refresh#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#8480:8573" expanded="false" />
+            <element signature="method#mousePressed#0;class#8480:8573" expanded="false" />
+            <element signature="class#8621:8714" expanded="false" />
+            <element signature="method#mousePressed#0;class#8621:8714" expanded="false" />
             <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -836,39 +817,20 @@
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="class#3454:3798" expanded="false" />
-            <element signature="method#dispatchKeyEvent#0;class#3454:3798" expanded="false" />
+            <element signature="class#2497:2841" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2497:2841" expanded="false" />
             <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
             <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#6034:6460" expanded="false" />
-            <element signature="method#actionPerformed#0;class#6034:6460" expanded="false" />
-            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5070:5496" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5070:5496" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#generate#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#10819#10873#0" expanded="false" />
-            <element signature="method#initVariableSet#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#power2#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#11826#11842#0" expanded="false" />
-            <element signature="method#createTeamList#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createSeedRounds#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createOverflowGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#calculatePositioningArray#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createOverflowRound2Games#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createLoserOverflowGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#checkGameNumber#0;class#MainWindow#0" expanded="false" />
             <element signature="method#printTeams#0;class#MainWindow#0" expanded="false" />
             <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#17454:17547" expanded="false" />
-            <element signature="method#mousePressed#0;class#17454:17547" expanded="false" />
-            <element signature="class#17595:17688" expanded="false" />
-            <element signature="method#mousePressed#0;class#17595:17688" expanded="false" />
-            <element signature="method#buildGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#21170:21263" expanded="false" />
-            <element signature="method#mousePressed#0;class#21170:21263" expanded="false" />
-            <element signature="class#21311:21404" expanded="false" />
-            <element signature="method#mousePressed#0;class#21311:21404" expanded="false" />
-            <element signature="method#refresh#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#8480:8573" expanded="false" />
+            <element signature="method#mousePressed#0;class#8480:8573" expanded="false" />
+            <element signature="class#8621:8714" expanded="false" />
+            <element signature="method#mousePressed#0;class#8621:8714" expanded="false" />
             <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -924,39 +886,20 @@
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="class#3454:3798" expanded="false" />
-            <element signature="method#dispatchKeyEvent#0;class#3454:3798" expanded="false" />
+            <element signature="class#2497:2841" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2497:2841" expanded="false" />
             <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
             <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#6034:6460" expanded="false" />
-            <element signature="method#actionPerformed#0;class#6034:6460" expanded="false" />
-            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5070:5496" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5070:5496" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#generate#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#10819#10873#0" expanded="false" />
-            <element signature="method#initVariableSet#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#power2#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#11826#11842#0" expanded="false" />
-            <element signature="method#createTeamList#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createSeedRounds#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createOverflowGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#calculatePositioningArray#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createOverflowRound2Games#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createLoserOverflowGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#checkGameNumber#0;class#MainWindow#0" expanded="false" />
             <element signature="method#printTeams#0;class#MainWindow#0" expanded="false" />
             <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#17454:17547" expanded="false" />
-            <element signature="method#mousePressed#0;class#17454:17547" expanded="false" />
-            <element signature="class#17595:17688" expanded="false" />
-            <element signature="method#mousePressed#0;class#17595:17688" expanded="false" />
-            <element signature="method#buildGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#21170:21263" expanded="false" />
-            <element signature="method#mousePressed#0;class#21170:21263" expanded="false" />
-            <element signature="class#21311:21404" expanded="false" />
-            <element signature="method#mousePressed#0;class#21311:21404" expanded="false" />
-            <element signature="method#refresh#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#8480:8573" expanded="false" />
+            <element signature="method#mousePressed#0;class#8480:8573" expanded="false" />
+            <element signature="class#8621:8714" expanded="false" />
+            <element signature="method#mousePressed#0;class#8621:8714" expanded="false" />
             <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -1029,8 +972,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+        <state relative-caret-position="1040">
+          <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
           <folding>
             <element signature="docComment;class#BinaryTree#0" expanded="false" />
             <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
@@ -1052,43 +995,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+        <state relative-caret-position="300">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="class#3454:3798" expanded="false" />
-            <element signature="method#dispatchKeyEvent#0;class#3454:3798" expanded="false" />
+            <element signature="class#2497:2841" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2497:2841" expanded="false" />
             <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
             <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#6034:6460" expanded="false" />
-            <element signature="method#actionPerformed#0;class#6034:6460" expanded="false" />
-            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5070:5496" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5070:5496" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#generate#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#10819#10873#0" expanded="false" />
-            <element signature="method#initVariableSet#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#power2#0;class#MainWindow#0" expanded="false" />
-            <element signature="e#11826#11842#0" expanded="false" />
-            <element signature="method#createTeamList#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createSeedRounds#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createOverflowGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#calculatePositioningArray#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createOverflowRound2Games#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#createLoserOverflowGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#checkGameNumber#0;class#MainWindow#0" expanded="false" />
             <element signature="method#printTeams#0;class#MainWindow#0" expanded="false" />
             <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#17454:17547" expanded="false" />
-            <element signature="method#mousePressed#0;class#17454:17547" expanded="false" />
-            <element signature="class#17595:17688" expanded="false" />
-            <element signature="method#mousePressed#0;class#17595:17688" expanded="false" />
-            <element signature="method#buildGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#21170:21263" expanded="false" />
-            <element signature="method#mousePressed#0;class#21170:21263" expanded="false" />
-            <element signature="class#21311:21404" expanded="false" />
-            <element signature="method#mousePressed#0;class#21311:21404" expanded="false" />
-            <element signature="method#refresh#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#8480:8573" expanded="false" />
+            <element signature="method#mousePressed#0;class#8480:8573" expanded="false" />
+            <element signature="class#8621:8714" expanded="false" />
+            <element signature="method#mousePressed#0;class#8621:8714" expanded="false" />
             <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
