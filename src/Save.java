@@ -1,5 +1,6 @@
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -24,15 +25,21 @@ public class Save implements Serializable {
         return blist;
     }
 
-    public static void scrapeTree(BinaryTree b1, BinaryTree b2) {
-
-
+    public static void scrapeTree(BinaryTree b1, BinaryTree b2) throws IOException {
+        FileOutputStream out = new FileOutputStream("test.txt");
+        ObjectOutputStream ost= new ObjectOutputStream(out);
+        for (Game x : b1.getGameList()) {
+            ost.writeObject(x);
+        }
+        for (Game x : b2.getGameList()) {
+            ost.writeObject(x);
+        }
+        ost.close();
+/*
         try {
            PrintWriter out = new PrintWriter("test.txt");
 
-            for (Game x : splitNodeList(b1)) {
-                out.println(x);
-            }
+
             for (Game y : splitNodeList(b2)) {
                 out.println(y);
             }
@@ -42,7 +49,7 @@ public class Save implements Serializable {
         } catch (FileNotFoundException v) {
             v.printStackTrace();
         }
-
+*/
 
     }
 

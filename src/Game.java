@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.Date;
 
-class Game
+class Game implements Serializable
 {
 	BinaryNode containerNode;
 	String label1="null";

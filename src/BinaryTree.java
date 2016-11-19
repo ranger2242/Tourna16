@@ -5,7 +5,7 @@ import java.util.Collections;
  * Created by Chris Cavazos on 11/10/2016.
  */
 @SuppressWarnings("WeakerAccess")
-class BinaryTree {
+class BinaryTree{
     private static char letter='A';
     static int teamc=1;
     private BinaryNode root;

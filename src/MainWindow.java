@@ -3,6 +3,7 @@ import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -80,7 +81,11 @@ public class MainWindow implements KeyListener {
         winnerPanel.invalidate();
         winnerPanel.setVisible(true);
         frame.setVisible(true);
-         Save.scrapeTree(winnerBracket,losersBracket);
+        try {
+            Save.scrapeTree(winnerBracket,losersBracket);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         winnerBracket.getGameList().forEach(Game::printGame);
     }
 

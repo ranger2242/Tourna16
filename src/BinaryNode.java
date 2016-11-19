@@ -1,3 +1,5 @@
+import java.io.Serializable;
+
 /**
  * A BinaryTree consists of "nodes"--each "node" is itself a BinaryTree.
  * Each node has a parent (unless it is the root), may have a left child,
@@ -8,7 +10,7 @@
  * @version Jan 25, 2004
  */
 @SuppressWarnings("WeakerAccess")
-public class BinaryNode {
+public class BinaryNode implements Serializable{
     private Game value;
     private BinaryNode leftChild;
     private BinaryNode rightChild;
