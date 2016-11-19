@@ -14,9 +14,9 @@ public class BinaryNode {
     private BinaryNode rightChild;
 
     public BinaryNode(Game value) {
-        this.value = value;
         this.leftChild = null;
         this.rightChild = null;
+        setValue(value);
     }
     public BinaryNode(){
         this(null);

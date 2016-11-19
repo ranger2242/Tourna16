@@ -2,6 +2,7 @@ import java.util.Date;
 
 class Game
 {
+	BinaryNode containerNode;
 	String label1="null";
 	String label2="null";
 	String date ="null";
@@ -85,6 +86,15 @@ class Game
 	{
 		posy=x;
 	}
+
+	public BinaryNode getNode(){
+
+		return containerNode;
+	}
+	public void setNode(BinaryNode refNode){
+		containerNode=refNode;
+	}
+
 
 	void printGame()
 	{

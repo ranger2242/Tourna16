@@ -73,7 +73,6 @@ class BinaryTree {
     public static void printPostOrder(BinaryNode b){
         printPostOrder(b.getLeftChild());
         printPostOrder(b.getRightChild());
-        b.setValue(new Game(letter+"","",""));
         letter++;
     }
     public static void breadthTraverse(BinaryNode root){

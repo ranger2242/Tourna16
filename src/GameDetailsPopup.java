@@ -98,7 +98,7 @@ public class GameDetailsPopup{
 
                 }
                 game.setLocation(location.getText());
-               // MainWindow.winnerPanel.removeAll();
+                MainWindow.winnerPanel.removeAll();
                 MainWindow.winnerPanel.updateUI();
                 System.out.println(Integer.parseInt(score1.getText()));
             }
@@ -153,7 +153,7 @@ public class GameDetailsPopup{
     }
 
     public static void onPopupComplete() {
-
+        MainWindow.scrollPane.updateUI();
     }
 }
 

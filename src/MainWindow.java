@@ -16,6 +16,9 @@ public class MainWindow implements KeyListener {
     static JPanel loserPanel = new JPanel();
     static JScrollPane scrollPane = new JScrollPane(winnerPanel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
 
+
+    static ArrayList<Game> gameList = new ArrayList<>();
+    static ArrayList<String> teamList = new ArrayList<>();
     protected JFrame frame = new JFrame();
     protected static TeamListImportPopup tlimporter = new TeamListImportPopup();
     protected static JMenuBar mainMenuBar = new JMenuBar();
@@ -77,6 +80,7 @@ public class MainWindow implements KeyListener {
         winnerPanel.invalidate();
         winnerPanel.setVisible(true);
         frame.setVisible(true);
+         Save.scrapeTree(winnerBracket,losersBracket);
         winnerBracket.getGameList().forEach(Game::printGame);
     }
 
@@ -93,7 +97,6 @@ public class MainWindow implements KeyListener {
             }
         }
     }
-
     JFrame initFrame(JFrame frame) {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.addWindowListener(new WindowAdapter() {
@@ -117,7 +120,6 @@ public class MainWindow implements KeyListener {
         panel.revalidate();
         return panel;
     }
-
     public void makeMenuBar() {
         mntmTeamList.setFont(Main.robotoThin);
         mainMenuBar.add(mnFile);
@@ -147,7 +149,6 @@ public class MainWindow implements KeyListener {
             }
         }));
     }
-
     public static void centreWindow(Window frame) {
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         int x = (int) ((dimension.getWidth() - frame.getWidth()) / 2);
@@ -156,12 +157,10 @@ public class MainWindow implements KeyListener {
 
         frame.setLocation(x, y);
     }
-
     public void setTeamCount(int tc) {
         teamCount = tc;
         teamCountDisplay.setText("Teams :" + teamCount);
     }
-
     /////////////////////////////////////////////////////////////////
     JPanel refreshGameButtonLinks(JPanel panel) {//send in only JPanels containing Game modules
         for (Component c : panel.getComponents()) {if (c instanceof JPanel) {for (Component a : ((JPanel) c).getComponents()) {if (a instanceof JButton) {a.addMouseListener(new MouseAdapter() {public void mousePressed(MouseEvent e) {Main.out("!@!@");}});}}}}
@@ -169,7 +168,6 @@ public class MainWindow implements KeyListener {
         //loserPanel;
 
     }
-
     public JPanel getGameModule(Game g) {
         Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
         JPanel gamePanel = new JPanel();
@@ -259,15 +257,12 @@ public class MainWindow implements KeyListener {
 
         return gamePanel;
     }
-
     public void keyTyped(KeyEvent e) {
 
     }
-
     public void keyPressed(KeyEvent e) {
 
     }
-
     public void keyReleased(KeyEvent e) {
 
     }
