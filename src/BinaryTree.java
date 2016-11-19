@@ -1,16 +1,14 @@
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Created by Chris Cavazos on 11/10/2016.
  */
 @SuppressWarnings("WeakerAccess")
-class BinaryTree{
+class BinaryTree implements Serializable{
     private static char letter='A';
     static int teamc=1;
     private BinaryNode root;
-    protected ArrayList<String> lay = new ArrayList<>();
-    ArrayList<ArrayList<Game>> list = new ArrayList<>();
 
     public BinaryTree(){
         root=new BinaryNode();
@@ -110,24 +108,27 @@ class BinaryTree{
     public void setRoot(BinaryNode b){
         root=b;
     }
+    ArrayList<ArrayList<Game>> listByLevel(ArrayList<ArrayList<Game>> list, BinaryNode b, int i){
+        if (b.getLeftChild() != null) {
+            listByLevel(list,b.getLeftChild(), i - 1);
+        }
+        if (b.getRightChild() != null) {
+            listByLevel(list,b.getRightChild(), i - 1);
+        }
+        try {
+            list.get(i-1).add(b.getValue());
+        } catch (IndexOutOfBoundsException e) {
+        }
+        b.getValue().depth=i;
+        return list;
+    }
     public void printByLevel(BinaryNode b, int i) {
         String s="";
         if (b.getLeftChild() != null) {
             printByLevel(b.getLeftChild(), i + 1);
-        }else if(height(root)-1==i && b.getLeftChild()==null){
-            s="-";
         }
         if (b.getRightChild() != null) {
             printByLevel(b.getRightChild(), i + 1);
-        }else if(height(root)-1==i && b.getRightChild()==null){
-            s="-";
-        }
-        try {
-            String s2 = lay.get(i - 1);
-            s2 += b.getValue().getGameNumber();
-            list.get(i-1).add(b.getValue());
-            lay.set(i - 1, s2);
-        } catch (IndexOutOfBoundsException e) {
         }
         b.getValue().depth=i;
         //System.out.println("Depth:" + i);
@@ -135,13 +136,12 @@ class BinaryTree{
 
     }
     public void printBT(BinaryTree tree){
-        tree.clearLay();
         tree.printByLevel(tree.getRoot(),1);
         BinaryTree.breadthTraverse(tree.getRoot());
 
-        tree.printLay();
 
         Main.out("");
+        ArrayList<ArrayList<Game>> list = split();
         for(int i=0;i<list.size();i++){
             Main.outa((list.size()-i)+":");
             for(int j=0;j<list.get(i).size();j++){
@@ -150,18 +150,6 @@ class BinaryTree{
             Main.out("");
         }
 
-    }
-    public void prepSplitByLevel(BinaryNode b, int i) {
-        if (b.getLeftChild() != null) {
-            prepSplitByLevel(b.getLeftChild(), i + 1);
-        }
-        if (b.getRightChild() != null) {
-            prepSplitByLevel(b.getRightChild(), i + 1);
-        }
-        try {
-            list.get(i - 1).add(b.getValue());
-        } catch (IndexOutOfBoundsException e) {
-        }
     }
     public void insertRootRight(BinaryNode b){
         BinaryNode b1= root;
@@ -177,17 +165,16 @@ class BinaryTree{
         return root;
     }
     public ArrayList<ArrayList<Game>> split(){
-        list.clear();
-        for(int i=0;i<10;i++){
+        ArrayList<ArrayList<Game>> list = new ArrayList<>();
+        for(int i=0;i<10;i++)
             list.add(new ArrayList<Game>());
-        }
-        prepSplitByLevel(root,1);
+        list=listByLevel(list,root,height(root));
         for(int i=list.size()-1;i>0;i--){
             if(list.get(i).isEmpty()){
                 list.remove(i);
             }
         }
-        Collections.reverse(list);
+        //Collections.reverse(list);
         return list;//
     }
     public ArrayList<Game> getGameList(){
@@ -210,19 +197,7 @@ class BinaryTree{
         }
         return null;
     }
-    void clearLay() {
-        lay.clear();
-        for (int i = 0; i < 10; i++) {
-            lay.add("");
-        }
-    }
-    void printLay() {
-        System.out.println("-----------------");
-        for (String s : lay)
-            System.out.println(s);
-        System.out.println("-----------------");
 
-    }
     void labelWinnerBracket(BinaryNode b){//
         int h = height(b);
         int i;

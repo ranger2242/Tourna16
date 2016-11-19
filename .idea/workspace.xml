@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$3.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$4.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$5.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$6.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$7.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$8.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" />
+    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="fixed serialization of Game objects and fixed save function">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/Game.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/Game.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryNode.java" afterPath="$PROJECT_DIR$/src/BinaryNode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryTree.java" afterPath="$PROJECT_DIR$/src/BinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.java" afterPath="$PROJECT_DIR$/src/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainWindow.java" afterPath="$PROJECT_DIR$/src/MainWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Save.java" afterPath="$PROJECT_DIR$/src/Save.java" />
     </list>
     <ignored path="Tourna16.iws" />
@@ -67,18 +53,8 @@
       <file leaf-file-name="Save.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Save.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+            <state relative-caret-position="55">
+              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -87,7 +63,7 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
+            <state relative-caret-position="-180">
               <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -96,34 +72,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="155">
+              <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#BinaryTree#0" expanded="false" />
-                <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
-                <element signature="e#4145#4180#0" expanded="false" />
-                <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
-                <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
-                <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+                <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
+                <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+                <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
+                <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
+                <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
+                <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
+                <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
+                <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
+                <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
+                <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
+                <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
+                <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
+                <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -189,9 +169,9 @@
         <option value="$PROJECT_DIR$/src/GameDetailsPopup.java" />
         <option value="$PROJECT_DIR$/src/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/BinaryNode.java" />
-        <option value="$PROJECT_DIR$/src/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/Save.java" />
+        <option value="$PROJECT_DIR$/src/BinaryTree.java" />
       </list>
     </option>
   </component>
@@ -826,7 +806,7 @@
       <workItem from="1479337521384" duration="3311000" />
       <workItem from="1479341392443" duration="4989000" />
       <workItem from="1479489269279" duration="5555000" />
-      <workItem from="1479510743524" duration="3899000" />
+      <workItem from="1479510743524" duration="5654000" />
     </task>
     <task id="LOCAL-00001" summary="finally with working bracket generation">
       <created>1479317015470</created>
@@ -891,27 +871,43 @@
       <option name="project" value="LOCAL" />
       <updated>1479514962999</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fixed serialization of Game objects and fixed save function">
+      <created>1479517043074</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1479517043074</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31827000" />
+    <option name="totallyTimeSpent" value="33582000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4941435" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5263543" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.4736457" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.4736457" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4795022" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -942,7 +938,8 @@
     <MESSAGE value="stripped MainWindow of useless variables and functions" />
     <MESSAGE value="Removed more useless classes and functions" />
     <MESSAGE value="did some shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="did some shit" />
+    <MESSAGE value="fixed serialization of Game objects and fixed save function" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed serialization of Game objects and fixed save function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -996,27 +993,31 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="e#4145#4180#0" expanded="false" />
-            <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
-            <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
+            <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+            <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
+            <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1169,27 +1170,31 @@
           <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="e#4145#4180#0" expanded="false" />
-            <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
-            <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
+            <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+            <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
+            <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1214,27 +1219,31 @@
           <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="e#4145#4180#0" expanded="false" />
-            <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
-            <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
+            <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+            <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
+            <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1288,27 +1297,31 @@
           <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="e#4145#4180#0" expanded="false" />
-            <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
-            <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
+            <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+            <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
+            <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1455,40 +1468,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+    <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="e#4145#4180#0" expanded="false" />
-            <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
-            <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-105">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
+        <state relative-caret-position="-180">
           <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1498,17 +1488,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Save.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="55">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="155">
+          <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
+            <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+            <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
+            <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
+            <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
+            <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
+            <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
