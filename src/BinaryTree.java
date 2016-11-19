@@ -119,7 +119,7 @@ class BinaryTree implements Serializable{
             list.get(i-1).add(b.getValue());
         } catch (IndexOutOfBoundsException e) {
         }
-        b.getValue().depth=i;
+        b.getValue().setRound(i);
         return list;
     }
     public void printByLevel(BinaryNode b, int i) {
@@ -130,7 +130,7 @@ class BinaryTree implements Serializable{
         if (b.getRightChild() != null) {
             printByLevel(b.getRightChild(), i + 1);
         }
-        b.getValue().depth=i;
+        b.getValue().round =i;
         //System.out.println("Depth:" + i);
         // b.getValue().printGame();
 

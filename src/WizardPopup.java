@@ -4,6 +4,7 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
 
 /**
  * Created by Tom on 6/4/2015.
@@ -65,13 +66,15 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
                 Action details = fc.getActionMap().get("viewTypeDetails");            //set the default view of fc to detailed view
                 details.actionPerformed(null);
                 fc.showOpenDialog(frame);
-                //File file = fc.getSelectedFile();
+                File file = fc.getSelectedFile();
+                FileHandler.load(file);
+                onWizardComplete(false);
             }
         });
         teamCountSelector.addAdjustmentListener(this);
         confirmButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                onWizardComplete();
+                onWizardComplete(false);
                 //frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
                 pressed = true;
             }
@@ -82,11 +85,11 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         //frame.getContentPane().revalidate();
     }
 
-    public static void onWizardComplete() {
+    public static void onWizardComplete(boolean loaded) {
         frame.setVisible(false);
         Main.window = new MainWindow();
         Main.window.setTeamCount(teamCount);
-        Main.window.onStart();
+        Main.window.onStart(loaded);
 
     }
 

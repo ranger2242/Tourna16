@@ -9,7 +9,6 @@ class Game implements Serializable
 	String date ="null";
 	String time ="12:00:00";
 	String location ="--";
-	String round="null";
 	String bracket="null";
 	String team1="null";
 	String team2="null";
@@ -30,11 +29,11 @@ class Game implements Serializable
 		team2=teamB;
 		gameNumber=g;
 	}
-	int depth = 0;
+	int round = 0;
 	String getTeam1() {return team1;}
 	String getTeam2() {return team2;}
 	String getGameNumber() {return gameNumber;}
-	String getRound(){return round;}
+	int  getRound(){return round;}
 	String getLocation(){return  location;}
 	String getTime(){return time;}
 	String getDate(){return date;}
@@ -58,7 +57,7 @@ class Game implements Serializable
 	}
 
 	void setTeams(String s, String s1) {team1=s; team2=s1;}
-	void setRound(String r)
+	void setRound(int r)
 	{
 		round=r;
 	}
@@ -99,7 +98,7 @@ class Game implements Serializable
 
 	void printGame()
 	{
-		System.out.println("\nD:"+depth + " Round "+ round);
+		System.out.println("\nRound "+ round);
 		System.out.println("Game"+gameNumber+" "+team1+" "+ team2);
 	}
 }

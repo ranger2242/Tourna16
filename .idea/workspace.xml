@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="fixed serialization of Game objects and fixed save function">
+    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Save.java" afterPath="$PROJECT_DIR$/src/FileHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/Game.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/Game.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$3.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$4.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$5.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$6.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$7.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$8.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryTree.java" afterPath="$PROJECT_DIR$/src/BinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Save.java" afterPath="$PROJECT_DIR$/src/Save.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.java" afterPath="$PROJECT_DIR$/src/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainWindow.java" afterPath="$PROJECT_DIR$/src/MainWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WizardPopup.java" afterPath="$PROJECT_DIR$/src/WizardPopup.java" />
     </list>
     <ignored path="Tourna16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,32 +45,66 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="32" />
+            <state relative-caret-position="305">
+              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding>
                 <element signature="docComment;class#MainWindow#0" expanded="false" />
-                <element signature="e#4345#4477#0" expanded="true" />
-                <element signature="e#4476#4477#0" expanded="true" />
-                <element signature="e#5927#6157#0" expanded="true" />
-                <element signature="e#6156#6157#0" expanded="true" />
-                <element signature="e#7035#7114#0" expanded="true" />
-                <element signature="e#7113#7114#0" expanded="true" />
-                <element signature="e#8499#8722#0" expanded="true" />
-                <element signature="e#8721#8722#0" expanded="true" />
-                <element signature="e#9050#9282#0" expanded="true" />
-                <element signature="e#9281#9282#0" expanded="true" />
+                <element signature="class#2601:2952" expanded="false" />
+                <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
+                <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+                <element signature="class#5560:5990" expanded="false" />
+                <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+                <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
+                <element signature="class#8992:9085" expanded="false" />
+                <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
+                <element signature="class#9133:9226" expanded="false" />
+                <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+                <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Save.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Save.java">
+      <file leaf-file-name="WizardPopup.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="120">
+              <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#WizardPopup#0" expanded="false" />
+                <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
+                <element signature="e#1645#1660#0" expanded="false" />
+                <element signature="e#3387#3422#0" expanded="false" />
+                <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
+                <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FileHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,47 +112,49 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+            <state relative-caret-position="720">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
+                <element signature="e#1132#1133#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
+            <state relative-caret-position="700">
+              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
-                <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-                <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
-                <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
-                <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
-                <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
-                <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
-                <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
-                <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
-                <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
-                <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
-                <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
-                <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
+                <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+                <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
+                <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
+                <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
+                <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
+                <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
+                <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
+                <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
+                <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
+                <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
+                <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
+                <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -165,13 +216,14 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/TeamListImportPopup.java" />
         <option value="$PROJECT_DIR$/src/Traversal.java" />
-        <option value="$PROJECT_DIR$/src/WizardPopup.java" />
         <option value="$PROJECT_DIR$/src/GameDetailsPopup.java" />
-        <option value="$PROJECT_DIR$/src/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/BinaryNode.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
-        <option value="$PROJECT_DIR$/src/Save.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/Save.java" />
+        <option value="$PROJECT_DIR$/src/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/FileHandler.java" />
+        <option value="$PROJECT_DIR$/src/WizardPopup.java" />
       </list>
     </option>
   </component>
@@ -243,25 +295,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tourna16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tourna16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="copyright" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -806,7 +840,7 @@
       <workItem from="1479337521384" duration="3311000" />
       <workItem from="1479341392443" duration="4989000" />
       <workItem from="1479489269279" duration="5555000" />
-      <workItem from="1479510743524" duration="5654000" />
+      <workItem from="1479510743524" duration="9787000" />
     </task>
     <task id="LOCAL-00001" summary="finally with working bracket generation">
       <created>1479317015470</created>
@@ -878,11 +912,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479517043074</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixed serialization of BinaryTree and save function">
+      <created>1479518814727</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1479518814727</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33582000" />
+    <option name="totallyTimeSpent" value="37715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -939,7 +980,8 @@
     <MESSAGE value="Removed more useless classes and functions" />
     <MESSAGE value="did some shit" />
     <MESSAGE value="fixed serialization of Game objects and fixed save function" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed serialization of Game objects and fixed save function" />
+    <MESSAGE value="fixed serialization of BinaryTree and save function" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed serialization of BinaryTree and save function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -958,16 +1000,24 @@
           <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="e#4345#4477#0" expanded="true" />
-            <element signature="e#4476#4477#0" expanded="true" />
-            <element signature="e#5927#6157#0" expanded="true" />
-            <element signature="e#6156#6157#0" expanded="true" />
-            <element signature="e#7035#7114#0" expanded="true" />
-            <element signature="e#7113#7114#0" expanded="true" />
-            <element signature="e#8499#8722#0" expanded="true" />
-            <element signature="e#8721#8722#0" expanded="true" />
-            <element signature="e#9050#9282#0" expanded="true" />
-            <element signature="e#9281#9282#0" expanded="true" />
+            <element signature="class#2601:2952" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5560:5990" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#8992:9085" expanded="false" />
+            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
+            <element signature="class#9133:9226" expanded="false" />
+            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
           </folding>
         </state>
@@ -993,31 +1043,31 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
-            <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-            <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
-            <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
+            <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+            <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
+            <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1062,12 +1112,12 @@
           <folding>
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
             <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
-            <element signature="e#1624#1639#0" expanded="false" />
-            <element signature="class#2450:2876" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2450:2876" expanded="false" />
-            <element signature="class#2978:3236" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2978:3236" expanded="false" />
-            <element signature="e#3282#3317#0" expanded="false" />
+            <element signature="e#1645#1660#0" expanded="false" />
+            <element signature="class#2471:2976" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2471:2976" expanded="false" />
+            <element signature="class#3078:3341" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3078:3341" expanded="false" />
+            <element signature="e#3387#3422#0" expanded="false" />
             <element signature="method#onWizardComplete#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
@@ -1087,16 +1137,24 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="e#4345#4477#0" expanded="true" />
-            <element signature="e#4476#4477#0" expanded="true" />
-            <element signature="e#5927#6157#0" expanded="true" />
-            <element signature="e#6156#6157#0" expanded="true" />
-            <element signature="e#7035#7114#0" expanded="true" />
-            <element signature="e#7113#7114#0" expanded="true" />
-            <element signature="e#8499#8722#0" expanded="true" />
-            <element signature="e#8721#8722#0" expanded="true" />
-            <element signature="e#9050#9282#0" expanded="true" />
-            <element signature="e#9281#9282#0" expanded="true" />
+            <element signature="class#2601:2952" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5560:5990" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#8992:9085" expanded="false" />
+            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
+            <element signature="class#9133:9226" expanded="false" />
+            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
           </folding>
         </state>
@@ -1141,16 +1199,24 @@
           <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="e#4345#4477#0" expanded="true" />
-            <element signature="e#4476#4477#0" expanded="true" />
-            <element signature="e#5927#6157#0" expanded="true" />
-            <element signature="e#6156#6157#0" expanded="true" />
-            <element signature="e#7035#7114#0" expanded="true" />
-            <element signature="e#7113#7114#0" expanded="true" />
-            <element signature="e#8499#8722#0" expanded="true" />
-            <element signature="e#8721#8722#0" expanded="true" />
-            <element signature="e#9050#9282#0" expanded="true" />
-            <element signature="e#9281#9282#0" expanded="true" />
+            <element signature="class#2601:2952" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5560:5990" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#8992:9085" expanded="false" />
+            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
+            <element signature="class#9133:9226" expanded="false" />
+            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
           </folding>
         </state>
@@ -1170,31 +1236,31 @@
           <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
-            <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-            <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
-            <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
+            <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+            <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
+            <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1219,31 +1285,31 @@
           <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
-            <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-            <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
-            <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
+            <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+            <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
+            <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1254,16 +1320,24 @@
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="e#4345#4477#0" expanded="true" />
-            <element signature="e#4476#4477#0" expanded="true" />
-            <element signature="e#5927#6157#0" expanded="true" />
-            <element signature="e#6156#6157#0" expanded="true" />
-            <element signature="e#7035#7114#0" expanded="true" />
-            <element signature="e#7113#7114#0" expanded="true" />
-            <element signature="e#8499#8722#0" expanded="true" />
-            <element signature="e#8721#8722#0" expanded="true" />
-            <element signature="e#9050#9282#0" expanded="true" />
-            <element signature="e#9281#9282#0" expanded="true" />
+            <element signature="class#2601:2952" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5560:5990" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#8992:9085" expanded="false" />
+            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
+            <element signature="class#9133:9226" expanded="false" />
+            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
           </folding>
         </state>
@@ -1297,31 +1371,31 @@
           <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
-            <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-            <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
-            <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
+            <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+            <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
+            <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1332,16 +1406,24 @@
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="e#4345#4477#0" expanded="true" />
-            <element signature="e#4476#4477#0" expanded="true" />
-            <element signature="e#5927#6157#0" expanded="true" />
-            <element signature="e#6156#6157#0" expanded="true" />
-            <element signature="e#7035#7114#0" expanded="true" />
-            <element signature="e#7113#7114#0" expanded="true" />
-            <element signature="e#8499#8722#0" expanded="true" />
-            <element signature="e#8721#8722#0" expanded="true" />
-            <element signature="e#9050#9282#0" expanded="true" />
-            <element signature="e#9281#9282#0" expanded="true" />
+            <element signature="class#2601:2952" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5560:5990" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#8992:9085" expanded="false" />
+            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
+            <element signature="class#9133:9226" expanded="false" />
+            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
           </folding>
         </state>
@@ -1382,58 +1464,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StartPopup.java" />
     <entry file="file://$PROJECT_DIR$/src/Traversal.java" />
-    <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding>
-            <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
-            <element signature="e#1624#1639#0" expanded="false" />
-            <element signature="class#2450:2876" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2450:2876" expanded="false" />
-            <element signature="class#2978:3236" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2978:3236" expanded="false" />
-            <element signature="e#3282#3317#0" expanded="false" />
-            <element signature="method#onWizardComplete#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
           <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="32" />
-          <folding>
-            <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="e#4345#4477#0" expanded="true" />
-            <element signature="e#4476#4477#0" expanded="true" />
-            <element signature="e#5927#6157#0" expanded="true" />
-            <element signature="e#6156#6157#0" expanded="true" />
-            <element signature="e#7035#7114#0" expanded="true" />
-            <element signature="e#7113#7114#0" expanded="true" />
-            <element signature="e#8499#8722#0" expanded="true" />
-            <element signature="e#8721#8722#0" expanded="true" />
-            <element signature="e#9050#9282#0" expanded="true" />
-            <element signature="e#9281#9282#0" expanded="true" />
-            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1468,63 +1503,118 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
+            <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+            <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
+            <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
+            <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
+            <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
+            <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        <state relative-caret-position="20">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/FileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        <state relative-caret-position="265">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Save.java">
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="305">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding>
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="class#2601:2952" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5560:5990" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#8992:9085" expanded="false" />
+            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
+            <element signature="class#9133:9226" expanded="false" />
+            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+    <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
+        <state relative-caret-position="120">
+          <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479518715347" expanded="false" signature="58:108" ph="/**...*/" />
-            <marker date="1479518715347" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-            <marker date="1479518715347" expanded="false" signature="298:308" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="330:336" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="372:382" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="389:395" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="475:727" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="782:1150" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1210:1314" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1369:1616" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="1673:2101" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2153:2263" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2319:2503" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2546:2778" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="2825:2969" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="3025:3275" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="3313:3323" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="3330:3336" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="4136:4208" ph="//..." />
-            <marker date="1479518715347" expanded="false" signature="4730:4814" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="4859:4942" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="4974:4984" ph=" { " />
-            <marker date="1479518715347" expanded="false" signature="4996:5002" ph=" }" />
-            <marker date="1479518715347" expanded="false" signature="5735:6001" ph="{...}" />
-            <marker date="1479518715347" expanded="false" signature="6044:6152" ph="{...}" />
+            <element signature="docComment;class#WizardPopup#0" expanded="false" />
+            <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
+            <element signature="e#1645#1660#0" expanded="false" />
+            <element signature="e#3387#3422#0" expanded="false" />
+            <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -35,7 +35,10 @@ public class MainWindow implements KeyListener {
 
     static int height = 0;
 
-    void onStart() {
+    static BinaryTree winnerBracket;
+    static BinaryTree losersBracket;
+
+    void onStart(boolean loaded) {
         makeMenuBar();
         frame = initFrame(frame);
         winnerPanel = initGamePanel("Winners");
@@ -48,9 +51,10 @@ public class MainWindow implements KeyListener {
         frame.add(scrollPane);
         frame.repaint();
         frame.revalidate();
-
-        BinaryTree winnerBracket = BinaryTree.createWinnerBracket(teamCount - 2);
-        BinaryTree losersBracket = Bracket.createLoserBracket(teamCount - 2);
+        if(!loaded){
+            winnerBracket = BinaryTree.createWinnerBracket(teamCount - 2);
+            losersBracket = Bracket.createLoserBracket(teamCount - 2);
+        }
         winnerBracket.labelWinnerBracket(winnerBracket.getRoot());
         losersBracket.labelWinnerBracket(losersBracket.getRoot());
 
@@ -82,7 +86,7 @@ public class MainWindow implements KeyListener {
         winnerPanel.setVisible(true);
         frame.setVisible(true);
         try {
-            Save.scrapeTree(winnerBracket,losersBracket);
+            FileHandler.save(winnerBracket,losersBracket);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -165,6 +169,10 @@ public class MainWindow implements KeyListener {
     public void setTeamCount(int tc) {
         teamCount = tc;
         teamCountDisplay.setText("Teams :" + teamCount);
+    }
+    public static void setTrees(BinaryTree w, BinaryTree l){
+        winnerBracket=w;
+        losersBracket=l;
     }
     /////////////////////////////////////////////////////////////////
     JPanel refreshGameButtonLinks(JPanel panel) {//send in only JPanels containing Game modules
