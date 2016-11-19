@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Tourna16/StartPopup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/StartPopup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Traversal.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$3.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$4.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$5.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$6.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$7.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$8.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryNode.java" afterPath="$PROJECT_DIR$/src/BinaryNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WizardPopup.java" afterPath="$PROJECT_DIR$/src/WizardPopup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryTree.java" afterPath="$PROJECT_DIR$/src/BinaryTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameDetailsPopup.java" afterPath="$PROJECT_DIR$/src/GameDetailsPopup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainWindow.java" afterPath="$PROJECT_DIR$/src/MainWindow.java" />
     </list>
     <ignored path="Tourna16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,49 +37,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#MainWindow#0" expanded="false" />
+                <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+                <element signature="e#6746#6825#0" expanded="true" />
+                <element signature="e#6824#6825#0" expanded="true" />
+                <element signature="class#8622:8715" expanded="false" />
+                <element signature="method#mousePressed#0;class#8622:8715" expanded="false" />
+                <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
+                <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
+            <state relative-caret-position="40">
               <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WizardPopup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
+      <file leaf-file-name="Bracket.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bracket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="100">
+              <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
               <folding>
-                <element signature="docComment;class#WizardPopup#0" expanded="false" />
-                <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
-                <element signature="e#1624#1639#0" expanded="false" />
-                <element signature="class#2450:2876" expanded="false" />
-                <element signature="method#actionPerformed#0;class#2450:2876" expanded="false" />
-                <element signature="class#2978:3236" expanded="false" />
-                <element signature="method#actionPerformed#0;class#2978:3236" expanded="false" />
-                <element signature="e#3282#3317#0" expanded="false" />
-                <element signature="method#onWizardComplete#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+                <element signature="docComment;class#Bracket#0" expanded="false" />
+                <element signature="method#createLoserBracket#0;class#Bracket#0" expanded="false" />
+                <element signature="method#trim#0;class#Bracket#0" expanded="false" />
+                <element signature="method#trimLosersBracketGames#0;class#Bracket#0" expanded="false" />
+                <element signature="method#deleteGreaterThan#0;class#Bracket#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryNode.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="200" column="19" selection-start-line="200" selection-start-column="19" selection-end-line="200" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#BinaryTree#0" expanded="false" />
+                <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
+                <element signature="e#4193#4228#0" expanded="false" />
+                <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+                <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+            <state relative-caret-position="140">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+              <folding>
+                <element signature="docComment;class#BinaryNode#0" expanded="false" />
+                <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+                <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
+                <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+                <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
+                <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
+                <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
+                <element signature="method#hashCode#0;class#BinaryNode#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameDetailsPopup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1540">
+              <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -106,12 +173,12 @@
         <option value="$PROJECT_DIR$/src/Bracket2.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/TeamListImportPopup.java" />
-        <option value="$PROJECT_DIR$/src/GameDetailsPopup.java" />
-        <option value="$PROJECT_DIR$/src/BinaryTree.java" />
-        <option value="$PROJECT_DIR$/src/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/Traversal.java" />
         <option value="$PROJECT_DIR$/src/WizardPopup.java" />
         <option value="$PROJECT_DIR$/src/BinaryNode.java" />
+        <option value="$PROJECT_DIR$/src/GameDetailsPopup.java" />
+        <option value="$PROJECT_DIR$/src/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/MainWindow.java" />
       </list>
     </option>
   </component>
@@ -152,6 +219,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -186,9 +256,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -608,7 +675,9 @@
       <workItem from="1479274908387" duration="13991000" />
       <workItem from="1479336952143" duration="82000" />
       <workItem from="1479337521384" duration="3311000" />
-      <workItem from="1479341392443" duration="3101000" />
+      <workItem from="1479341392443" duration="4989000" />
+      <workItem from="1479489269279" duration="5555000" />
+      <workItem from="1479510743524" duration="2243000" />
     </task>
     <task id="LOCAL-00001" summary="finally with working bracket generation">
       <created>1479317015470</created>
@@ -659,11 +728,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479349823303</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Removed more useless classes and functions">
+      <created>1479350242177</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1479350242177</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20485000" />
+    <option name="totallyTimeSpent" value="30171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
@@ -673,21 +749,21 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4941435" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.51756954" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5263543" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.48243046" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.4736457" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.49707174" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.48535872" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4795022" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -708,10 +784,13 @@
     <MESSAGE value="huge refactoring and deleting useless code" />
     <MESSAGE value="reupload" />
     <MESSAGE value="stripped MainWindow of useless variables and functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="stripped MainWindow of useless variables and functions" />
+    <MESSAGE value="Removed more useless classes and functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed more useless classes and functions" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -719,6 +798,97 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3880">
+          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#6746#6825#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="class#8622:8715" expanded="false" />
+            <element signature="method#mousePressed#0;class#8622:8715" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bracket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <element signature="docComment;class#Bracket#0" expanded="false" />
+            <element signature="method#createLoserBracket#0;class#Bracket#0" expanded="false" />
+            <element signature="method#trim#0;class#Bracket#0" expanded="false" />
+            <element signature="method#trimLosersBracketGames#0;class#Bracket#0" expanded="false" />
+            <element signature="method#deleteGreaterThan#0;class#Bracket#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4193#4228#0" expanded="false" />
+            <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="docComment;class#BinaryNode#0" expanded="false" />
+            <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
+            <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#hashCode#0;class#BinaryNode#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -727,323 +897,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
-          <folding>
-            <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="class#2497:2841" expanded="false" />
-            <element signature="method#dispatchKeyEvent#0;class#2497:2841" expanded="false" />
-            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#5070:5496" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5070:5496" expanded="false" />
-            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#printTeams#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#8480:8573" expanded="false" />
-            <element signature="method#mousePressed#0;class#8480:8573" expanded="false" />
-            <element signature="class#8621:8714" expanded="false" />
-            <element signature="method#mousePressed#0;class#8621:8714" expanded="false" />
-            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2560">
-          <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
-          <folding>
-            <element signature="docComment;class#BinaryTree#0" expanded="false" />
-            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-            <element signature="e#5351#5386#0" expanded="false" />
-            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bracket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
-          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
-          <folding>
-            <element signature="docComment;class#BinaryTree#0" expanded="false" />
-            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-            <element signature="e#5351#5386#0" expanded="false" />
-            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="class#2497:2841" expanded="false" />
-            <element signature="method#dispatchKeyEvent#0;class#2497:2841" expanded="false" />
-            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#5070:5496" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5070:5496" expanded="false" />
-            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#printTeams#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#8480:8573" expanded="false" />
-            <element signature="method#mousePressed#0;class#8480:8573" expanded="false" />
-            <element signature="class#8621:8714" expanded="false" />
-            <element signature="method#mousePressed#0;class#8621:8714" expanded="false" />
-            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#5572#5573#0" expanded="false" />
-            <element signature="e#5620#5621#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bracket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
-          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
-          <folding>
-            <element signature="docComment;class#BinaryTree#0" expanded="false" />
-            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-            <element signature="e#5351#5386#0" expanded="false" />
-            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="class#2497:2841" expanded="false" />
-            <element signature="method#dispatchKeyEvent#0;class#2497:2841" expanded="false" />
-            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#5070:5496" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5070:5496" expanded="false" />
-            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#printTeams#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#8480:8573" expanded="false" />
-            <element signature="method#mousePressed#0;class#8480:8573" expanded="false" />
-            <element signature="class#8621:8714" expanded="false" />
-            <element signature="method#mousePressed#0;class#8621:8714" expanded="false" />
-            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#5572#5573#0" expanded="false" />
-            <element signature="e#5620#5621#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bracket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bracket2.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="94" column="46" selection-start-line="94" selection-start-column="46" selection-end-line="94" selection-end-column="46" />
-          <folding>
-            <element signature="e#5572#5573#0" expanded="false" />
-            <element signature="e#5620#5621#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TeamListImportPopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Popups.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="docComment;class#MainWindow#0" expanded="false" />
-            <element signature="class#2497:2841" expanded="false" />
-            <element signature="method#dispatchKeyEvent#0;class#2497:2841" expanded="false" />
-            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#5070:5496" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5070:5496" expanded="false" />
-            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#printTeams#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#8480:8573" expanded="false" />
-            <element signature="method#mousePressed#0;class#8480:8573" expanded="false" />
-            <element signature="class#8621:8714" expanded="false" />
-            <element signature="method#mousePressed#0;class#8621:8714" expanded="false" />
-            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
-          <folding>
-            <element signature="docComment;class#BinaryTree#0" expanded="false" />
-            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
-            <element signature="e#5351#5386#0" expanded="false" />
-            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
-            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartPopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Traversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
+        <state relative-caret-position="780">
           <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
           <folding>
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
@@ -1067,11 +923,417 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#6746#6825#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="class#8622:8715" expanded="false" />
+            <element signature="method#mousePressed#0;class#8622:8715" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
+        <state relative-caret-position="920">
           <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <element signature="docComment;class#BinaryNode#0" expanded="false" />
+            <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
+            <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#hashCode#0;class#BinaryNode#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+          <folding>
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#6746#6825#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="class#8622:8715" expanded="false" />
+            <element signature="method#mousePressed#0;class#8622:8715" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2560">
+          <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4193#4228#0" expanded="false" />
+            <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bracket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <element signature="docComment;class#Bracket#0" expanded="false" />
+            <element signature="method#createLoserBracket#0;class#Bracket#0" expanded="false" />
+            <element signature="method#trim#0;class#Bracket#0" expanded="false" />
+            <element signature="method#trimLosersBracketGames#0;class#Bracket#0" expanded="false" />
+            <element signature="method#deleteGreaterThan#0;class#Bracket#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4193#4228#0" expanded="false" />
+            <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#6746#6825#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="class#8622:8715" expanded="false" />
+            <element signature="method#mousePressed#0;class#8622:8715" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bracket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <element signature="docComment;class#Bracket#0" expanded="false" />
+            <element signature="method#createLoserBracket#0;class#Bracket#0" expanded="false" />
+            <element signature="method#trim#0;class#Bracket#0" expanded="false" />
+            <element signature="method#trimLosersBracketGames#0;class#Bracket#0" expanded="false" />
+            <element signature="method#deleteGreaterThan#0;class#Bracket#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4193#4228#0" expanded="false" />
+            <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#6746#6825#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="class#8622:8715" expanded="false" />
+            <element signature="method#mousePressed#0;class#8622:8715" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bracket2.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TeamListImportPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Popups.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StartPopup.java" />
+    <entry file="file://$PROJECT_DIR$/src/Traversal.java" />
+    <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <element signature="docComment;class#WizardPopup#0" expanded="false" />
+            <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
+            <element signature="e#1624#1639#0" expanded="false" />
+            <element signature="class#2450:2876" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2450:2876" expanded="false" />
+            <element signature="class#2978:3236" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2978:3236" expanded="false" />
+            <element signature="e#3282#3317#0" expanded="false" />
+            <element signature="method#onWizardComplete#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <element signature="docComment;class#BinaryNode#0" expanded="false" />
+            <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
+            <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#hashCode#0;class#BinaryNode#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="200" column="19" selection-start-line="200" selection-start-column="19" selection-end-line="200" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printPostOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4193#4228#0" expanded="false" />
+            <element signature="method#printBT#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#prepSplitByLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#clearLay#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLay#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bracket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+          <folding>
+            <element signature="docComment;class#Bracket#0" expanded="false" />
+            <element signature="method#createLoserBracket#0;class#Bracket#0" expanded="false" />
+            <element signature="method#trim#0;class#Bracket#0" expanded="false" />
+            <element signature="method#trimLosersBracketGames#0;class#Bracket#0" expanded="false" />
+            <element signature="method#deleteGreaterThan#0;class#Bracket#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#6746#6825#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="class#8622:8715" expanded="false" />
+            <element signature="method#mousePressed#0;class#8622:8715" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

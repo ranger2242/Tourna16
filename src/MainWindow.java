@@ -8,17 +8,14 @@ import java.util.ArrayList;
 /**
  * Created by Tom on 6/4/2015.
  */
-public class MainWindow implements  KeyListener{
-    static String sep="-----------------";
+public class MainWindow implements KeyListener {
     protected static int teamCount = 0;
     protected static JLabel teamCountDisplay = new JLabel("Teams :--");
     static JPanel mainPanel = new JPanel();
     static JPanel winnerPanel = new JPanel();
-    static JPanel loserPanel= new JPanel();
-    static JScrollPane scrollPane = new JScrollPane(winnerPanel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+    static JPanel loserPanel = new JPanel();
+    static JScrollPane scrollPane = new JScrollPane(winnerPanel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
 
-    static ArrayList<Game> gameList = new ArrayList<>();
-    static ArrayList<String> teamList = new ArrayList<>();
     protected JFrame frame = new JFrame();
     protected static TeamListImportPopup tlimporter = new TeamListImportPopup();
     protected static JMenuBar mainMenuBar = new JMenuBar();
@@ -32,15 +29,15 @@ public class MainWindow implements  KeyListener{
     protected static JMenu mnAbout = new JMenu("About");
     protected static JMenuItem mntmTeamList = new JMenuItem("Team List Editior");
 
-    static int height =0;
+    static int height = 0;
 
     void onStart() {
         makeMenuBar();
-        frame= initFrame(frame);
+        frame = initFrame(frame);
         winnerPanel = initGamePanel("Winners");
-        loserPanel=initGamePanel("Losers");
+        loserPanel = initGamePanel("Losers");
 
-        mainPanel.setLayout(new GridLayout(2,1));
+        mainPanel.setLayout(new GridLayout(2, 1));
         mainPanel.add(winnerPanel);
         mainPanel.add(loserPanel);
         scrollPane.getViewport().add(mainPanel);
@@ -48,18 +45,18 @@ public class MainWindow implements  KeyListener{
         frame.repaint();
         frame.revalidate();
 
-        BinaryTree winnerBracket = BinaryTree.createWinnerBracket(teamCount-2);
-        BinaryTree losersBracket= Bracket.createLoserBracket(teamCount-2);
+        BinaryTree winnerBracket = BinaryTree.createWinnerBracket(teamCount - 2);
+        BinaryTree losersBracket = Bracket.createLoserBracket(teamCount - 2);
         winnerBracket.labelWinnerBracket(winnerBracket.getRoot());
         losersBracket.labelWinnerBracket(losersBracket.getRoot());
 
-        height= winnerPanel.getPreferredSize().height;
+        height = winnerPanel.getPreferredSize().height;
         KeyboardFocusManager.getCurrentKeyboardFocusManager()
                 .addKeyEventDispatcher(new KeyEventDispatcher() {
                     @Override
                     public boolean dispatchKeyEvent(KeyEvent e) {
-                        if(e.getKeyCode()==KeyEvent.VK_TAB){
-                         WizardPopup.frame.setVisible(true);
+                        if (e.getKeyCode() == KeyEvent.VK_TAB) {
+                            WizardPopup.frame.setVisible(true);
                         }
                         return false;
                     }
@@ -67,30 +64,36 @@ public class MainWindow implements  KeyListener{
         winnerPanel.addKeyListener(this);
         frame.setJMenuBar(mainMenuBar);
 
-        ArrayList<ArrayList<Game>> list=losersBracket.split();
-        placeGames(list,loserPanel);
+        ArrayList<ArrayList<Game>> list = losersBracket.split();
+        placeGames(list, loserPanel);
         list.clear();
-        list=winnerBracket.split();
+        list = winnerBracket.split();
         placeGames(list, winnerPanel);
+
+        winnerPanel= refreshGameButtonLinks(winnerPanel);
+        loserPanel= refreshGameButtonLinks(loserPanel);
 
         frame.invalidate();
         winnerPanel.invalidate();
         winnerPanel.setVisible(true);
         frame.setVisible(true);
+        winnerBracket.getGameList().forEach(Game::printGame);
     }
-    void placeGames(ArrayList<ArrayList<Game>> list, JPanel p){
 
-        for(int i=0;i<list.size();i++){
-            for(int j=0;j<list.get(i).size();j++){
-                JPanel gamep=getGameModule(list.get(i).get(j));
+    void placeGames(ArrayList<ArrayList<Game>> list, JPanel p) {
+
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = 0; j < list.get(i).size(); j++) {
+                JPanel gamep = getGameModule(list.get(i).get(j));
                 Insets insets = p.getInsets();
-                Dimension size= gamep.getPreferredSize();
-                int yoff=p.getPreferredSize().height/(list.get(i).size()+1);
-                gamep.setBounds(20+(i*100)+(insets.left),((j+1)*(yoff))+(insets.top),size.width,size.height);
+                Dimension size = gamep.getPreferredSize();
+                int yoff = p.getPreferredSize().height / (list.get(i).size() + 1);
+                gamep.setBounds(20 + (i * 100) + (insets.left), ((j + 1) * (yoff)) + (insets.top), size.width, size.height);
                 p.add(gamep);
             }
         }
     }
+
     JFrame initFrame(JFrame frame) {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.addWindowListener(new WindowAdapter() {
@@ -104,15 +107,17 @@ public class MainWindow implements  KeyListener{
         centreWindow(frame);
         return frame;
     }
-    JPanel initGamePanel(String title){
-        JPanel panel=new JPanel();
-        panel.setPreferredSize(new Dimension(700,300));
+
+    JPanel initGamePanel(String title) {
+        JPanel panel = new JPanel();
+        panel.setPreferredSize(new Dimension(700, 300));
         panel.setLayout(null);
         panel.setBorder(BorderFactory.createTitledBorder(title));
         panel.repaint();
         panel.revalidate();
         return panel;
     }
+
     public void makeMenuBar() {
         mntmTeamList.setFont(Main.robotoThin);
         mainMenuBar.add(mnFile);
@@ -130,7 +135,7 @@ public class MainWindow implements  KeyListener{
                 Action details = fc.getActionMap().get("viewTypeDetails");            //set the default view of fc to detailed view
                 details.actionPerformed(null);
                 fc.showOpenDialog(frame);
-            //    File file = fc.getSelectedFile();
+                //    File file = fc.getSelectedFile();
             }
         });
 
@@ -142,6 +147,7 @@ public class MainWindow implements  KeyListener{
             }
         }));
     }
+
     public static void centreWindow(Window frame) {
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         int x = (int) ((dimension.getWidth() - frame.getWidth()) / 2);
@@ -150,18 +156,20 @@ public class MainWindow implements  KeyListener{
 
         frame.setLocation(x, y);
     }
+
     public void setTeamCount(int tc) {
         teamCount = tc;
         teamCountDisplay.setText("Teams :" + teamCount);
     }
+
     /////////////////////////////////////////////////////////////////
-    void printTeams(){
-        Main.out("----Team List----");
-        for(String s:teamList){
-            Main.out(s);
-        }
-        Main.out(sep);
+    JPanel refreshGameButtonLinks(JPanel panel) {//send in only JPanels containing Game modules
+        for (Component c : panel.getComponents()) {if (c instanceof JPanel) {for (Component a : ((JPanel) c).getComponents()) {if (a instanceof JButton) {a.addMouseListener(new MouseAdapter() {public void mousePressed(MouseEvent e) {Main.out("!@!@");}});}}}}
+        return panel;
+        //loserPanel;
+
     }
+
     public JPanel getGameModule(Game g) {
         Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
         JPanel gamePanel = new JPanel();
@@ -189,20 +197,13 @@ public class MainWindow implements  KeyListener{
         score1.setFont(Main.robotoThin);
         score2.setFont(Main.robotoThin);
 
-        mntmGameOptions.addMouseListener((new MouseAdapter() {
+        mntmGameOptions.addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
-                GameDetailsPopup gameDetailsPopup = new GameDetailsPopup();
-                String s = gameNumberButton.getText();
-                Game g = new Game();
-                for (int i = 0; i < gameList.size(); i++) {
-                    if (s.equals(gameList.get(i).getGameNumber())) {
-                        g = gameList.get(i);
-                    }
-                }
-                gameDetailsPopup.setGame(g);
-                gameDetailsPopup.onStart();
+                GameDetailsPopup gdp = new GameDetailsPopup();
+                gdp.setGame(g);
+                gdp.onStart();
             }
-        }));
+        });
         winnerbutton1.addMouseListener((new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
             }
@@ -258,12 +259,15 @@ public class MainWindow implements  KeyListener{
 
         return gamePanel;
     }
+
     public void keyTyped(KeyEvent e) {
 
     }
+
     public void keyPressed(KeyEvent e) {
 
     }
+
     public void keyReleased(KeyEvent e) {
 
     }

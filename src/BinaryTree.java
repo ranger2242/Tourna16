@@ -7,6 +7,7 @@ import java.util.Collections;
 @SuppressWarnings("WeakerAccess")
 class BinaryTree {
     private static char letter='A';
+    static int teamc=1;
     private BinaryNode root;
     protected ArrayList<String> lay = new ArrayList<>();
     ArrayList<ArrayList<Game>> list = new ArrayList<>();
@@ -16,6 +17,14 @@ class BinaryTree {
     }
     public BinaryTree(BinaryNode b){
         root=b;
+    }
+    public static boolean contains(BinaryNode testNode, BinaryNode targetNode) {
+        if (testNode == null)
+            return false;
+        if (testNode == targetNode)
+            return true;
+        return contains(targetNode, testNode.getLeftChild())
+                || contains(targetNode, testNode.getRightChild());
     }
     public static void addBalancedLeaf(BinaryNode bt) {
         int a=getSize(bt.getLeftChild());
@@ -49,30 +58,17 @@ class BinaryTree {
         if(b==null){
             return;
         }if(l==1) {
-            b.setValue(new Game(letter + "", "", ""));
+            if(teamc<MainWindow.teamCount)
+            b.setValue(new Game(letter + "", "t"+(teamc++), "t"+(teamc++)));
+            else
+                b.setValue(new Game(letter + "", "",""));
+
             letter++;
         }
         else if(l >1){
             labelByLevel(b.getLeftChild(), l-1);
             labelByLevel(b.getRightChild(), l-1);
         }
-    }
-    public void printBT(BinaryTree tree){
-        tree.clearLay();
-        tree.printByLevel(tree.getRoot(),1);
-         BinaryTree.breadthTraverse(tree.getRoot());
-
-        tree.printLay();
-
-        Main.out("");
-        for(int i=0;i<list.size();i++){
-            Main.outa((list.size()-i)+":");
-            for(int j=0;j<list.get(i).size();j++){
-                Main.outa(list.get(i).get(j).getGameNumber());
-            }
-            Main.out("");
-        }
-
     }
     public static void printPostOrder(BinaryNode b){
         printPostOrder(b.getLeftChild());
@@ -87,14 +83,6 @@ class BinaryTree {
         root.getValue().printGame();
         breadthTraverse(root.getLeftChild());
         breadthTraverse(root.getRightChild());
-    }
-    public static boolean contains(BinaryNode testNode, BinaryNode targetNode) {
-        if (testNode == null)
-            return false;
-        if (testNode == targetNode)
-            return true;
-        return contains(targetNode, testNode.getLeftChild())
-                || contains(targetNode, testNode.getRightChild());
     }
     public static int height(BinaryNode b){
         if(b==null){
@@ -112,20 +100,6 @@ class BinaryTree {
         }
         return 1 + getSize(root.getLeftChild()) + getSize(root.getRightChild());
     }
-    public ArrayList<ArrayList<Game>> split(){
-        list.clear();
-        for(int i=0;i<10;i++){
-            list.add(new ArrayList<Game>());
-        }
-        prepSplitByLevel(root,1);
-        for(int i=list.size()-1;i>0;i--){
-            if(list.get(i).isEmpty()){
-                list.remove(i);
-            }
-        }
-        Collections.reverse(list);
-        return list;//
-    }
     public static BinaryTree createWinnerBracket(int n){
         BinaryTree tree= new BinaryTree();
         for(int i=0;i<n;i++)
@@ -133,25 +107,6 @@ class BinaryTree {
         tree.insertRootLeft(new BinaryNode());
         tree.insertRootLeft(new BinaryNode());
         return tree;
-    }
-    void clearLay() {
-        lay.clear();
-        for (int i = 0; i < 10; i++) {
-            lay.add("");
-        }
-    }
-    void printLay() {
-        System.out.println("-----------------");
-        for (String s : lay)
-            System.out.println(s);
-        System.out.println("-----------------");
-
-    }
-    void labelWinnerBracket(BinaryNode b){//
-        int h = height(b);
-        int i;
-        for(i=h;i>=1;i--)
-            labelByLevel(b,i);
     }
     public void setRoot(BinaryNode b){
         root=b;
@@ -180,7 +135,23 @@ class BinaryTree {
         // b.getValue().printGame();
 
     }
+    public void printBT(BinaryTree tree){
+        tree.clearLay();
+        tree.printByLevel(tree.getRoot(),1);
+        BinaryTree.breadthTraverse(tree.getRoot());
 
+        tree.printLay();
+
+        Main.out("");
+        for(int i=0;i<list.size();i++){
+            Main.outa((list.size()-i)+":");
+            for(int j=0;j<list.get(i).size();j++){
+                Main.outa(list.get(i).get(j).getGameNumber());
+            }
+            Main.out("");
+        }
+
+    }
     public void prepSplitByLevel(BinaryNode b, int i) {
         if (b.getLeftChild() != null) {
             prepSplitByLevel(b.getLeftChild(), i + 1);
@@ -205,5 +176,58 @@ class BinaryTree {
     }
     public BinaryNode getRoot(){
         return root;
+    }
+    public ArrayList<ArrayList<Game>> split(){
+        list.clear();
+        for(int i=0;i<10;i++){
+            list.add(new ArrayList<Game>());
+        }
+        prepSplitByLevel(root,1);
+        for(int i=list.size()-1;i>0;i--){
+            if(list.get(i).isEmpty()){
+                list.remove(i);
+            }
+        }
+        Collections.reverse(list);
+        return list;//
+    }
+    public ArrayList<Game> getGameList(){
+        ArrayList<Game> out=new ArrayList<>();
+        for(ArrayList<Game> arr: split()){
+            for(Game g: arr){
+                out.add(g);
+            }
+        }
+        return out;
+    }
+    public BinaryNode contains(Game g, BinaryNode node) {
+        if (node == null)
+            return null;
+        else if (node.getValue().equals(g))
+            return node;
+        else {
+            contains(g, node.getLeftChild());
+            contains(g, node.getRightChild());
+        }
+        return null;
+    }
+    void clearLay() {
+        lay.clear();
+        for (int i = 0; i < 10; i++) {
+            lay.add("");
+        }
+    }
+    void printLay() {
+        System.out.println("-----------------");
+        for (String s : lay)
+            System.out.println(s);
+        System.out.println("-----------------");
+
+    }
+    void labelWinnerBracket(BinaryNode b){//
+        int h = height(b);
+        int i;
+        for(i=h;i>=1;i--)
+            labelByLevel(b,i);
     }
 }
