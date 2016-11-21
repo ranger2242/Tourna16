@@ -107,7 +107,7 @@ public class MainWindow implements KeyListener {
         }
     }
     JFrame initFrame(JFrame frame) {
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 System.exit(0);
@@ -151,7 +151,7 @@ public class MainWindow implements KeyListener {
         });
 
         mntmTeamList.addMouseListener((new MouseAdapter() {
-            public void mousePressed(MouseEvent e) {
+            public void mousePressed(MouseEvent e) {//new java.awt.FileDialog((java.awt.Frame) null).setVisible(true);
                 tlimporter = new TeamListImportPopup();
                 tlimporter.onStart();
                 tlimporter.onReopen();

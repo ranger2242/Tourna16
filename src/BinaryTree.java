@@ -68,11 +68,6 @@ class BinaryTree implements Serializable{
             labelByLevel(b.getRightChild(), l-1);
         }
     }
-    public static void printPostOrder(BinaryNode b){
-        printPostOrder(b.getLeftChild());
-        printPostOrder(b.getRightChild());
-        letter++;
-    }
     public static void breadthTraverse(BinaryNode root){
         if (root == null)
             return;
@@ -123,17 +118,12 @@ class BinaryTree implements Serializable{
         return list;
     }
     public void printByLevel(BinaryNode b, int i) {
-        String s="";
         if (b.getLeftChild() != null) {
             printByLevel(b.getLeftChild(), i + 1);
         }
         if (b.getRightChild() != null) {
             printByLevel(b.getRightChild(), i + 1);
         }
-        b.getValue().round =i;
-        //System.out.println("Depth:" + i);
-        // b.getValue().printGame();
-
     }
     public void printBT(BinaryTree tree){
         tree.printByLevel(tree.getRoot(),1);

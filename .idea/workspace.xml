@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Save.java" afterPath="$PROJECT_DIR$/src/FileHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/Game.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/Game.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" />
@@ -18,7 +17,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryTree.java" afterPath="$PROJECT_DIR$/src/BinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.java" afterPath="$PROJECT_DIR$/src/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainWindow.java" afterPath="$PROJECT_DIR$/src/MainWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WizardPopup.java" afterPath="$PROJECT_DIR$/src/WizardPopup.java" />
     </list>
@@ -45,26 +43,24 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+            <state relative-caret-position="141">
+              <caret line="153" column="118" selection-start-line="153" selection-start-column="118" selection-end-line="153" selection-end-column="118" />
               <folding>
                 <element signature="docComment;class#MainWindow#0" expanded="false" />
                 <element signature="class#2601:2952" expanded="false" />
                 <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
                 <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-                <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
-                <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-                <element signature="class#5560:5990" expanded="false" />
-                <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+                <element signature="class#5569:5999" expanded="false" />
+                <element signature="method#actionPerformed#0;class#5569:5999" expanded="false" />
                 <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-                <element signature="class#8992:9085" expanded="false" />
-                <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
-                <element signature="class#9133:9226" expanded="false" />
-                <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+                <element signature="class#9067:9160" expanded="false" />
+                <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
+                <element signature="class#9208:9301" expanded="false" />
+                <element signature="method#mousePressed#0;class#9208:9301" expanded="false" />
                 <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -76,14 +72,14 @@
       <file leaf-file-name="WizardPopup.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+            <state relative-caret-position="221">
+              <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#WizardPopup#0" expanded="false" />
                 <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
-                <element signature="e#1645#1660#0" expanded="false" />
-                <element signature="e#3387#3422#0" expanded="false" />
+                <element signature="e#1824#1839#0" expanded="false" />
+                <element signature="e#3650#3685#0" expanded="false" />
                 <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
                 <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
                 <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -100,7 +96,7 @@
       <file leaf-file-name="FileHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FileHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
+            <state relative-caret-position="20">
               <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -112,7 +108,7 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
+            <state relative-caret-position="860">
               <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -126,35 +122,24 @@
       <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="1020">
+              <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
-                <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-                <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
-                <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
-                <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
-                <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
-                <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
-                <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
-                <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
-                <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
-                <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
-                <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
-                <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
+                <element signature="docComment;class#BinaryTree#0" expanded="false" />
+                <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+                <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+                <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+                <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
               </folding>
             </state>
           </provider>
@@ -163,7 +148,7 @@
       <file leaf-file-name="BinaryNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
+            <state relative-caret-position="80">
               <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
               <folding>
                 <element signature="docComment;class#BinaryNode#0" expanded="false" />
@@ -182,7 +167,7 @@
       <file leaf-file-name="GameDetailsPopup.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1540">
+            <state relative-caret-position="1560">
               <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
               <folding />
             </state>
@@ -219,10 +204,10 @@
         <option value="$PROJECT_DIR$/src/GameDetailsPopup.java" />
         <option value="$PROJECT_DIR$/src/BinaryNode.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
-        <option value="$PROJECT_DIR$/src/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/Save.java" />
-        <option value="$PROJECT_DIR$/src/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/FileHandler.java" />
+        <option value="$PROJECT_DIR$/src/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/WizardPopup.java" />
       </list>
     </option>
@@ -232,6 +217,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -264,9 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -301,6 +290,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,124 +301,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/Tourna16/Game.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/Tourna16/GameDetailsPopup$2.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/BinaryNode.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/BinaryTree.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Game.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/GameDetailsPopup.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/MainWindow.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Save.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
+    <property name="SearchEverywhereHistoryKey" value="open&#9;PSI&#9;JAVA://MainWindow#mntmOpen" />
   </component>
   <component name="RunManager" selected="Application.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -840,7 +715,8 @@
       <workItem from="1479337521384" duration="3311000" />
       <workItem from="1479341392443" duration="4989000" />
       <workItem from="1479489269279" duration="5555000" />
-      <workItem from="1479510743524" duration="9787000" />
+      <workItem from="1479510743524" duration="10736000" />
+      <workItem from="1479752768153" duration="862000" />
     </task>
     <task id="LOCAL-00001" summary="finally with working bracket generation">
       <created>1479317015470</created>
@@ -919,11 +795,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479518814727</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added save and load functions as list of Games">
+      <created>1479524769649</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1479524769650</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37715000" />
+    <option name="totallyTimeSpent" value="39526000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -945,18 +828,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5263543" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.4736457" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.4736457" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4795022" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4795022" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -981,7 +864,8 @@
     <MESSAGE value="did some shit" />
     <MESSAGE value="fixed serialization of Game objects and fixed save function" />
     <MESSAGE value="fixed serialization of BinaryTree and save function" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed serialization of BinaryTree and save function" />
+    <MESSAGE value="added save and load functions as list of Games" />
+    <option name="LAST_COMMIT_MESSAGE" value="added save and load functions as list of Games" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -996,6 +880,126 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="109" column="54" selection-start-line="109" selection-start-column="54" selection-end-line="109" selection-end-column="54" />
+          <folding>
+            <element signature="docComment;class#MainWindow#0" expanded="false" />
+            <element signature="class#2601:2952" expanded="false" />
+            <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
+            <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#5569:5999" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5569:5999" expanded="false" />
+            <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
+            <element signature="class#9067:9160" expanded="false" />
+            <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
+            <element signature="class#9208:9301" expanded="false" />
+            <element signature="method#mousePressed#0;class#9208:9301" expanded="false" />
+            <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#WizardPopup#0" expanded="false" />
+            <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
+            <element signature="e#1824#1839#0" expanded="false" />
+            <element signature="e#3650#3685#0" expanded="false" />
+            <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
+            <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1180">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2500">
+          <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="docComment;class#BinaryNode#0" expanded="false" />
+            <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
+            <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#hashCode#0;class#BinaryNode#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3880">
           <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
           <folding>
@@ -1003,19 +1007,17 @@
             <element signature="class#2601:2952" expanded="false" />
             <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
             <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#5560:5990" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="class#5569:5999" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5569:5999" expanded="false" />
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
             <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#8992:9085" expanded="false" />
-            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
-            <element signature="class#9133:9226" expanded="false" />
-            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="class#9067:9160" expanded="false" />
+            <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
+            <element signature="class#9208:9301" expanded="false" />
+            <element signature="method#mousePressed#0;class#9208:9301" expanded="false" />
             <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -1043,31 +1045,20 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
-            <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-            <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
-            <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
           </folding>
         </state>
       </provider>
@@ -1101,7 +1092,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1110,15 +1105,11 @@
         <state relative-caret-position="780">
           <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
             <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
-            <element signature="e#1645#1660#0" expanded="false" />
-            <element signature="class#2471:2976" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2471:2976" expanded="false" />
-            <element signature="class#3078:3341" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3078:3341" expanded="false" />
-            <element signature="e#3387#3422#0" expanded="false" />
-            <element signature="method#onWizardComplete#0;class#WizardPopup#0" expanded="false" />
+            <element signature="e#1824#1839#0" expanded="false" />
+            <element signature="e#3650#3685#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
@@ -1140,19 +1131,17 @@
             <element signature="class#2601:2952" expanded="false" />
             <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
             <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#5560:5990" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="class#5569:5999" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5569:5999" expanded="false" />
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
             <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#8992:9085" expanded="false" />
-            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
-            <element signature="class#9133:9226" expanded="false" />
-            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="class#9067:9160" expanded="false" />
+            <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
+            <element signature="class#9208:9301" expanded="false" />
+            <element signature="method#mousePressed#0;class#9208:9301" expanded="false" />
             <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -1189,7 +1178,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,19 +1195,17 @@
             <element signature="class#2601:2952" expanded="false" />
             <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
             <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#5560:5990" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="class#5569:5999" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5569:5999" expanded="false" />
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
             <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#8992:9085" expanded="false" />
-            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
-            <element signature="class#9133:9226" expanded="false" />
-            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="class#9067:9160" expanded="false" />
+            <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
+            <element signature="class#9208:9301" expanded="false" />
+            <element signature="method#mousePressed#0;class#9208:9301" expanded="false" />
             <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -1236,31 +1227,20 @@
           <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
-            <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-            <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
-            <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
           </folding>
         </state>
       </provider>
@@ -1285,31 +1265,20 @@
           <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
-            <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-            <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
-            <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
           </folding>
         </state>
       </provider>
@@ -1323,19 +1292,17 @@
             <element signature="class#2601:2952" expanded="false" />
             <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
             <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#5560:5990" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="class#5569:5999" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5569:5999" expanded="false" />
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
             <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#8992:9085" expanded="false" />
-            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
-            <element signature="class#9133:9226" expanded="false" />
-            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="class#9067:9160" expanded="false" />
+            <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
+            <element signature="class#9208:9301" expanded="false" />
+            <element signature="method#mousePressed#0;class#9208:9301" expanded="false" />
             <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -1371,31 +1338,20 @@
           <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
-            <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-            <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
-            <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
           </folding>
         </state>
       </provider>
@@ -1409,19 +1365,17 @@
             <element signature="class#2601:2952" expanded="false" />
             <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
             <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#5560:5990" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="class#5569:5999" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5569:5999" expanded="false" />
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
             <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#8992:9085" expanded="false" />
-            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
-            <element signature="class#9133:9226" expanded="false" />
-            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="class#9067:9160" expanded="false" />
+            <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
+            <element signature="class#9208:9301" expanded="false" />
+            <element signature="method#mousePressed#0;class#9208:9301" expanded="false" />
             <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -1466,7 +1420,7 @@
     <entry file="file://$PROJECT_DIR$/src/Traversal.java" />
     <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
+        <state relative-caret-position="1560">
           <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
           <folding />
         </state>
@@ -1488,7 +1442,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
+        <state relative-caret-position="80">
           <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
           <folding>
             <element signature="docComment;class#BinaryNode#0" expanded="false" />
@@ -1505,7 +1459,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
+        <state relative-caret-position="860">
           <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1515,52 +1469,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+    <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1479519816515" expanded="false" signature="58:108" ph="/**...*/" />
-            <marker date="1479519816515" expanded="false" signature="109:142" ph="/WeakerAccess/" />
-            <marker date="1479519816515" expanded="false" signature="298:308" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="330:336" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="372:382" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="389:395" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="475:727" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="782:1150" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1210:1314" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1369:1616" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="1673:2101" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2153:2263" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2319:2503" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2546:2778" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="2825:2969" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="3025:3275" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="3313:3323" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="3330:3336" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="4141:4213" ph="//..." />
-            <marker date="1479519816515" expanded="false" signature="4735:4819" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="4864:4947" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="4979:4989" ph=" { " />
-            <marker date="1479519816515" expanded="false" signature="5001:5007" ph=" }" />
-            <marker date="1479519816515" expanded="false" signature="5740:6006" ph="{...}" />
-            <marker date="1479519816515" expanded="false" signature="6049:6157" ph="{...}" />
-          </folding>
+        <state relative-caret-position="40">
+          <caret line="2" column="2359" selection-start-line="2" selection-start-column="2359" selection-end-line="2" selection-end-column="2359" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="1020">
+          <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
+        <state relative-caret-position="20">
           <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1570,26 +1513,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        <state relative-caret-position="141">
+          <caret line="153" column="118" selection-start-line="153" selection-start-column="118" selection-end-line="153" selection-end-column="118" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="class#2601:2952" expanded="false" />
             <element signature="method#dispatchKeyEvent#0;class#2601:2952" expanded="false" />
             <element signature="method#placeGames#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#initFrame#0;class#MainWindow#0" expanded="false" />
             <element signature="method#initGamePanel#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#makeMenuBar#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#5560:5990" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5560:5990" expanded="false" />
+            <element signature="class#5569:5999" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5569:5999" expanded="false" />
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
             <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
-            <element signature="class#8992:9085" expanded="false" />
-            <element signature="method#mousePressed#0;class#8992:9085" expanded="false" />
-            <element signature="class#9133:9226" expanded="false" />
-            <element signature="method#mousePressed#0;class#9133:9226" expanded="false" />
+            <element signature="class#9067:9160" expanded="false" />
+            <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
+            <element signature="class#9208:9301" expanded="false" />
+            <element signature="method#mousePressed#0;class#9208:9301" expanded="false" />
             <element signature="method#keyTyped#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyPressed#0;class#MainWindow#0" expanded="false" />
             <element signature="method#keyReleased#0;class#MainWindow#0" expanded="false" />
@@ -1599,14 +1540,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+        <state relative-caret-position="221">
+          <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#WizardPopup#0" expanded="false" />
             <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
-            <element signature="e#1645#1660#0" expanded="false" />
-            <element signature="e#3387#3422#0" expanded="false" />
+            <element signature="e#1824#1839#0" expanded="false" />
+            <element signature="e#3650#3685#0" expanded="false" />
             <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />

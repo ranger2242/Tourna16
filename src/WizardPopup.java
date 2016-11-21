@@ -25,6 +25,11 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
     }
 
     void onStart() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        }catch(Exception ex) {
+            ex.printStackTrace();
+        }
         frame.setResizable(false);
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         CC componentConstraints = new CC();
@@ -39,7 +44,7 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         int frameHeight = 200;
 
         panel.setLayout(layout);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setSize(new Dimension(frameWidth, frameHeight));
         frame.getContentPane().add(panel, BorderLayout.CENTER);
         //frame.pack();
@@ -62,6 +67,7 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
 
         mntmOpen.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                //new java.awt.FileDialog((java.awt.Frame) null ).setVisible(true);
                 JFileChooser fc = new JFileChooser();
                 Action details = fc.getActionMap().get("viewTypeDetails");            //set the default view of fc to detailed view
                 details.actionPerformed(null);
