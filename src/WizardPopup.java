@@ -2,6 +2,7 @@ import net.miginfocom.layout.CC;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
+import javax.swing.plaf.basic.BasicMenuBarUI;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
@@ -14,13 +15,16 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
 
     protected JScrollBar teamCountSelector = new JScrollBar(JScrollBar.HORIZONTAL, 8, 1, 6, 33);
     protected static JFrame frame = new JFrame();
-    protected JLabel titleLabel = new JLabel("Tourna 16");
-    protected JLabel textOutput1 = new JLabel("Enter number of teams: " + teamCount);
     protected JButton confirmButton = new JButton("Confirm");
     protected MigLayout layout = new MigLayout("fill");
     protected static boolean pressed = false;
     protected static int teamCount = 8;
-
+    JLabel titleLabel;
+    JLabel textOutput1;
+    Color textcolor =new Color(220,220,220);
+    Color maincolor=new Color(60,60,60);
+    Color lightcolor=new Color(80,80,80);
+    Color accentMainColor = new Color(100,100,255);
     public WizardPopup() {
     }
 
@@ -30,6 +34,14 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         }catch(Exception ex) {
             ex.printStackTrace();
         }
+        titleLabel = new JLabel("Tourna 16");
+        textOutput1 = new JLabel("Enter number of teams: " + teamCount);
+
+        teamCountSelector.setForeground(textcolor);
+        teamCountSelector.setBackground(lightcolor);
+        titleLabel.setForeground(textcolor);
+        textOutput1.setForeground(textcolor);
+
         frame.setResizable(false);
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         CC componentConstraints = new CC();
@@ -38,10 +50,24 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         JMenuItem mntmOpen = new JMenuItem("Open");
         JMenuItem mntmRecent = new JMenuItem("Recent");
         JPanel panel = new JPanel();
+        wizardMenuBar.setBackground(maincolor);
+        wizardMenuBar.setForeground(maincolor);
+        mnFile.setForeground(textcolor);
+        mnFile.setBackground(lightcolor);
+        wizardMenuBar.setUI ( new BasicMenuBarUI(){
+            public void paint ( Graphics g, JComponent c ){
+                g.setColor (lightcolor);
+                g.fillRect ( 0, 0, c.getWidth (), c.getHeight () );
+            }
+        } );
+
         int screenHeight = (int) dimension.getHeight();
         //int screenWidth= (int) dimension.getWidth();
         int frameWidth = 200;
         int frameHeight = 200;
+
+        panel.setBackground(maincolor);
+        panel.setForeground(textcolor);
 
         panel.setLayout(layout);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -56,6 +82,7 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         mnFile.add(mntmOpen);
         mnFile.add(mntmRecent);
         frame.setJMenuBar(wizardMenuBar);
+        frame.revalidate();
         panel.add(titleLabel, componentConstraints);
         panel.add(new JSeparator(JSeparator.HORIZONTAL), "growx, wrap");
         panel.add(textOutput1, "growx,wrap");
@@ -67,7 +94,6 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
 
         mntmOpen.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //new java.awt.FileDialog((java.awt.Frame) null ).setVisible(true);
                 JFileChooser fc = new JFileChooser();
                 Action details = fc.getActionMap().get("viewTypeDetails");            //set the default view of fc to detailed view
                 details.actionPerformed(null);
@@ -78,6 +104,10 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
             }
         });
         teamCountSelector.addAdjustmentListener(this);
+        confirmButton.setBackground(accentMainColor);
+        Font font = confirmButton.getFont();
+        confirmButton.setForeground(Color.WHITE);
+        //confirmButton.setFont();
         confirmButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onWizardComplete(false);

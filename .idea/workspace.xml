@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/Game.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$3.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$4.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$5.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$6.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$7.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$8.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainWindow.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$1.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$2.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup.class" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardPopup.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryTree.java" afterPath="$PROJECT_DIR$/src/BinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainWindow.java" afterPath="$PROJECT_DIR$/src/MainWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WizardPopup.java" afterPath="$PROJECT_DIR$/src/WizardPopup.java" />
     </list>
     <ignored path="Tourna16.iws" />
@@ -43,8 +31,8 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="153" column="118" selection-start-line="153" selection-start-column="118" selection-end-line="153" selection-end-column="118" />
+            <state relative-caret-position="1120">
+              <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
               <folding>
                 <element signature="docComment;class#MainWindow#0" expanded="false" />
                 <element signature="class#2601:2952" expanded="false" />
@@ -56,7 +44,6 @@
                 <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
                 <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
-                <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
                 <element signature="class#9067:9160" expanded="false" />
                 <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
                 <element signature="class#9208:9301" expanded="false" />
@@ -72,23 +59,23 @@
       <file leaf-file-name="WizardPopup.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+            <state relative-caret-position="135">
+              <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#WizardPopup#0" expanded="false" />
-                <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
-                <element signature="e#1824#1839#0" expanded="false" />
-                <element signature="e#3650#3685#0" expanded="false" />
-                <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
-                <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+                <element signature="e#2065#2279#0" expanded="true" />
+                <element signature="e#2278#2279#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColorConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ColorConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,10 +83,10 @@
       <file leaf-file-name="FileHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FileHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state relative-caret-position="620">
+              <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -109,11 +96,33 @@
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="860">
-              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+              <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1118#1119#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#420#421#0" expanded="false" />
+                <element signature="e#442#443#0" expanded="false" />
+                <element signature="e#903#904#0" expanded="false" />
+                <element signature="e#923#924#0" expanded="false" />
+                <element signature="e#943#944#0" expanded="false" />
+                <element signature="e#963#964#0" expanded="false" />
+                <element signature="e#981#982#0" expanded="false" />
+                <element signature="e#999#1000#0" expanded="false" />
+                <element signature="e#1017#1018#0" expanded="false" />
+                <element signature="e#1035#1036#0" expanded="false" />
+                <element signature="e#1118#1119#0" expanded="false" />
+                <element signature="e#1132#1133#0" expanded="false" />
+                <element signature="e#1207#1208#0" expanded="false" />
+                <element signature="e#1226#1227#0" expanded="false" />
+                <element signature="e#1357#1358#0" expanded="false" />
+                <element signature="e#1375#1376#0" expanded="false" />
+                <element signature="e#1456#1457#0" expanded="false" />
+                <element signature="e#1470#1471#0" expanded="false" />
+                <element signature="e#1530#1531#0" expanded="false" />
+                <element signature="e#1543#1544#0" expanded="false" />
+                <element signature="e#1567#1568#0" expanded="false" />
+                <element signature="e#1580#1581#0" expanded="false" />
+                <element signature="e#1681#1682#0" expanded="false" />
+                <element signature="e#1709#1710#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -122,11 +131,15 @@
       <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+            <state relative-caret-position="1000">
+              <caret line="119" column="51" lean-forward="false" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
                 <element signature="docComment;class#BinaryTree#0" expanded="false" />
+                <element signature="e#298#299#0" expanded="false" />
+                <element signature="e#335#336#0" expanded="false" />
+                <element signature="e#372#373#0" expanded="false" />
+                <element signature="e#394#395#0" expanded="false" />
                 <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
                 <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
                 <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
@@ -135,8 +148,12 @@
                 <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
                 <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
                 <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+                <element signature="e#3151#3152#0" expanded="false" />
+                <element signature="e#3173#3174#0" expanded="false" />
                 <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
                 <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+                <element signature="e#4683#4684#0" expanded="false" />
+                <element signature="e#4710#4711#0" expanded="false" />
                 <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
                 <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
                 <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
@@ -149,12 +166,26 @@
         <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+              <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
               <folding>
                 <element signature="docComment;class#BinaryNode#0" expanded="false" />
                 <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+                <element signature="e#675#676#0" expanded="false" />
+                <element signature="e#701#702#0" expanded="false" />
+                <element signature="e#731#732#0" expanded="false" />
+                <element signature="e#793#794#0" expanded="false" />
+                <element signature="e#822#823#0" expanded="false" />
+                <element signature="e#850#851#0" expanded="false" />
+                <element signature="e#889#890#0" expanded="false" />
+                <element signature="e#921#922#0" expanded="false" />
+                <element signature="e#961#962#0" expanded="false" />
+                <element signature="e#994#995#0" expanded="false" />
                 <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
                 <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+                <element signature="e#1633#1634#0" expanded="false" />
+                <element signature="e#1667#1668#0" expanded="false" />
+                <element signature="e#1697#1698#0" expanded="false" />
+                <element signature="e#1759#1760#0" expanded="false" />
                 <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
                 <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
                 <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
@@ -168,8 +199,14 @@
         <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1560">
-              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-              <folding />
+              <caret line="87" column="17" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#5506#5507#0" expanded="false" />
+                <element signature="e#5528#5529#0" expanded="false" />
+                <element signature="e#5572#5573#0" expanded="false" />
+                <element signature="e#5620#5621#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -208,6 +245,7 @@
         <option value="$PROJECT_DIR$/src/FileHandler.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/ColorConverter.java" />
         <option value="$PROJECT_DIR$/src/WizardPopup.java" />
       </list>
     </option>
@@ -218,28 +256,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="22" />
     <option name="width" value="1382" />
     <option name="height" value="754" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -258,12 +279,6 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tourna16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tourna16" />
@@ -288,6 +303,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tourna16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tourna16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="production" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tourna16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -300,14 +337,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
-    <property name="SearchEverywhereHistoryKey" value="open&#9;PSI&#9;JAVA://MainWindow#mntmOpen" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DUNGEON V3/DUNGEON_V3A" />
+    <property name="SearchEverywhereHistoryKey" value="confirm&#9;PSI&#9;JAVA://WizardPopup#confirmButton&#10;open&#9;PSI&#9;JAVA://MainWindow#mntmOpen" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RunManager" selected="Application.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -494,6 +533,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
@@ -510,27 +550,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -558,6 +577,12 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -631,34 +656,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -703,6 +700,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="" />
@@ -716,7 +716,10 @@
       <workItem from="1479341392443" duration="4989000" />
       <workItem from="1479489269279" duration="5555000" />
       <workItem from="1479510743524" duration="10736000" />
-      <workItem from="1479752768153" duration="862000" />
+      <workItem from="1479752768153" duration="1626000" />
+      <workItem from="1479784174388" duration="365000" />
+      <workItem from="1479863668317" duration="1682000" />
+      <workItem from="1479872292348" duration="5503000" />
     </task>
     <task id="LOCAL-00001" summary="finally with working bracket generation">
       <created>1479317015470</created>
@@ -802,11 +805,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479524769650</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Changed UI to match current OS">
+      <created>1479753665013</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1479753665013</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39526000" />
+    <option name="totallyTimeSpent" value="47840000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -833,14 +843,17 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4795022" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4795022" order="0" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -865,7 +878,8 @@
     <MESSAGE value="fixed serialization of Game objects and fixed save function" />
     <MESSAGE value="fixed serialization of BinaryTree and save function" />
     <MESSAGE value="added save and load functions as list of Games" />
-    <option name="LAST_COMMIT_MESSAGE" value="added save and load functions as list of Games" />
+    <MESSAGE value="Changed UI to match current OS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed UI to match current OS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -878,10 +892,143 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2065#2279#0" expanded="true" />
+            <element signature="e#2278#2279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
+            <element signature="e#923#924#0" expanded="false" />
+            <element signature="e#943#944#0" expanded="false" />
+            <element signature="e#963#964#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#999#1000#0" expanded="false" />
+            <element signature="e#1017#1018#0" expanded="false" />
+            <element signature="e#1035#1036#0" expanded="false" />
+            <element signature="e#1118#1119#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+            <element signature="e#1207#1208#0" expanded="false" />
+            <element signature="e#1226#1227#0" expanded="false" />
+            <element signature="e#1357#1358#0" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
+            <element signature="e#1456#1457#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1530#1531#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1567#1568#0" expanded="false" />
+            <element signature="e#1580#1581#0" expanded="false" />
+            <element signature="e#1681#1682#0" expanded="false" />
+            <element signature="e#1709#1710#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="119" column="51" lean-forward="false" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+            <element signature="e#372#373#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
+            <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#printLevel#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#breadthTraverse#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#3151#3152#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
+            <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
+            <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4683#4684#0" expanded="false" />
+            <element signature="e#4710#4711#0" expanded="false" />
+            <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
+            <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="docComment;class#BinaryNode#0" expanded="false" />
+            <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+            <element signature="e#675#676#0" expanded="false" />
+            <element signature="e#701#702#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#793#794#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#850#851#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#921#922#0" expanded="false" />
+            <element signature="e#961#962#0" expanded="false" />
+            <element signature="e#994#995#0" expanded="false" />
+            <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#1759#1760#0" expanded="false" />
+            <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
+            <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
+            <element signature="method#hashCode#0;class#BinaryNode#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="87" column="17" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#5506#5507#0" expanded="false" />
+            <element signature="e#5528#5529#0" expanded="false" />
+            <element signature="e#5572#5573#0" expanded="false" />
+            <element signature="e#5620#5621#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1620">
-          <caret line="109" column="54" selection-start-line="109" selection-start-column="54" selection-end-line="109" selection-end-column="54" />
+          <caret line="109" column="54" lean-forward="false" selection-start-line="109" selection-start-column="54" selection-end-line="109" selection-end-column="54" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="class#2601:2952" expanded="false" />
@@ -893,7 +1040,6 @@
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
             <element signature="class#9067:9160" expanded="false" />
             <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
             <element signature="class#9208:9301" expanded="false" />
@@ -908,21 +1054,11 @@
     <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="820">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
-            <element signature="e#1824#1839#0" expanded="false" />
-            <element signature="e#3650#3685#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+            <element signature="e#2065#2279#0" expanded="true" />
+            <element signature="e#2278#2279#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -930,9 +1066,9 @@
     <entry file="file://$PROJECT_DIR$/src/FileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -940,11 +1076,33 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1180">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
+            <element signature="e#923#924#0" expanded="false" />
+            <element signature="e#943#944#0" expanded="false" />
+            <element signature="e#963#964#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#999#1000#0" expanded="false" />
+            <element signature="e#1017#1018#0" expanded="false" />
+            <element signature="e#1035#1036#0" expanded="false" />
+            <element signature="e#1118#1119#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+            <element signature="e#1207#1208#0" expanded="false" />
+            <element signature="e#1226#1227#0" expanded="false" />
+            <element signature="e#1357#1358#0" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
+            <element signature="e#1456#1457#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1530#1531#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1567#1568#0" expanded="false" />
+            <element signature="e#1580#1581#0" expanded="false" />
+            <element signature="e#1681#1682#0" expanded="false" />
+            <element signature="e#1709#1710#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -952,10 +1110,14 @@
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2500">
-          <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
+          <caret line="125" column="9" lean-forward="false" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+            <element signature="e#372#373#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
             <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
@@ -964,8 +1126,12 @@
             <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#3151#3152#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
             <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4683#4684#0" expanded="false" />
+            <element signature="e#4710#4711#0" expanded="false" />
             <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
             <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
             <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
@@ -976,12 +1142,26 @@
     <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
           <folding>
             <element signature="docComment;class#BinaryNode#0" expanded="false" />
             <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+            <element signature="e#675#676#0" expanded="false" />
+            <element signature="e#701#702#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#793#794#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#850#851#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#921#922#0" expanded="false" />
+            <element signature="e#961#962#0" expanded="false" />
+            <element signature="e#994#995#0" expanded="false" />
             <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
             <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#1759#1760#0" expanded="false" />
             <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
             <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
             <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
@@ -993,15 +1173,21 @@
     <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1560">
-          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-          <folding />
+          <caret line="87" column="17" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#5506#5507#0" expanded="false" />
+            <element signature="e#5528#5529#0" expanded="false" />
+            <element signature="e#5572#5573#0" expanded="false" />
+            <element signature="e#5620#5621#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3880">
-          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="class#2601:2952" expanded="false" />
@@ -1013,7 +1199,6 @@
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
             <element signature="class#9067:9160" expanded="false" />
             <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
             <element signature="class#9208:9301" expanded="false" />
@@ -1028,7 +1213,7 @@
     <entry file="file://$PROJECT_DIR$/src/Bracket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
           <folding>
             <element signature="docComment;class#Bracket#0" expanded="false" />
             <element signature="method#createLoserBracket#0;class#Bracket#0" expanded="false" />
@@ -1042,10 +1227,14 @@
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+            <element signature="e#372#373#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
             <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
@@ -1054,8 +1243,12 @@
             <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#3151#3152#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
             <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4683#4684#0" expanded="false" />
+            <element signature="e#4710#4711#0" expanded="false" />
             <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
             <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
             <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
@@ -1066,12 +1259,26 @@
     <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
             <element signature="docComment;class#BinaryNode#0" expanded="false" />
             <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+            <element signature="e#675#676#0" expanded="false" />
+            <element signature="e#701#702#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#793#794#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#850#851#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#921#922#0" expanded="false" />
+            <element signature="e#961#962#0" expanded="false" />
+            <element signature="e#994#995#0" expanded="false" />
             <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
             <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#1759#1760#0" expanded="false" />
             <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
             <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
             <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
@@ -1083,19 +1290,47 @@
     <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
-          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-          <folding />
+          <caret line="86" column="25" lean-forward="false" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#5506#5507#0" expanded="false" />
+            <element signature="e#5528#5529#0" expanded="false" />
+            <element signature="e#5572#5573#0" expanded="false" />
+            <element signature="e#5620#5621#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
+            <element signature="e#923#924#0" expanded="false" />
+            <element signature="e#943#944#0" expanded="false" />
+            <element signature="e#963#964#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#999#1000#0" expanded="false" />
+            <element signature="e#1017#1018#0" expanded="false" />
+            <element signature="e#1035#1036#0" expanded="false" />
+            <element signature="e#1118#1119#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+            <element signature="e#1207#1208#0" expanded="false" />
+            <element signature="e#1226#1227#0" expanded="false" />
+            <element signature="e#1357#1358#0" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
+            <element signature="e#1456#1457#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1530#1531#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1567#1568#0" expanded="false" />
+            <element signature="e#1580#1581#0" expanded="false" />
+            <element signature="e#1681#1682#0" expanded="false" />
+            <element signature="e#1709#1710#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1103,21 +1338,11 @@
     <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
-            <element signature="e#1824#1839#0" expanded="false" />
-            <element signature="e#3650#3685#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+            <element signature="e#2065#2279#0" expanded="true" />
+            <element signature="e#2278#2279#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1125,7 +1350,7 @@
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="class#2601:2952" expanded="false" />
@@ -1137,7 +1362,6 @@
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
             <element signature="class#9067:9160" expanded="false" />
             <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
             <element signature="class#9208:9301" expanded="false" />
@@ -1152,12 +1376,26 @@
     <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
           <folding>
             <element signature="docComment;class#BinaryNode#0" expanded="false" />
             <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+            <element signature="e#675#676#0" expanded="false" />
+            <element signature="e#701#702#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#793#794#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#850#851#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#921#922#0" expanded="false" />
+            <element signature="e#961#962#0" expanded="false" />
+            <element signature="e#994#995#0" expanded="false" />
             <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
             <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#1759#1760#0" expanded="false" />
             <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
             <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
             <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
@@ -1169,19 +1407,47 @@
     <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          <folding />
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#5506#5507#0" expanded="false" />
+            <element signature="e#5528#5529#0" expanded="false" />
+            <element signature="e#5572#5573#0" expanded="false" />
+            <element signature="e#5620#5621#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
+            <element signature="e#923#924#0" expanded="false" />
+            <element signature="e#943#944#0" expanded="false" />
+            <element signature="e#963#964#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#999#1000#0" expanded="false" />
+            <element signature="e#1017#1018#0" expanded="false" />
+            <element signature="e#1035#1036#0" expanded="false" />
+            <element signature="e#1118#1119#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+            <element signature="e#1207#1208#0" expanded="false" />
+            <element signature="e#1226#1227#0" expanded="false" />
+            <element signature="e#1357#1358#0" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
+            <element signature="e#1456#1457#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1530#1531#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1567#1568#0" expanded="false" />
+            <element signature="e#1580#1581#0" expanded="false" />
+            <element signature="e#1681#1682#0" expanded="false" />
+            <element signature="e#1709#1710#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1189,7 +1455,7 @@
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1500">
-          <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+          <caret line="91" column="39" lean-forward="false" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="class#2601:2952" expanded="false" />
@@ -1201,7 +1467,6 @@
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
             <element signature="class#9067:9160" expanded="false" />
             <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
             <element signature="class#9208:9301" expanded="false" />
@@ -1216,7 +1481,7 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1224,10 +1489,14 @@
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2560">
-          <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
+          <caret line="128" column="29" lean-forward="false" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+            <element signature="e#372#373#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
             <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
@@ -1236,8 +1505,12 @@
             <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#3151#3152#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
             <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4683#4684#0" expanded="false" />
+            <element signature="e#4710#4711#0" expanded="false" />
             <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
             <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
             <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
@@ -1248,7 +1521,7 @@
     <entry file="file://$PROJECT_DIR$/src/Bracket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
           <folding>
             <element signature="docComment;class#Bracket#0" expanded="false" />
             <element signature="method#createLoserBracket#0;class#Bracket#0" expanded="false" />
@@ -1262,10 +1535,14 @@
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2340">
-          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
+          <caret line="117" column="44" lean-forward="false" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+            <element signature="e#372#373#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
             <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
@@ -1274,8 +1551,12 @@
             <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#3151#3152#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
             <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4683#4684#0" expanded="false" />
+            <element signature="e#4710#4711#0" expanded="false" />
             <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
             <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
             <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
@@ -1286,7 +1567,7 @@
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="class#2601:2952" expanded="false" />
@@ -1298,7 +1579,6 @@
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
             <element signature="class#9067:9160" expanded="false" />
             <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
             <element signature="class#9208:9301" expanded="false" />
@@ -1313,15 +1593,21 @@
     <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#5506#5507#0" expanded="false" />
+            <element signature="e#5528#5529#0" expanded="false" />
+            <element signature="e#5572#5573#0" expanded="false" />
+            <element signature="e#5620#5621#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bracket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
           <folding>
             <element signature="docComment;class#Bracket#0" expanded="false" />
             <element signature="method#createLoserBracket#0;class#Bracket#0" expanded="false" />
@@ -1335,10 +1621,14 @@
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2340">
-          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
+          <caret line="117" column="44" lean-forward="false" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+            <element signature="e#372#373#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
             <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
@@ -1347,8 +1637,12 @@
             <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#3151#3152#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
             <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4683#4684#0" expanded="false" />
+            <element signature="e#4710#4711#0" expanded="false" />
             <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
             <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
             <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
@@ -1359,7 +1653,7 @@
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="class#2601:2952" expanded="false" />
@@ -1371,7 +1665,6 @@
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
             <element signature="class#9067:9160" expanded="false" />
             <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
             <element signature="class#9208:9301" expanded="false" />
@@ -1386,8 +1679,14 @@
     <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#5506#5507#0" expanded="false" />
+            <element signature="e#5528#5529#0" expanded="false" />
+            <element signature="e#5572#5573#0" expanded="false" />
+            <element signature="e#5620#5621#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1395,7 +1694,7 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1403,7 +1702,7 @@
     <entry file="file://$PROJECT_DIR$/src/TeamListImportPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+          <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1411,7 +1710,7 @@
     <entry file="file://$PROJECT_DIR$/src/Popups.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1421,15 +1720,21 @@
     <entry file="file://$PROJECT_DIR$/src/GameDetailsPopup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1560">
-          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-          <folding />
+          <caret line="87" column="17" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#5506#5507#0" expanded="false" />
+            <element signature="e#5528#5529#0" expanded="false" />
+            <element signature="e#5572#5573#0" expanded="false" />
+            <element signature="e#5620#5621#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bracket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+          <caret line="45" column="56" lean-forward="false" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
           <folding>
             <element signature="docComment;class#Bracket#0" expanded="false" />
             <element signature="method#createLoserBracket#0;class#Bracket#0" expanded="false" />
@@ -1443,12 +1748,26 @@
     <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
           <folding>
             <element signature="docComment;class#BinaryNode#0" expanded="false" />
             <element signature="method#BinaryNode#0;class#BinaryNode#0" expanded="false" />
+            <element signature="e#675#676#0" expanded="false" />
+            <element signature="e#701#702#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#793#794#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#850#851#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#921#922#0" expanded="false" />
+            <element signature="e#961#962#0" expanded="false" />
+            <element signature="e#994#995#0" expanded="false" />
             <element signature="method#setLeftChild#0;class#BinaryNode#0" expanded="false" />
             <element signature="method#setRightChild#0;class#BinaryNode#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#1759#1760#0" expanded="false" />
             <element signature="method#equals#0;class#BinaryNode#0" expanded="false" />
             <element signature="method#equals#1;class#BinaryNode#0" expanded="false" />
             <element signature="method#toString#0;class#BinaryNode#0" expanded="false" />
@@ -1460,11 +1779,33 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="860">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
+            <element signature="e#923#924#0" expanded="false" />
+            <element signature="e#943#944#0" expanded="false" />
+            <element signature="e#963#964#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#999#1000#0" expanded="false" />
+            <element signature="e#1017#1018#0" expanded="false" />
+            <element signature="e#1035#1036#0" expanded="false" />
+            <element signature="e#1118#1119#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+            <element signature="e#1207#1208#0" expanded="false" />
+            <element signature="e#1226#1227#0" expanded="false" />
+            <element signature="e#1357#1358#0" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
+            <element signature="e#1456#1457#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1530#1531#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1567#1568#0" expanded="false" />
+            <element signature="e#1580#1581#0" expanded="false" />
+            <element signature="e#1681#1682#0" expanded="false" />
+            <element signature="e#1709#1710#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1472,18 +1813,21 @@
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" column="2359" selection-start-line="2" selection-start-column="2359" selection-end-line="2" selection-end-column="2359" />
-          <folding />
+          <caret line="2" column="2359" lean-forward="false" selection-start-line="2" selection-start-column="2359" selection-end-line="2" selection-end-column="2359" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+        <state relative-caret-position="1000">
+          <caret line="119" column="51" lean-forward="false" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#BinaryTree#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+            <element signature="e#372#373#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
             <element signature="method#contains#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#addBalancedLeaf#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#printReverseLevelOrder#0;class#BinaryTree#0" expanded="false" />
@@ -1492,8 +1836,12 @@
             <element signature="method#height#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#getSize#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#createWinnerBracket#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#3151#3152#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
             <element signature="method#insertRootRight#0;class#BinaryTree#0" expanded="false" />
             <element signature="method#insertRootLeft#0;class#BinaryTree#0" expanded="false" />
+            <element signature="e#4683#4684#0" expanded="false" />
+            <element signature="e#4710#4711#0" expanded="false" />
             <element signature="method#contains#1;class#BinaryTree#0" expanded="false" />
             <element signature="method#labelWinnerBracket#0;class#BinaryTree#0" expanded="false" />
             <marker date="1479525047739" expanded="false" signature="109:142" ph="/WeakerAccess/" />
@@ -1503,18 +1851,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="620">
+          <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ColorConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="153" column="118" selection-start-line="153" selection-start-column="118" selection-end-line="153" selection-end-column="118" />
+        <state relative-caret-position="1120">
+          <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
           <folding>
             <element signature="docComment;class#MainWindow#0" expanded="false" />
             <element signature="class#2601:2952" expanded="false" />
@@ -1526,7 +1882,6 @@
             <element signature="method#centreWindow#0;class#MainWindow#0" expanded="false" />
             <element signature="method#setTeamCount#0;class#MainWindow#0" expanded="false" />
             <element signature="method#refreshGameButtonLinks#0;class#MainWindow#0" expanded="false" />
-            <element signature="method#getGameModule#0;class#MainWindow#0" expanded="false" />
             <element signature="class#9067:9160" expanded="false" />
             <element signature="method#mousePressed#0;class#9067:9160" expanded="false" />
             <element signature="class#9208:9301" expanded="false" />
@@ -1540,22 +1895,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WizardPopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+        <state relative-caret-position="135">
+          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#WizardPopup#0" expanded="false" />
-            <element signature="method#WizardPopup#0;class#WizardPopup#0" expanded="false" />
-            <element signature="e#1824#1839#0" expanded="false" />
-            <element signature="e#3650#3685#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mousePressed#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseEntered#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#mouseExited#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#adjustmentValueChanged#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#WizardPopup#0" expanded="false" />
-            <element signature="method#run#0;class#WizardPopup#0" expanded="false" />
+            <element signature="e#2065#2279#0" expanded="true" />
+            <element signature="e#2278#2279#0" expanded="true" />
           </folding>
         </state>
       </provider>
