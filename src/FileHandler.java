@@ -25,15 +25,17 @@ public class FileHandler implements Serializable {
             ObjectInputStream oit = new ObjectInputStream(in);
             ArrayList<Game> list= new ArrayList<>();
             try {
-                while (oit.readObject() != null) {
+                while (true) {
                     list.add((Game) oit.readObject());
                 }
-            }catch (EOFException e){}
+            }catch (EOFException e){
+                oit.close();
+
+            }
             for(Game g : list){
                 g.printGame();
             }
             out("g--");
-            oit.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
