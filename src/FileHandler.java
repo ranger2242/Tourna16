@@ -18,7 +18,7 @@ public class FileHandler implements Serializable {
         ost.close();
     }
 
-    public static void load(File f) {
+    public static void load(File f) {//trying to upload new load function
 
         try {
             FileInputStream in = new FileInputStream(f.getAbsolutePath());
