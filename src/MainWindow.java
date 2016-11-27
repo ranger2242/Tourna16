@@ -3,8 +3,11 @@ import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import static sun.misc.MessageUtils.out;
 
 /**
  * Created by Tom on 6/4/2015.
@@ -85,12 +88,7 @@ public class MainWindow implements KeyListener {
         winnerPanel.invalidate();
         winnerPanel.setVisible(true);
         frame.setVisible(true);
-        try {
-            FileHandler.save(winnerBracket,losersBracket);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        winnerBracket.getGameList().forEach(Game::printGame);
+        //winnerBracket.getGameList().forEach(Game::printGame);
     }
 
     void placeGames(ArrayList<ArrayList<Game>> list, JPanel p) {
@@ -146,7 +144,13 @@ public class MainWindow implements KeyListener {
                 Action details = fc.getActionMap().get("viewTypeDetails");            //set the default view of fc to detailed view
                 details.actionPerformed(null);
                 fc.showOpenDialog(frame);
-                //    File file = fc.getSelectedFile();
+                File file = fc.getSelectedFile();
+                FileHandler.load(file);
+            }
+        });
+        mntmSave.addMouseListener(new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+                    FileHandler.save(winnerBracket,losersBracket);
             }
         });
 

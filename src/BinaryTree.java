@@ -72,7 +72,7 @@ class BinaryTree implements Serializable{
         if (root == null)
             return;
 
-        root.getValue().printGame();
+        //root.getValue().printGame();
         breadthTraverse(root.getLeftChild());
         breadthTraverse(root.getRightChild());
     }

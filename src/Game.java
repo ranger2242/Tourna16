@@ -3,7 +3,7 @@ import java.util.Date;
 
 class Game implements Serializable
 {
-	BinaryNode containerNode;
+	//BinaryNode containerNode;
 	String label1="null";
 	String label2="null";
 	String date ="null";
@@ -88,17 +88,18 @@ class Game implements Serializable
 	}
 
 	public BinaryNode getNode(){
+//		return containerNode;
 
-		return containerNode;
+		return null;
 	}
 	public void setNode(BinaryNode refNode){
-		containerNode=refNode;
+		//containerNode=refNode;
 	}
 
 
 	void printGame()
 	{
-		System.out.println("\nRound "+ round);
-		System.out.println("Game"+gameNumber+" "+team1+" "+ team2);
+		Main.out("\nRound "+ round);
+		Main.out("Game"+gameNumber+" "+team1+" "+ team2);
 	}
 }
