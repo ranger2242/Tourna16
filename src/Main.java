@@ -34,6 +34,7 @@ public class Main {
 
 		frame.setLocation(x, y);
 	}
+
 }
 
 

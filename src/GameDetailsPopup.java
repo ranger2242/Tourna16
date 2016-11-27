@@ -115,7 +115,7 @@ public class GameDetailsPopup{
                 date = "" + date + " " + sdate;
                 time.setText(date.substring(0, 20));
                 game.setTime(date.substring(0, 8));
-                game.setDate(date.substring(9,20),fullDate);
+               // game.setDate(date.substring(9,20),fullDate);
             }
         });
 

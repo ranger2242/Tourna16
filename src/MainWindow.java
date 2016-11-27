@@ -216,9 +216,9 @@ public class MainWindow implements KeyListener {
 
         mntmGameOptions.addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
-                GameDetailsPopup gdp = new GameDetailsPopup();
-                gdp.setGame(g);
-                gdp.onStart();
+                GameDetailsPopup2 gdp = new GameDetailsPopup2(g);
+
+
             }
         });
         winnerbutton1.addMouseListener((new MouseAdapter() {
