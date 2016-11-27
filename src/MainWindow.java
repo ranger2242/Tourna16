@@ -7,8 +7,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import static sun.misc.MessageUtils.out;
-
 /**
  * Created by Tom on 6/4/2015.
  */
@@ -150,7 +148,11 @@ public class MainWindow implements KeyListener {
         });
         mntmSave.addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
+                try {
                     FileHandler.save(winnerBracket,losersBracket);
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
             }
         });
 
