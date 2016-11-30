@@ -1,3 +1,4 @@
+import gui.ColorProfile;
 import net.miginfocom.layout.CC;
 import net.miginfocom.swing.MigLayout;
 
@@ -21,10 +22,7 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
     protected static int teamCount = 8;
     JLabel titleLabel;
     JLabel textOutput1;
-    Color textcolor =new Color(220,220,220);
-    Color maincolor=new Color(60,60,60);
-    Color lightcolor=new Color(80,80,80);
-    Color accentMainColor = new Color(100,100,255);
+    ColorProfile colors= new ColorProfile();
     public WizardPopup() {
     }
 
@@ -37,10 +35,10 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         titleLabel = new JLabel("Tourna 16");
         textOutput1 = new JLabel("Enter number of teams: " + teamCount);
 
-        teamCountSelector.setForeground(textcolor);
-        teamCountSelector.setBackground(lightcolor);
-        titleLabel.setForeground(textcolor);
-        textOutput1.setForeground(textcolor);
+        teamCountSelector.setForeground(colors.getTextColor());
+        teamCountSelector.setBackground(colors.getLightColor());
+        titleLabel.setForeground(colors.getTextColor());
+        textOutput1.setForeground(colors.getTextColor());
 
         frame.setResizable(false);
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
@@ -50,13 +48,13 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         JMenuItem mntmOpen = new JMenuItem("Open");
         JMenuItem mntmRecent = new JMenuItem("Recent");
         JPanel panel = new JPanel();
-        wizardMenuBar.setBackground(maincolor);
-        wizardMenuBar.setForeground(maincolor);
-        mnFile.setForeground(textcolor);
-        mnFile.setBackground(lightcolor);
+        wizardMenuBar.setBackground(colors.getMainColor());
+        wizardMenuBar.setForeground(colors.getMainColor());
+        mnFile.setForeground(colors.getTextColor());
+        mnFile.setBackground(colors.getLightColor());
         wizardMenuBar.setUI ( new BasicMenuBarUI(){
             public void paint ( Graphics g, JComponent c ){
-                g.setColor (lightcolor);
+                g.setColor (colors.getLightColor());
                 g.fillRect ( 0, 0, c.getWidth (), c.getHeight () );
             }
         } );
@@ -66,8 +64,8 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
         int frameWidth = 200;
         int frameHeight = 200;
 
-        panel.setBackground(maincolor);
-        panel.setForeground(textcolor);
+        panel.setBackground(colors.getMainColor());
+        panel.setForeground(colors.getTextColor());
 
         panel.setLayout(layout);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -104,7 +102,7 @@ public class WizardPopup implements Runnable, MouseListener, AdjustmentListener,
             }
         });
         teamCountSelector.addAdjustmentListener(this);
-        confirmButton.setBackground(accentMainColor);
+        confirmButton.setBackground(colors.getAccentColor());
         Font font = confirmButton.getFont();
         confirmButton.setForeground(Color.WHITE);
         //confirmButton.setFont();

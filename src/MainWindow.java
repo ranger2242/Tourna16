@@ -1,6 +1,10 @@
+import gui.ColorProfile;
+import net.miginfocom.swing.MigLayout;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
+import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
@@ -11,28 +15,31 @@ import java.util.ArrayList;
  * Created by Tom on 6/4/2015.
  */
 public class MainWindow implements KeyListener {
+    boolean smallView = false;
     protected static int teamCount = 0;
     protected static JLabel teamCountDisplay = new JLabel("Teams :--");
     static JPanel mainPanel = new JPanel();
     static JPanel winnerPanel = new JPanel();
     static JPanel loserPanel = new JPanel();
-    static JScrollPane scrollPane = new JScrollPane(winnerPanel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
-
-
+    static JScrollPane scrollPane = new JScrollPane(winnerPanel, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
+            ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+    ColorProfile colors= new ColorProfile();
     static ArrayList<Game> gameList = new ArrayList<>();
     static ArrayList<String> teamList = new ArrayList<>();
-    protected JFrame frame = new JFrame();
-    protected static TeamListImportPopup tlimporter = new TeamListImportPopup();
-    protected static JMenuBar mainMenuBar = new JMenuBar();
-    protected static JMenu mnFile = new JMenu("File");
-    protected static JMenuItem mntmOpen = new JMenuItem("Open");
-    protected static JMenuItem mntmSave = new JMenuItem("Save");
-    protected static JMenuItem mntmSaveAs = new JMenuItem("Save As");
-    protected static JMenuItem mntmPref = new JMenuItem("Preferences");
-    protected static JMenuItem mntmExit = new JMenuItem("Exit");
-    protected static JMenu mnEdit = new JMenu("Edit");
-    protected static JMenu mnAbout = new JMenu("About");
-    protected static JMenuItem mntmTeamList = new JMenuItem("Team List Editior");
+    JFrame frame = new JFrame();
+    static TeamListImportPopup tlimporter = new TeamListImportPopup();
+    static JMenuBar mainMenuBar = new JMenuBar();
+    static JMenu mnFile = new JMenu("File");
+    static JMenu mnView = new JMenu("View");
+    static JCheckBoxMenuItem mntmSmallView = new JCheckBoxMenuItem("Small Games");
+    static JMenuItem mntmOpen = new JMenuItem("Open");
+    static JMenuItem mntmSave = new JMenuItem("Save");
+    static JMenuItem mntmSaveAs = new JMenuItem("Save As");
+    static JMenuItem mntmPref = new JMenuItem("Preferences");
+    static JMenuItem mntmExit = new JMenuItem("Exit");
+    static JMenu mnEdit = new JMenu("Edit");
+    static JMenu mnAbout = new JMenu("About");
+    static JMenuItem mntmTeamList = new JMenuItem("Team List Editior");
 
     static int height = 0;
 
@@ -93,11 +100,13 @@ public class MainWindow implements KeyListener {
 
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.get(i).size(); j++) {
-                JPanel gamep = getGameModule(list.get(i).get(j));
+                JPanel gamep = getSmallGameModule(list.get(i).get(j));
+
+               // JPanel gamep = getLargeGameModule(list.get(i).get(j));
                 Insets insets = p.getInsets();
                 Dimension size = gamep.getPreferredSize();
-                int yoff = p.getPreferredSize().height / (list.get(i).size() + 1);
-                gamep.setBounds(20 + (i * 100) + (insets.left), ((j + 1) * (yoff)) + (insets.top), size.width, size.height);
+                int yoff = (p.getPreferredSize().height / (list.get(i).size() + 1));
+                gamep.setBounds(20 + (i * 200) + (insets.left), ((j+1) * (yoff)) + (insets.top)-size.height, size.width, size.height);
                 p.add(gamep);
             }
         }
@@ -118,24 +127,37 @@ public class MainWindow implements KeyListener {
 
     JPanel initGamePanel(String title) {
         JPanel panel = new JPanel();
-        panel.setPreferredSize(new Dimension(700, 300));
+        Dimension size= new Dimension(700,700);
+        panel.setSize(size);
+        panel.setPreferredSize(size);
+        panel.setBackground(colors.getMainColor());
+        panel.setForeground(colors.getTextColor());
         panel.setLayout(null);
-        panel.setBorder(BorderFactory.createTitledBorder(title));
+        panel.setBorder(BorderFactory.createTitledBorder(null, title, TitledBorder.LEFT,
+                TitledBorder.TOP, new Font("consolas",Font.PLAIN,14), colors.getTextColor()));
         panel.repaint();
         panel.revalidate();
         return panel;
     }
-    public void makeMenuBar() {
+    void makeMenuBar() {
         mntmTeamList.setFont(Main.robotoThin);
         mainMenuBar.add(mnFile);
+        mainMenuBar.add(mnView);
         mainMenuBar.add(mnEdit);
         mainMenuBar.add(mnAbout);
+        mnView.add(mntmSmallView);
         mnFile.add(mntmOpen);
         mnFile.add(mntmSave);
         mnFile.add(mntmSaveAs);
         mnFile.add(mntmPref);
         mnFile.add(mntmExit);
         mnEdit.add(mntmTeamList);
+        mntmSmallView.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+        });
         mntmOpen.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser fc = new JFileChooser();
@@ -164,7 +186,7 @@ public class MainWindow implements KeyListener {
             }
         }));
     }
-    public static void centreWindow(Window frame) {
+    static void centreWindow(Window frame) {
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         int x = (int) ((dimension.getWidth() - frame.getWidth()) / 2);
         int y = (int) ((dimension.getHeight() - frame.getHeight()) / 2);
@@ -172,7 +194,7 @@ public class MainWindow implements KeyListener {
 
         frame.setLocation(x, y);
     }
-    public void setTeamCount(int tc) {
+    void setTeamCount(int tc) {
         teamCount = tc;
         teamCountDisplay.setText("Teams :" + teamCount);
     }
@@ -187,7 +209,47 @@ public class MainWindow implements KeyListener {
         //loserPanel;
 
     }
-    public JPanel getGameModule(Game g) {
+    JPanel getSmallGameModule(Game g) {
+        g=Game.getDummyGame();
+        Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
+        JPanel gamePanel = new JPanel();
+        JLabel team1 = new JLabel(g.getTeam1());
+        JLabel team2 = new JLabel(g.getTeam2());
+        JLabel score1 = new JLabel("" + g.getScore1());
+        JLabel score2 = new JLabel("" + g.getScore2());
+        JButton gameNumberButton = new JButton(g.getGameNumber());
+        JPopupMenu gameMenuPopup = new JPopupMenu();
+        JMenuItem mntmGameOptions = new JMenuItem("Game Options");
+        Game finalG = g;
+
+        mntmGameOptions.addMouseListener(new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+                GameDetailsPopup gdp = new GameDetailsPopup(finalG);
+
+
+            }
+        });
+        gameNumberButton.addMouseListener((new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+                gameMenuPopup.show(e.getComponent(), gameNumberButton.getX(), gameNumberButton.getY() + gameNumberButton.getHeight());
+            }
+        }));
+
+        gamePanel.setLayout(new MigLayout());
+        gamePanel.setBorder(border);
+        gameMenuPopup.add(mntmGameOptions);
+        gamePanel.add(team1,"cell 1 0, w 100px");
+        gamePanel.add(team2, "cell 1 1, w 100px");
+        //gamePanel.add(new JLabel(),"cell 0 0");
+        int buttonPosx= (int) gameNumberButton.getPreferredSize().getWidth();
+        int buttonPosy= (int) (gamePanel.getPreferredSize().getHeight()+gameNumberButton.getPreferredSize().getHeight()+50);
+        gamePanel.add(gameNumberButton,"dock west");//"pad 0 0 0 0, pos 0 0,"+"w "+buttonPosx+", h "+buttonPosy
+
+        return gamePanel;
+    }
+
+    JPanel getLargeGameModule(Game g) {
+        g=Game.getDummyGame();
         Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
         JPanel gamePanel = new JPanel();
         GridBagConstraints gbc = new GridBagConstraints();
@@ -199,6 +261,7 @@ public class MainWindow implements KeyListener {
         JLabel score2 = new JLabel("" + g.getScore2());
         JLabel timeLabel = new JLabel(g.getTime() + " " + g.getDate());
         JLabel locLabel = new JLabel(g.getLocation());
+        JLabel dateLabel = new JLabel(g.getDate());
         JButton gameNumberButton = new JButton(g.getGameNumber());
         ButtonGroup buttonGroup = new ButtonGroup();
         JPopupMenu gameMenuPopup = new JPopupMenu();
@@ -214,9 +277,10 @@ public class MainWindow implements KeyListener {
         score1.setFont(Main.robotoThin);
         score2.setFont(Main.robotoThin);
 
+        Game finalG = g;
         mntmGameOptions.addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
-                GameDetailsPopup2 gdp = new GameDetailsPopup2(g);
+                GameDetailsPopup gdp = new GameDetailsPopup(finalG);
 
 
             }
@@ -235,45 +299,20 @@ public class MainWindow implements KeyListener {
             }
         }));
 
-        gamePanel.setLayout(new GridBagLayout());
+        gamePanel.setLayout(new MigLayout("debug"));
         gamePanel.setBorder(border);
         buttonGroup.add(winnerbutton1);
         buttonGroup.add(winnerbutton2);
         gameMenuPopup.add(mntmGameOptions);
-
-        gbc.fill = GridBagConstraints.VERTICAL;
-        gbc.gridheight = 2;
-        gbc.gridy = 0;
-        gbc.weightx = 1;
-        gbc.insets = new Insets(5, 5, 3, 3);
-        gamePanel.add(gameNumberButton, gbc);
-        gameNumberButton.setMargin(new Insets(0, 0, 0, 0));
-        gameNumberButton.setPreferredSize(new Dimension(20, 20));
-        gamePanel.updateUI();
-
-        gbc = new GridBagConstraints();
-        gbc.fill = GridBagConstraints.HORIZONTAL;
-        gbc.gridx = 1;
-        gbc.gridy = 0;
-        gbc.insets = new Insets(0, 3, 0, 0);
-        gamePanel.add(team1, gbc);
-
-
-        gbc.gridx = 2;
-        gbc.gridy = 0;
-        gbc.insets = new Insets(0, 3, 0, 0);
-        gamePanel.add(score1, gbc);
-
-        gbc.gridx = 1;
-        gbc.gridy = 1;
-        gbc.insets = new Insets(0, 3, 0, 0);
-        gamePanel.add(team2, gbc);
-
-        gbc.gridx = 2;
-        gbc.gridy = 1;
-        gbc.insets = new Insets(0, 3, 0, 0);
-        gamePanel.add(score2, gbc);
-
+        gamePanel.add(gameNumberButton);
+        gamePanel.add(new JLabel("Date:"));
+        gamePanel.add(dateLabel,"wrap");
+        gamePanel.add(team1);
+        gamePanel.add(new JLabel("Time:"));
+        gamePanel.add(timeLabel,"wrap");
+        gamePanel.add(team2);
+        gamePanel.add(new JLabel("Loc:"));
+        gamePanel.add(locLabel);
         return gamePanel;
     }
     public void keyTyped(KeyEvent e) {

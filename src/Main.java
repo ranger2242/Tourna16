@@ -2,7 +2,7 @@ import java.awt.*;
 
 public class Main {
 
-	static GameDetailsPopup gdp = new GameDetailsPopup();
+	//static GameDetailsPopup gdp = new GameDetailsPopup();
 	static MainWindow window = new MainWindow();
 	static WizardPopup wizard = new WizardPopup();
 	static Font robotoThin;

@@ -30,6 +30,13 @@ public class GameDetailsPopup{
     JSpinner.DateEditor timeEditor = new JSpinner.DateEditor(timeSpinner, "HH:mm:ss");
     static NumberFormat integerFormat = NumberFormat.getIntegerInstance();
 
+    public GameDetailsPopup(){
+        this(Game.getDummyGame());
+    }
+    public GameDetailsPopup(Game g){
+        game=g;
+        onStart();
+    }
     void onStart() {
 
         frame.setResizable(false);
@@ -98,7 +105,7 @@ public class GameDetailsPopup{
 
                 }
                 game.setLocation(location.getText());
-                MainWindow.winnerPanel.removeAll();
+                //MainWindow.winnerPanel.removeAll();
                 MainWindow.winnerPanel.updateUI();
                 System.out.println(Integer.parseInt(score1.getText()));
             }
@@ -155,5 +162,6 @@ public class GameDetailsPopup{
     public static void onPopupComplete() {
         MainWindow.scrollPane.updateUI();
     }
+
 }
 

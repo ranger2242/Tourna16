@@ -102,7 +102,7 @@ class Game implements Serializable
 		Main.out("\nRound "+ round);
 		Main.out("Game"+gameNumber+" "+team1+" "+ team2);
 	}
-	Game getDummyGame(){
+	public static Game getDummyGame(){
 		Game dummy = new Game();
 		dummy.setGameNumber("123");
 		dummy.setLocation("6030 N FM 493");

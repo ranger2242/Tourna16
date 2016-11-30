@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -9,13 +10,24 @@ import static sun.misc.MessageUtils.out;
 public class FileHandler implements Serializable {
 
     public static void save(BinaryTree b1, BinaryTree b2) throws IOException {
-        FileOutputStream out = new FileOutputStream("test.txt");
-        ObjectOutputStream ost = new ObjectOutputStream(out);
-        for (Game g : b1.getGameList()) {
-            ost.writeObject(g);
+        JFrame parentFrame = new JFrame();
+
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("Specify a file to save");
+
+        int userSelection = fileChooser.showSaveDialog(parentFrame);
+        File f;
+        if (userSelection == JFileChooser.APPROVE_OPTION) {
+            f = fileChooser.getSelectedFile();
+            FileOutputStream out = new FileOutputStream(f.getAbsolutePath());
+            ObjectOutputStream ost = new ObjectOutputStream(out);
+            for (Game g : b1.getGameList()) {
+                ost.writeObject(g);
+            }
+
+            ost.close();
         }
 
-        ost.close();
     }
 
     public static void load(File f) {//trying to upload new load function
