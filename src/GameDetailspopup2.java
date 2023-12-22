@@ -2,9 +2,6 @@ import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import java.awt.*;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * Created by range_000 on 11/26/2016.
@@ -12,9 +9,7 @@ import java.util.Date;
 public class GameDetailsPopup2 {
     JFrame frame = new JFrame();
     JPanel panel = new JPanel();
-    JPanel WeatherPanel = new JPanel();
-    JPanel calenderPanel = new JPanel();
-    Game game = new Game();
+    Game game ;
     JLabel home = new JLabel("Home");
     JLabel away = new JLabel("Away");
     JLabel team1 = new JLabel();
@@ -26,11 +21,7 @@ public class GameDetailsPopup2 {
     JLabel location = new JLabel();
     JCheckBox homecheck = new JCheckBox();
     JCheckBox awaycheck = new JCheckBox();
-    JTextField editible = new JTextField();
 
-    public GameDetailsPopup2(){
-        this(null);
-    }
     public GameDetailsPopup2(Game game){
         this.game = game.getDummyGame();
         onStart();
@@ -40,13 +31,13 @@ public class GameDetailsPopup2 {
          buildPannel();
     }
     void initalizeFeilds(){
-        gameNumber.setText(game.getGameNumber());
-        team1.setText(game.getTeam1());
-        team2.setText(game.getTeam2());
-        score1.setText(game.getScore1());
-        score2.setText(game.getScore2());
-        location.setText(game.getLocation());
-        datetime.setText(game.getTime()+" "+game.getTime());
+        gameNumber.setText(game.game);
+        team1.setText(game.team1);
+        team2.setText(game.team2);
+        score1.setText(game.score1);
+        score2.setText(game.score2);
+        location.setText(game.location);
+        datetime.setText(game.date.toString()+" "+game.time);
     }
     void buildPannel(){
         panel.setLayout(new MigLayout("debug"));
