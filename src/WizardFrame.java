@@ -15,7 +15,7 @@ public class WizardFrame extends JFrame {
         this.revalidate();
 
         int screenHeight = (int) dimension.getHeight();
-        int frameWidth = 300;
+        int frameWidth = 300; /** johnni **/
         int frameHeight = 300;
 
         this.setResizable(true);
