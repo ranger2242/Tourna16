@@ -31,9 +31,9 @@ class BinaryTree implements Serializable {
         int a = getSize(bt.left);
         int b = getSize(bt.right);
         if (a + b == 0) {
-            bt.left =(new BinaryNode());
+            bt.setLeft(new BinaryNode());
         } else if (a + b == 1) {
-            bt.right = (new BinaryNode());
+            bt.setRight(new BinaryNode());
         } else {
             if (b < a) addBalancedLeaf(bt.right);
             else addBalancedLeaf(bt.left);
@@ -45,7 +45,7 @@ class BinaryTree implements Serializable {
             return;
         }
         if (l == 1)
-            System.out.print(b.value.game);
+            System.out.print(b.game.game);
         else if (l > 1) {
             printLevel(b.left, l - 1);
             printLevel(b.right, l - 1);
@@ -62,10 +62,13 @@ class BinaryTree implements Serializable {
                 String _b= "Team " + (teamc++);
                 Global.teamList.add(_a);
                 Global.teamList.add(_b);
-                b.value = (new Game(letter + "", _a,_b));
+                b.game = (new Game(letter + "", _a,_b));
             }
-            else
-                b.value = (new Game(letter + "", "", ""));
+            else{
+                b.game = (new Game(letter + "", "", ""));
+
+            }
+            b.game.node=b;
 
             letter++;
         } else if (l > 1) {
@@ -112,37 +115,40 @@ class BinaryTree implements Serializable {
         BinaryTree losersBracket = new BinaryTree();
         ArrayList<BinaryNode> nodes = new ArrayList<>();
         for(int i=0;i<30;i++){
-            nodes.add(new BinaryNode(new Game(""+(i+1),"","")));
+            Game g = new Game(""+(i+1),"","");
+            BinaryNode b = new BinaryNode(g);
+            g.node=b;
+            nodes.add(b);
         }
-        nodes.get(21).left =(nodes.get(29));
-        nodes.get(15).left =(nodes.get(22));
-        nodes.get(18).left =(nodes.get(26));
-        nodes.get(17).left =(nodes.get(25));
-        nodes.get(20).left =(nodes.get(27));
-        nodes.get(14).left =(nodes.get(23));
-        nodes.get(19).left =(nodes.get(28));
-        nodes.get(16).left =(nodes.get(24));
-        nodes.get(13).left =(nodes.get(21));
-        nodes.get(13).right = (nodes.get(15));
-        nodes.get(10).left =(nodes.get(18));
-        nodes.get(10).right = (nodes.get(17));
-        nodes.get(12).left =(nodes.get(20));
-        nodes.get(12).right = (nodes.get(14));
-        nodes.get(11).left =(nodes.get(19));
-        nodes.get(11).right = (nodes.get(16));
-        nodes.get(9).left =(nodes.get(13));
-        nodes.get(6).left =(nodes.get(10));
-        nodes.get(8).left =(nodes.get(12));
-        nodes.get(7).left =(nodes.get(11));
-        nodes.get(5).left =(nodes.get(9));
-        nodes.get(5).right = (nodes.get(6));
-        nodes.get(4).left =(nodes.get(8));
-        nodes.get(4).right = (nodes.get(7));
-        nodes.get(2).left =(nodes.get(5));
-        nodes.get(3).left =(nodes.get(4));
-        nodes.get(1).left =(nodes.get(2));
-        nodes.get(1).right = (nodes.get(3));
-        nodes.get(0).left =(nodes.get(1));
+        nodes.get(21).setLeft(nodes.get(29));
+        nodes.get(15).setLeft(nodes.get(22));
+        nodes.get(18).setLeft(nodes.get(26));
+        nodes.get(17).setLeft(nodes.get(25));
+        nodes.get(20).setLeft(nodes.get(27));
+        nodes.get(14).setLeft(nodes.get(23));
+        nodes.get(19).setLeft(nodes.get(28));
+        nodes.get(16).setLeft(nodes.get(24));
+        nodes.get(13).setLeft(nodes.get(21));
+        nodes.get(13).setRight(nodes.get(15));
+        nodes.get(10).setLeft(nodes.get(18));
+        nodes.get(10).setRight(nodes.get(17));
+        nodes.get(12).setLeft(nodes.get(20));
+        nodes.get(12).setRight(nodes.get(14));
+        nodes.get(11).setLeft(nodes.get(19));
+        nodes.get(11).setRight(nodes.get(16));
+        nodes.get(9).setLeft(nodes.get(13));
+        nodes.get(6).setLeft(nodes.get(10));
+        nodes.get(8).setLeft(nodes.get(12));
+        nodes.get(7).setLeft(nodes.get(11));
+        nodes.get(5).setLeft(nodes.get(9));
+        nodes.get(5).setRight(nodes.get(6));
+        nodes.get(4).setLeft(nodes.get(8));
+        nodes.get(4).setRight(nodes.get(7));
+        nodes.get(2).setLeft(nodes.get(5));
+        nodes.get(3).setLeft(nodes.get(4));
+        nodes.get(1).setLeft(nodes.get(2));
+        nodes.get(1).setRight(nodes.get(3));
+        nodes.get(0).setLeft(nodes.get(1));
         losersBracket.setRoot(nodes.get(0));
         losersBracket=trim(losersBracket.getRoot(),games);
         return losersBracket;
@@ -150,10 +156,10 @@ class BinaryTree implements Serializable {
     static BinaryNode deleteGreaterThan(BinaryNode root, int n){
         if (root == null)
             return null;
-        if( root.left !=null &&Integer.parseInt(root.left.value.game)>n ){
-            root.left =(null);
-        }if(root.right !=null && Integer.parseInt(root.right.value.game)>n){
-            root.right = (null);
+        if( root.left !=null &&Integer.parseInt(root.left.game.game)>n ){
+            root.setLeft(null);
+        }if(root.right !=null && Integer.parseInt(root.right.game.game)>n){
+            root.setRight(null);
         }
         return root;
     }
@@ -161,9 +167,9 @@ class BinaryTree implements Serializable {
         if (root == null)
             return new BinaryTree();
 
-        root.left =(deleteGreaterThan(root.left,n));
+        root.setLeft(deleteGreaterThan(root.left,n));
         trim(root.left,n);
-        root.right = (deleteGreaterThan(root.right,n));
+        root.setRight(deleteGreaterThan(root.right,n));
         trim(root.right,n);
         return new BinaryTree(root);
     }
@@ -179,17 +185,17 @@ class BinaryTree implements Serializable {
             listByLevel(list, b.right, i - 1);
         }
         try {
-            list.get(i - 1).add(b.value);
+            list.get(i - 1).add(b.game);
         } catch (IndexOutOfBoundsException e) {
         }
-        b.value.round =i ;
+        b.game.round =i ;
         return list;
     }
 
     public void insertRootLeft(BinaryNode b) {
         BinaryNode b1 = root;
         root = b;
-        root.left =(b1);
+        root.setLeft(b1);
     }
 
     public BinaryNode getRoot() {
@@ -230,7 +236,7 @@ class BinaryTree implements Serializable {
     public BinaryNode contains(Game g, BinaryNode node) {
         if (node == null)
             return null;
-        else if (node.value.equals(g))
+        else if (node.game.equals(g))
             return node;
         else {
             contains(g, node.left);

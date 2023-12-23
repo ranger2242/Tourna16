@@ -15,10 +15,10 @@ public class WizardFrame extends JFrame {
         this.revalidate();
 
         int screenHeight = (int) dimension.getHeight();
-        int frameWidth = 200;
-        int frameHeight = 200;
+        int frameWidth = 300;
+        int frameHeight = 300;
 
-        this.setResizable(false);
+        this.setResizable(true);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setSize(new Dimension(frameWidth, frameHeight));
         this.getContentPane().add(view, BorderLayout.CENTER);

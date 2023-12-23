@@ -20,7 +20,7 @@ public class WizardView extends JPanel {
         confirmButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Global.bracket = new Bracket(Global.teamCount);
-                new MainFrame();            }
+                Global.mainFrame=  new MainFrame();            }
         });
 
         JLabel titleLabel = new JLabel("Tourna 24");

@@ -11,21 +11,57 @@ import java.io.Serializable;
  */
 @SuppressWarnings("WeakerAccess")
 public class BinaryNode implements Serializable {
-    public Game value;
+    public Game game;
     public BinaryNode left;
     public BinaryNode right;
+    BinaryNode next;
+    public boolean isLeft = false;
 
     public BinaryNode(Game value) {
         this.left = null;
         this.right = null;
-        this.value =(value);
+        this.game = (value);
+        if (this.game != null) {
+            this.game.node = this;
+        }
     }
 
     public BinaryNode() {
         this(null);
     }
 
+    public void setLeft(BinaryNode n) {
+        this.left = n;
+        if (n == null)
+            return;
+        this.left.next = this;
+        this.left.isLeft=true;
+    }
 
+    public void setRight(BinaryNode n) {
+        this.right = n;
+        if (n == null)
+            return;
+        this.right.next = this;
+    }
+
+    public boolean compareLeftGame(Game g) {
+        if (next.left != null) {
+            if (next.left.game != null) {
+                return next.left.game == g;
+            }
+        }
+        return false;
+    }
+
+    public boolean compareRightGame(Game g) {
+        if (next.right != null) {
+            if (next.right.game != null) {
+                return next.right.game == g;
+            }
+        }
+        return false;
+    }
 
     public boolean isLeaf() {
         return left == null && right == null;
@@ -36,7 +72,7 @@ public class BinaryNode implements Serializable {
             return false;
         }
         BinaryNode otherTree = (BinaryNode) o;
-        return equals(value, otherTree.value)
+        return equals(game, otherTree.game)
                 && equals(left, otherTree.left)
                 && equals(right, otherTree.right);
     }
@@ -48,10 +84,10 @@ public class BinaryNode implements Serializable {
 
     public String toString() {
         if (isLeaf()) {
-            return value.toString();
+            return game.toString();
         } else {
             String root, left = "null", right = "null";
-            root = value.toString();
+            root = game.toString();
             if (left != null) {
                 left = left.toString();
             }

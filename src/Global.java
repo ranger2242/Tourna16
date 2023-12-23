@@ -1,5 +1,7 @@
+import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Global {
     //some static vars can be defined at compile
@@ -8,7 +10,8 @@ public class Global {
     public static Color lightColor = new Color(80, 80, 80);
     public static Color accentColor = new Color(100, 100, 255);
     public static Bracket bracket;
-    public static int teamCount =8;
+    public static int teamCount = 8;
+    public static MainFrame mainFrame;
     static Font robotoThin;
     public static ArrayList teamList = new ArrayList();
 
@@ -22,4 +25,24 @@ public class Global {
         frame.setLocation(x, y);
     }
 
+    public static void error(String title, String message) {
+        JOptionPane.showMessageDialog(null, message, title, JOptionPane.ERROR_MESSAGE);
+
+    }
+    public static void print(Object... s){
+        String[] ar = new String[s.length];
+        int i =0;
+        for(Object o: s){
+            if(o!= null)
+                ar[i++]=o.toString();
+            else
+                ar[i++]="null";
+        }
+        StringBuilder b = new StringBuilder();
+        List.of(ar).forEach((x)->{
+            b.append(x);
+            b.append(" ");
+        });
+        System.out.println(b.toString());
+    }
 }
