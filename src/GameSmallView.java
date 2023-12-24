@@ -7,19 +7,20 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class GameSmallView extends JPanel {
-    JLabel team1 ;
-    JLabel team2 ;
-    JLabel score1 ;
-    JLabel score2 ;
+    JLabel team1;
+    JLabel team2;
+    JLabel score1;
+    JLabel score2;
     Game game;
-    public GameSmallView(Game g1){
+
+    public GameSmallView(Game g1) {
         game = g1;
         Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
         team1 = new JLabel(game.team1);
         team2 = new JLabel(game.team2);
         score1 = new JLabel(game.score1);
         score2 = new JLabel(game.score2);
-        JButton gameNumberButton = new JButton(game.game);
+        JButton gameNumberButton = new JButton("" + game.index);
         JPopupMenu gameMenuPopup = new JPopupMenu();
         JMenuItem mntmGameOptions = new JMenuItem("Game Options");
         mntmGameOptions.addMouseListener(new MouseAdapter() {

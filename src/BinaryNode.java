@@ -15,6 +15,7 @@ public class BinaryNode implements Serializable {
     public BinaryNode left;
     public BinaryNode right;
     BinaryNode next;
+    BinaryNode nextLoss;
     public boolean isLeft = false;
 
     public BinaryNode(Game value) {
@@ -26,22 +27,17 @@ public class BinaryNode implements Serializable {
         }
     }
 
-    public BinaryNode() {
-        this(null);
-    }
 
     public void setLeft(BinaryNode n) {
         this.left = n;
-        if (n == null)
-            return;
+        if (n == null) return;
         this.left.next = this;
-        this.left.isLeft=true;
+        this.left.isLeft = true;
     }
 
     public void setRight(BinaryNode n) {
         this.right = n;
-        if (n == null)
-            return;
+        if (n == null) return;
         this.right.next = this;
     }
 
@@ -72,9 +68,7 @@ public class BinaryNode implements Serializable {
             return false;
         }
         BinaryNode otherTree = (BinaryNode) o;
-        return equals(game, otherTree.game)
-                && equals(left, otherTree.left)
-                && equals(right, otherTree.right);
+        return equals(game, otherTree.game) && equals(left, otherTree.left) && equals(right, otherTree.right);
     }
 
     private boolean equals(Object x, Object y) {

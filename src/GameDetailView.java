@@ -10,14 +10,14 @@ import java.util.Date;
 public class GameDetailView extends JPanel {
 
 
-    Game game ;
+    Game game;
 
-    public GameDetailView(Game game){
+    public GameDetailView(Game game) {
         this.game = game;
-        int team1posx = ((this.getWidth())/4)-10;
-        int team2posx = (((this.getWidth())/4)*2)+70;
-        JSpinner timeSpinner = new JSpinner( new SpinnerDateModel() );
-        JLabel titleLabel= new JLabel("Tourna 15");
+        int team1posx = ((this.getWidth()) / 4) - 10;
+        int team2posx = (((this.getWidth()) / 4) * 2) + 70;
+        JSpinner timeSpinner = new JSpinner(new SpinnerDateModel());
+        JLabel titleLabel = new JLabel("Tourna 15");
         JButton confirmButton = new JButton("Confirm");
         JSpinner.DateEditor timeEditor = new JSpinner.DateEditor(timeSpinner, "HH:mm:ss");
         NumberFormat integerFormat = NumberFormat.getIntegerInstance();
@@ -63,21 +63,21 @@ public class GameDetailView extends JPanel {
                 d = "" + d + " " + sdate;
                 time.setText(d.substring(0, 20));
                 game.time = d.substring(0, 8);
-                game.date =sdate;
+                game.date = sdate;
             }
         });
 
-        location.setSize(200,14);
+        location.setSize(200, 14);
 
-         titleLabel.setText("Game Details");
+        titleLabel.setText("Game Details");
 
         this.setLayout(new MigLayout("fill"));
         this.add(titleLabel, "pos 150  20");
-        this.add(team1,"pos "+team1posx+" "+(90));
-        this.add(team2,"pos "+team2posx+" "+(90));
-        this.add(score1,"pos "+team1posx+" 110, w 30");
-        this.add(score2,"pos "+team2posx+" 110, w 30");
-        this.add(changeLocation,"pos 90 160");
+        this.add(team1, "pos " + team1posx + " " + (90));
+        this.add(team2, "pos " + team2posx + " " + (90));
+        this.add(score1, "pos " + team1posx + " 110, w 30");
+        this.add(score2, "pos " + team2posx + " 110, w 30");
+        this.add(changeLocation, "pos 90 160");
         this.add(location, "pos 150 160, w 150");
         this.add(changeTime, "pos 90 190");
         this.add(time, "pos 150 190");
