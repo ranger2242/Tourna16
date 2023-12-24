@@ -4,18 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="prototype ColorConverter class added">
+    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tourna16/BinaryNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/BinaryNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tourna16/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/BinaryTree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tourna16/Bracket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/Bracket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/BracketView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/BracketView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/BracketView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/BracketView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tourna16/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/GameDetailView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameDetailView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/GameSmallView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameSmallView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/GameSmallView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameSmallView$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tourna16/GameSmallView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameSmallView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bracket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bracket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameSmallView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameSmallView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameDetailView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameDetailView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WizardFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WizardFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WizardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WizardView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +103,9 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -248,6 +249,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Unnamed.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -257,9 +259,6 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -403,6 +402,15 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
@@ -450,15 +458,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -498,9 +497,7 @@
       <workItem from="1480465262433" duration="4051000" />
       <workItem from="1703246773617" duration="657000" />
       <workItem from="1703306926454" duration="21000" />
-      <workItem from="1703351292940" duration="8374000" />
-      <workItem from="1703368229047" duration="19000" />
-      <workItem from="1703368298861" duration="11017000" />
+      <workItem from="1703351292940" duration="7857000" />
     </task>
     <task id="LOCAL-00001" summary="finally with working bracket generation">
       <created>1479317015470</created>
@@ -671,29 +668,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="johnnitemp" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -723,14 +697,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinaryNode.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/Game.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Bracket.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/BinaryNode.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -16,7 +16,7 @@ public class WizardView extends JPanel {
 
         JButton confirmButton = new JButton("Confirm");
         confirmButton.setBackground(Global.accentColor);
-        confirmButton.setForeground(Color.WHITE);
+        confirmButton.setForeground(Color.BLACK);
         confirmButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Global.bracket = new Bracket(Global.teamCount);

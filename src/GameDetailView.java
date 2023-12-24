@@ -14,8 +14,8 @@ public class GameDetailView extends JPanel {
 
     public GameDetailView(Game game) {
         this.game = game;
-        int team1posx = ((this.getWidth()) / 4) - 10;
-        int team2posx = (((this.getWidth()) / 4) * 2) + 70;
+        int team1posx = ((this.getWidth()) / 4) +90;
+        int team2posx = (((this.getWidth()) / 4) * 2) + 200;
         JSpinner timeSpinner = new JSpinner(new SpinnerDateModel());
         JLabel titleLabel = new JLabel("Tourna 15");
         JButton confirmButton = new JButton("Confirm");
