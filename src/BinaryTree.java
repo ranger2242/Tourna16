@@ -6,12 +6,11 @@ import java.util.ArrayList;
  */
 @SuppressWarnings("WeakerAccess")
 class BinaryTree implements Serializable {
-    private static char letter = 'A';
-    static int teamc = 1;
+
     private BinaryNode root;
 
     public BinaryTree() {
-        root = new BinaryNode();
+        root = new BinaryNode(new Game(1, "", ""));
     }
 
     public BinaryTree(BinaryNode b) {
@@ -27,55 +26,19 @@ class BinaryTree implements Serializable {
                 || contains(targetNode, testNode.right);
     }
 
-    public static void addBalancedLeaf(BinaryNode bt) {
+    public static void addBalancedLeaf(BinaryNode bt, Game g) {
         int a = getSize(bt.left);
         int b = getSize(bt.right);
         if (a + b == 0) {
-            bt.setLeft(new BinaryNode());
+            bt.setLeft(new BinaryNode(g));
         } else if (a + b == 1) {
-            bt.setRight(new BinaryNode());
+            bt.setRight(new BinaryNode(g));
         } else {
-            if (b < a) addBalancedLeaf(bt.right);
-            else addBalancedLeaf(bt.left);
+            if (b < a) addBalancedLeaf(bt.right, g);
+            else addBalancedLeaf(bt.left, g);
         }
     }
 
-    public static void printLevel(BinaryNode b, int l) {
-        if (b == null) {
-            return;
-        }
-        if (l == 1)
-            System.out.print(b.game.game);
-        else if (l > 1) {
-            printLevel(b.left, l - 1);
-            printLevel(b.right, l - 1);
-        }
-    }
-
-    public static void labelByLevel(BinaryNode b, int l) {
-        if (b == null) {
-            return;
-        }
-        if (l == 1) {
-            if (teamc < Global.teamCount){
-                String _a = "Team " + (teamc++);
-                String _b= "Team " + (teamc++);
-                Global.teamList.add(_a);
-                Global.teamList.add(_b);
-                b.game = (new Game(letter + "", _a,_b));
-            }
-            else{
-                b.game = (new Game(letter + "", "", ""));
-
-            }
-            b.game.node=b;
-
-            letter++;
-        } else if (l > 1) {
-            labelByLevel(b.left, l - 1);
-            labelByLevel(b.right, l - 1);
-        }
-    }
 
     public static void breadthTraverse(BinaryNode root) {
         if (root == null)
@@ -105,19 +68,24 @@ class BinaryTree implements Serializable {
 
     public static BinaryTree createWinnerBracket(int n) {
         BinaryTree tree = new BinaryTree();
-        for (int i = 0; i < n; i++)
-            BinaryTree.addBalancedLeaf(tree.getRoot());
-        tree.insertRootLeft(new BinaryNode());
-        tree.insertRootLeft(new BinaryNode());
+        for (int i = 0; i < 30; i++) {
+            Game g = new Game(i + 1, "", "");
+            BinaryTree.addBalancedLeaf(tree.getRoot(), g);
+
+        }
+
+
         return tree;
     }
-    public static BinaryTree createLoserBracket(int games){
+
+    public static BinaryTree createLoserBracket(int games) {
         BinaryTree losersBracket = new BinaryTree();
         ArrayList<BinaryNode> nodes = new ArrayList<>();
-        for(int i=0;i<30;i++){
-            Game g = new Game(""+(i+1),"","");
+        for (int i = 0; i < 30; i++) {
+            Game g = new Game(i + 1, "", "");
+            g.w = false;
             BinaryNode b = new BinaryNode(g);
-            g.node=b;
+            g.node = b;
             nodes.add(b);
         }
         nodes.get(21).setLeft(nodes.get(29));
@@ -128,6 +96,7 @@ class BinaryTree implements Serializable {
         nodes.get(14).setLeft(nodes.get(23));
         nodes.get(19).setLeft(nodes.get(28));
         nodes.get(16).setLeft(nodes.get(24));
+
         nodes.get(13).setLeft(nodes.get(21));
         nodes.get(13).setRight(nodes.get(15));
         nodes.get(10).setLeft(nodes.get(18));
@@ -136,43 +105,31 @@ class BinaryTree implements Serializable {
         nodes.get(12).setRight(nodes.get(14));
         nodes.get(11).setLeft(nodes.get(19));
         nodes.get(11).setRight(nodes.get(16));
+
         nodes.get(9).setLeft(nodes.get(13));
         nodes.get(6).setLeft(nodes.get(10));
         nodes.get(8).setLeft(nodes.get(12));
         nodes.get(7).setLeft(nodes.get(11));
+
         nodes.get(5).setLeft(nodes.get(9));
         nodes.get(5).setRight(nodes.get(6));
         nodes.get(4).setLeft(nodes.get(8));
         nodes.get(4).setRight(nodes.get(7));
+
         nodes.get(2).setLeft(nodes.get(5));
         nodes.get(3).setLeft(nodes.get(4));
+
         nodes.get(1).setLeft(nodes.get(2));
         nodes.get(1).setRight(nodes.get(3));
+
         nodes.get(0).setLeft(nodes.get(1));
         losersBracket.setRoot(nodes.get(0));
-        losersBracket=trim(losersBracket.getRoot(),games);
+
+
         return losersBracket;
     }
-    static BinaryNode deleteGreaterThan(BinaryNode root, int n){
-        if (root == null)
-            return null;
-        if( root.left !=null &&Integer.parseInt(root.left.game.game)>n ){
-            root.setLeft(null);
-        }if(root.right !=null && Integer.parseInt(root.right.game.game)>n){
-            root.setRight(null);
-        }
-        return root;
-    }
-    public static BinaryTree trim(BinaryNode root,int n){
-        if (root == null)
-            return new BinaryTree();
 
-        root.setLeft(deleteGreaterThan(root.left,n));
-        trim(root.left,n);
-        root.setRight(deleteGreaterThan(root.right,n));
-        trim(root.right,n);
-        return new BinaryTree(root);
-    }
+
     public void setRoot(BinaryNode b) {
         root = b;
     }
@@ -188,7 +145,10 @@ class BinaryTree implements Serializable {
             list.get(i - 1).add(b.game);
         } catch (IndexOutOfBoundsException e) {
         }
-        b.game.round =i ;
+        if (b == null)
+            return list;
+
+        b.game.round = i;
         return list;
     }
 
@@ -245,10 +205,5 @@ class BinaryTree implements Serializable {
         return null;
     }
 
-    void labelWinnerBracket(BinaryNode b) {//
-        int h = height(b);
-        int i;
-        for (i = h; i >= 1; i--)
-            labelByLevel(b, i);
-    }
+
 }

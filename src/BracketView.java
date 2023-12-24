@@ -8,16 +8,17 @@ import java.util.ArrayList;
 
 public class BracketView extends JPanel {
     BinaryTree tree;
-    public BracketView(String title, BinaryTree t){
-        tree=t;
-        Dimension size= new Dimension(700,700);
+
+    public BracketView(String title, BinaryTree t) {
+        tree = t;
+        Dimension size = new Dimension(700, 700);
         this.setSize(size);
         this.setPreferredSize(size);
         this.setBackground(Global.mainColor);
         this.setForeground(Global.textColor);
         this.setLayout(null);
         this.setBorder(BorderFactory.createTitledBorder(null, title, TitledBorder.LEFT,
-                TitledBorder.TOP, new Font("consolas",Font.PLAIN,14), Global.textColor));
+                TitledBorder.TOP, new Font("consolas", Font.PLAIN, 14), Global.textColor));
         this.repaint();
         this.revalidate();
         placeGames();
@@ -25,11 +26,12 @@ public class BracketView extends JPanel {
         this.invalidate();
         this.setVisible(true);
     }
+
     void placeGames() {
         ArrayList<ArrayList<Game>> list = tree.getListsByLevel();
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.get(i).size(); j++) {
-                Game g =list.get(i).get(j);
+                Game g = list.get(i).get(j);
                 JPanel gamep = g.getSmallGameModule();
                 Insets insets = this.getInsets();
                 Dimension size = gamep.getPreferredSize();
@@ -39,7 +41,8 @@ public class BracketView extends JPanel {
             }
         }
     }
-    void refreshGameButtonLinks( ) {//send in only JPanels containing Game modules
+
+    void refreshGameButtonLinks() {//send in only JPanels containing Game modules
         for (Component c : this.getComponents()) {
             if (c instanceof JPanel) {
                 for (Component a : ((JPanel) c).getComponents()) {
