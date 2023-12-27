@@ -17,10 +17,9 @@ class Game implements Serializable {
     BinaryNode node;
     GameSmallView view;
 
-    Game(int g, String teamA, String teamB) {
+    Game(String teamA, String teamB) {
         team1 = teamA;
         team2 = teamB;
-        index = g;
     }
 
     @Override

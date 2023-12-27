@@ -17,10 +17,12 @@ public class BinaryNode implements Serializable {
     BinaryNode next;
     BinaryNode nextLoss;
     public boolean isLeft = false;
+    int index = 0;
 
-    public BinaryNode(Game value) {
+    public BinaryNode(Game value, int index) {
         this.left = null;
         this.right = null;
+        this.index = index;
         this.game = (value);
         if (this.game != null) {
             this.game.node = this;

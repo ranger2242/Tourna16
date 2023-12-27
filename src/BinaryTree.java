@@ -10,7 +10,7 @@ class BinaryTree implements Serializable {
     private BinaryNode root;
 
     public BinaryTree() {
-        root = new BinaryNode(new Game(1, "", ""));
+        root = new BinaryNode(new Game("", ""),0);
     }
 
     public BinaryTree(BinaryNode b) {
@@ -26,16 +26,16 @@ class BinaryTree implements Serializable {
                 || contains(targetNode, testNode.right);
     }
 
-    public static void addBalancedLeaf(BinaryNode bt, Game g) {
+    public static void addBalancedLeaf(BinaryNode bt, Game g,int index) {
         int a = getSize(bt.left);
         int b = getSize(bt.right);
         if (a + b == 0) {
-            bt.setLeft(new BinaryNode(g));
+            bt.setLeft(new BinaryNode(g,index));
         } else if (a + b == 1) {
-            bt.setRight(new BinaryNode(g));
+            bt.setRight(new BinaryNode(g,index));
         } else {
-            if (b < a) addBalancedLeaf(bt.right, g);
-            else addBalancedLeaf(bt.left, g);
+            if (b < a) addBalancedLeaf(bt.right, g,index);
+            else addBalancedLeaf(bt.left, g,index);
         }
     }
 
@@ -69,8 +69,8 @@ class BinaryTree implements Serializable {
     public static BinaryTree createWinnerBracket(int n) {
         BinaryTree tree = new BinaryTree();
         for (int i = 0; i < 30; i++) {
-            Game g = new Game(i + 1, "", "");
-            BinaryTree.addBalancedLeaf(tree.getRoot(), g);
+            Game g = new Game( "", "");
+            BinaryTree.addBalancedLeaf(tree.getRoot(), g,i);
 
         }
 
@@ -82,9 +82,9 @@ class BinaryTree implements Serializable {
         BinaryTree losersBracket = new BinaryTree();
         ArrayList<BinaryNode> nodes = new ArrayList<>();
         for (int i = 0; i < 30; i++) {
-            Game g = new Game(i + 1, "", "");
+            Game g = new Game("", "");
             g.w = false;
-            BinaryNode b = new BinaryNode(g);
+            BinaryNode b = new BinaryNode(g,i);
             g.node = b;
             nodes.add(b);
         }
