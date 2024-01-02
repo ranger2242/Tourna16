@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -22,7 +21,7 @@ public class MainFrame extends JFrame {
                 ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
         this.add(scrollPane, BorderLayout.CENTER);
 
-        //force redraw to recaluclate new borders after adding component
+        //force redraw to recalculate new borders after adding component
         this.repaint();
         this.revalidate();
 
@@ -36,17 +35,7 @@ public class MainFrame extends JFrame {
 
     }
     private void setHotkeys() {
-        //Handle keyboard input on the main window
         KeyboardFocusManager.getCurrentKeyboardFocusManager()
-                .addKeyEventDispatcher(new KeyEventDispatcher() {
-                    @Override
-                    public boolean dispatchKeyEvent(KeyEvent e) {
-                        //define all hotkeys here
-                        if (e.getKeyCode() == KeyEvent.VK_F10) {
-                           // WizardPopup.frame.setVisible(true);
-                        }
-                        return false;
-                    }
-                });
+                .addKeyEventDispatcher(e -> false);
     }
 }

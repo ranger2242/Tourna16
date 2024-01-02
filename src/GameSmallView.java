@@ -7,13 +7,13 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class GameSmallView extends JPanel {
-    JLabel team1;
-    JLabel team2;
-    JLabel score1;
-    JLabel score2;
-    Game game;
+    final JLabel team1;
+    final JLabel team2;
+    final JLabel score1;
+    final JLabel score2;
+    final Game game;
 
-    public GameSmallView(Game g1) {
+    GameSmallView(Game g1) {
         game = g1;
         Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
         team1 = new JLabel(game.team1);
@@ -22,8 +22,8 @@ public class GameSmallView extends JPanel {
         score2 = new JLabel(game.score2);
         JButton gameNumberButton = new JButton("" + game.index);
         JPopupMenu gameMenuPopup = new JPopupMenu();
-        JMenuItem mntmGameOptions = new JMenuItem("Game Options");
-        mntmGameOptions.addMouseListener(new MouseAdapter() {
+        JMenuItem itemGameOptions = new JMenuItem("Game Options");
+        itemGameOptions.addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
                 new GameDetailFrame(game);
             }
@@ -37,7 +37,7 @@ public class GameSmallView extends JPanel {
 
         this.setLayout(new MigLayout());
         this.setBorder(border);
-        gameMenuPopup.add(mntmGameOptions);
+        gameMenuPopup.add(itemGameOptions);
         this.add(team1, "cell 1 0, w 100px");
         this.add(team2, "cell 1 1, w 100px");
         this.add(score1, "cell 2 0, w 10px");

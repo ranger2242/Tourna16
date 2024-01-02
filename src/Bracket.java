@@ -1,15 +1,16 @@
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Bracket {
     BinaryTree winners;
     BinaryTree losers;
 
     public Bracket(int nTeams) {
-        winners = BinaryTree.createWinnerBracket(nTeams - 2);
-        losers = BinaryTree.createLoserBracket(nTeams - 2);
-        connectTrees(nTeams);
+        winners = BinaryTree.createWinnerBracket();
+        losers = BinaryTree.createLoserBracket();
+        winners = trim(winners.getRoot(), nTeams - 2);
+        losers = trim(losers.getRoot(), nTeams - 2);
         labelGames();
+        connectTrees();
         placeTeams(nTeams);
     }
 
@@ -19,105 +20,71 @@ public class Bracket {
         int cnt = 1;
         int n = Math.max(ws.size(), ls.size());
         for (int l = 0; l < n; l++) {
-            ArrayList<Game> wlevel = new ArrayList<>();
-            ArrayList<Game> llevel = new ArrayList<>();
+            ArrayList<Game> wLevel = new ArrayList<>();
+            ArrayList<Game> lLevel = new ArrayList<>();
 
             if (l < ws.size())
-                wlevel = ws.get(l);
+                wLevel = ws.get(l);
             if (l < ls.size())
-                llevel = ls.get(l);
-            for (int i = 0; i < wlevel.size(); i++) {
-                wlevel.get(i).index = cnt++;
+                lLevel = ls.get(l);
+            for (Game game : wLevel) {
+                game.index = cnt++;
             }
-            for (int i = 0; i < llevel.size(); i++) {
-                llevel.get(i).index = cnt++;
+            for (Game game : lLevel) {
+                game.index = cnt++;
             }
         }
 
 
     }
 
+
     void placeTeams(int n) {
         ArrayList<ArrayList<Game>> ws = winners.getListsByLevel();
-        int cnt = 1;
-        for (int i = 0; i < ws.get(0).size(); i++) {
-            Game g = ws.get(0).get(i);
-            g.team1 = "Team " + (cnt++);
-            g.team2 = "Team " + (cnt++);
-            Global.print(g, g.node.nextLoss);
+        ArrayList<String> names = new ArrayList<>();
+        for(int i = 1 ; i<= n ; i++){
+            names .add("Team " + i);
         }
-        int q = 0;
-        while (cnt <= n) {
-            Game g = ws.get(1).get(q++);
-            if (g.node.left != null) {
-                g.team1 = "Team " + (cnt++);
-                continue;
-            }
-            if (g.node.right != null) {
-                g.team2 = "Team " + (cnt++);
-                continue;
-            }
-            g.team1 = "Team " + (cnt++);
-            if (cnt <= n) break;
-            g.team2 = "Team " + (cnt++);
-        }
-        for(ArrayList<Game> level: ws){
-            for(Game g: level){
-                String name= "L"+ g.index;
-                if(g.node.nextLoss == null)
-                    break;
-                if(g.node.nextLoss.game.team2.isEmpty()){
-
-                    g.node.nextLoss.game.team2=name;
-
-                }else{
-                    g.node.nextLoss.game.team1=name;
+        for (ArrayList<Game> wLevel : ws) {
+            for (Game g : wLevel) {
+                if (g.team1.isEmpty() && !names.isEmpty() && g.node.right == null) {
+                    g.team1 = names.remove(0);
+                }
+                if (g.team2.isEmpty() && !names.isEmpty() && g.node.left == null) {
+                    g.team2 = names.remove(0);
 
                 }
             }
         }
-
     }
 
-    void connectTrees(int n) {
-        ArrayList<ArrayList<Game>> ws = winners.getListsByLevel();
+    void connectTrees() {
         ArrayList<ArrayList<Game>> ls = losers.getListsByLevel();
-
-        ArrayList<Game> wl0 = ws.get(0);
-        Global.print(ws);
-        ArrayList<Game> ll0 = ls.get(0);
-        for (int i = 0; i < 8; i++) {
-            Game g = ll0.get(i);
-            wl0.get(i).node.nextLoss = g.node;
-            wl0.get(i + 8).node.nextLoss = g.node;
+        ArrayList<Game> wsl = winners.asList();
+        for (int level = 0; level < ls.size(); level++) {
+            ArrayList<Game> lLevel = ls.get(level);
+            for (int gi = 0; gi < lLevel.size(); gi++) {
+                boolean flip = level % 2 == 1;
+                Game g;
+                if (flip)
+                    g = lLevel.get(lLevel.size()-1-gi);
+                else
+                    g = lLevel.get(gi);
+                if (g.team1.isEmpty() && !wsl.isEmpty() && g.node.right == null) {
+                    Game wg = wsl.remove(0);
+                    g.team1 = "L" + wg.index;
+                    wg.node.nextLoss = g.node;
+                }
+                if (g.team2.isEmpty() && !wsl.isEmpty() && g.node.left == null) {
+                    Game wg = wsl.remove(0);
+                    g.team2 = "L" + wg.index;
+                    wg.node.nextLoss = g.node;
+                }
+            }
         }
-        ArrayList<Game> wl1 = ws.get(1);
-        Collections.reverse(wl1);
-        ArrayList<Game> ll1 = ls.get(1);
-        for (int i = 0; i < 8; i++) {
-            Game g = ll1.get(i);
-            wl1.get(i).node.nextLoss = g.node;
-        }
-        ArrayList<Game> wl2 = ws.get(2);
-        ArrayList<Game> ll3 = ls.get(3);
-        for (int i = 0; i < 4; i++) {
-            Game g = ll3.get(i);
-            wl2.get(i).node.nextLoss = g.node;
-            //wl2.get(i + 2).node.nextLoss = g.node;
-        }
-        ArrayList<Game> wl3 = ws.get(3);
-        Collections.reverse(wl3);
-        ArrayList<Game> ll5 = ls.get(5);
-        for (int i = 0; i < 2; i++) {
-            Game g = ll5.get(i);
-            wl3.get(i).node.nextLoss = g.node;
-        }
-        ws.get(4).get(0).node.nextLoss = ls.get(7).get(0).node;
-        winners = trim(winners.getRoot(), n - 2);
-        losers = trim(losers.getRoot(), n - 2);
     }
 
-    public static BinaryTree trim(BinaryNode root, int n) {
+    static BinaryTree trim(BinaryNode root, int n) {
         if (root == null) return new BinaryTree();
 
         root.setLeft(deleteGreaterThan(root.left, n));

@@ -5,8 +5,7 @@ public class WizardFrame extends JFrame {
     public WizardFrame(){
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        }catch(Exception ex) {
-            ex.printStackTrace();
+        }catch(Exception ignored) {
         }
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         WizardView view = new WizardView();
@@ -15,7 +14,7 @@ public class WizardFrame extends JFrame {
         this.revalidate();
 
         int screenHeight = (int) dimension.getHeight();
-        int frameWidth = 300; /** johnni **/
+        int frameWidth = 300;
         int frameHeight = 300;
 
         this.setResizable(true);

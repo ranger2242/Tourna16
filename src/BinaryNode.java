@@ -11,22 +11,21 @@ import java.io.Serializable;
  */
 @SuppressWarnings("WeakerAccess")
 public class BinaryNode implements Serializable {
-    public Game game;
+    Game game;
     public BinaryNode left;
     public BinaryNode right;
     BinaryNode next;
     BinaryNode nextLoss;
     public boolean isLeft = false;
-    int index = 0;
+    final int index;
 
-    public BinaryNode(Game value, int index) {
+    public BinaryNode(int index) {
         this.left = null;
         this.right = null;
         this.index = index;
-        this.game = (value);
-        if (this.game != null) {
-            this.game.node = this;
-        }
+        this.game = new Game();
+        this.game.node = this;
+
     }
 
 
@@ -43,52 +42,36 @@ public class BinaryNode implements Serializable {
         this.right.next = this;
     }
 
-    public boolean compareLeftGame(Game g) {
-        if (next.left != null) {
-            if (next.left.game != null) {
-                return next.left.game == g;
-            }
-        }
-        return false;
-    }
-
-    public boolean compareRightGame(Game g) {
-        if (next.right != null) {
-            if (next.right.game != null) {
-                return next.right.game == g;
-            }
-        }
-        return false;
-    }
-
     public boolean isLeaf() {
         return left == null && right == null;
     }
 
     public boolean equals(Object o) {
-        if (o == null || !(o instanceof BinaryNode)) {
+        if (!(o instanceof BinaryNode)) {
             return false;
         }
         BinaryNode otherTree = (BinaryNode) o;
         return equals(game, otherTree.game) && equals(left, otherTree.left) && equals(right, otherTree.right);
     }
 
-    private boolean equals(Object x, Object y) {
-        if (x == null) return y == null;
-        return x.equals(y);
+    private boolean equals(Object node1, Object node2) {
+        if (node1 == null) return node2 == null;
+        return node1.equals(node2);
     }
 
     public String toString() {
         if (isLeaf()) {
             return game.toString();
         } else {
-            String root, left = "null", right = "null";
+            String root,
+                    left = "null",
+                    right = "null";
             root = game.toString();
-            if (left != null) {
-                left = left.toString();
+            if (this.left != null) {
+                left = this.left.toString();
             }
-            if (right != null) {
-                right = right.toString();
+            if (this.right != null) {
+                right = this.right.toString();
             }
             return root + " (" + left + ", " + right + ")";
         }

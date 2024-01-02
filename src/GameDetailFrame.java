@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GameDetailFrame extends JFrame {
-public GameDetailFrame(Game g){
+    GameDetailFrame(Game g){
     GameDetailView view = new GameDetailView(g);
 
     Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();

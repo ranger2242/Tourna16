@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="losers dropdown works">
+    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="added loss connection labels and relabeled gamesmallview button to game index">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/range.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/BinaryNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/BinaryNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/Bracket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/Bracket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/BracketView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/BracketView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/GameDetailView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameDetailView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/GameSmallView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/GameSmallView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/Global.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/Global.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/MainMenuBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/MainMenuBar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/TeamsView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/TeamsView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tourna16/WizardView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tourna16/WizardView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BinaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bracket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bracket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BracketView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BracketView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameDetailFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameDetailFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameDetailView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameDetailView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameSmallView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameSmallView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Global.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Map.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TeamsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeamsView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WizardFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WizardFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WizardMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WizardMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WizardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WizardView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +131,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ranger2242&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ea537707-7c56-41b8-a54c-52d3d8d3616a" />
+        <option name="url" value="https://github.com/ranger2242/Tourna16.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -131,6 +176,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -240,23 +288,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;johnnitemp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/range/OneDrive/Desktop/Tourna16&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "johnnitemp",
+    "last_opened_file_path": "C:/Users/range/OneDrive/Desktop/Tourna16",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="johnnitemp" />
@@ -500,7 +550,9 @@
       <workItem from="1703351292940" duration="8374000" />
       <workItem from="1703368229047" duration="19000" />
       <workItem from="1703368298861" duration="11855000" />
-      <workItem from="1703710100518" duration="2153000" />
+      <workItem from="1703710100518" duration="9036000" />
+      <workItem from="1703966633839" duration="595000" />
+      <workItem from="1704230702506" duration="6686000" />
     </task>
     <task id="LOCAL-00001" summary="finally with working bracket generation">
       <created>1479317015470</created>
@@ -615,7 +667,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703381253263</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added loss connection labels and relabeled gamesmallview button to game index">
+      <option name="closed" value="true" />
+      <created>1703712632329</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1703712632329</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -685,12 +745,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="johnnitemp" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -726,18 +791,8 @@
     <MESSAGE value="new UI colors in WizardPopup" />
     <MESSAGE value="prototype ColorConverter class added" />
     <MESSAGE value="losers dropdown works" />
-    <option name="LAST_COMMIT_MESSAGE" value="losers dropdown works" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Bracket.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added loss connection labels and relabeled gamesmallview button to game index" />
+    <option name="LAST_COMMIT_MESSAGE" value="added loss connection labels and relabeled gamesmallview button to game index" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

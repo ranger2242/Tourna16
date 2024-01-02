@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 public class BracketView extends JPanel {
-    BinaryTree tree;
+    final BinaryTree tree;
 
-    public BracketView(String title, BinaryTree t) {
+    BracketView(String title, BinaryTree t) {
         tree = t;
         Dimension size = new Dimension(700, 700);
         this.setSize(size);
@@ -32,12 +32,12 @@ public class BracketView extends JPanel {
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.get(i).size(); j++) {
                 Game g = list.get(i).get(j);
-                JPanel gamep = g.getSmallGameModule();
+                JPanel panel = g.getSmallGameModule();
                 Insets insets = this.getInsets();
-                Dimension size = gamep.getPreferredSize();
-                int yoff = (this.getPreferredSize().height / (list.get(i).size() + 1));
-                gamep.setBounds(20 + (i * 200) + (insets.left), ((j + 1) * (yoff)) + (insets.top) - size.height, size.width, size.height);
-                this.add(gamep);
+                Dimension size = panel.getPreferredSize();
+                int yOffset = (this.getPreferredSize().height / (list.get(i).size() + 1));
+                panel.setBounds(20 + (i * 200) + (insets.left), ((j + 1) * (yOffset)) + (insets.top) - size.height, size.width, size.height);
+                this.add(panel);
             }
         }
     }

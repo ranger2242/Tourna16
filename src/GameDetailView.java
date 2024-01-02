@@ -2,20 +2,16 @@ import com.toedter.calendar.JCalendar;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.text.NumberFormat;
 import java.util.Date;
 
 public class GameDetailView extends JPanel {
 
 
-    Game game;
 
-    public GameDetailView(Game game) {
-        this.game = game;
-        int team1posx = ((this.getWidth()) / 4) - 10;
-        int team2posx = (((this.getWidth()) / 4) * 2) + 70;
+    GameDetailView(Game game) {
+        int team1PosX = ((this.getWidth()) / 4) - 10;
+        int team2PosX = (((this.getWidth()) / 4) * 2) + 70;
         JSpinner timeSpinner = new JSpinner(new SpinnerDateModel());
         JLabel titleLabel = new JLabel("Tourna 15");
         JButton confirmButton = new JButton("Confirm");
@@ -43,28 +39,22 @@ public class GameDetailView extends JPanel {
         JCalendar cal = new JCalendar();
         cal.setDate(game.date);
 
-        confirmButton.addActionListener(new ActionListener() {
-
-            public void actionPerformed(ActionEvent e) {
-                game.score1 = score1.getText();
-                game.score2 = score2.getText();
-                game.location = location.getText();
-                game.applyResult();
-            }
+        confirmButton.addActionListener(e -> {
+            game.score1 = score1.getText();
+            game.score2 = score2.getText();
+            game.location = location.getText();
+            game.applyResult();
         });
 
 
-        changeTime.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        changeTime.addActionListener(e -> {
 
-                String d = timeEditor.getTextField().getText();
-                Date sdate = cal.getDate();
-                d = "" + d + " " + sdate;
-                time.setText(d.substring(0, 20));
-                game.time = d.substring(0, 8);
-                game.date = sdate;
-            }
+            String d = timeEditor.getTextField().getText();
+            Date sdate = cal.getDate();
+            d = String.format("%s %s", d, sdate);
+            time.setText(d.substring(0, 20));
+            game.time = d.substring(0, 8);
+            game.date = sdate;
         });
 
         location.setSize(200, 14);
@@ -73,10 +63,10 @@ public class GameDetailView extends JPanel {
 
         this.setLayout(new MigLayout("fill"));
         this.add(titleLabel, "pos 150  20");
-        this.add(team1, "pos " + team1posx + " " + (90));
-        this.add(team2, "pos " + team2posx + " " + (90));
-        this.add(score1, "pos " + team1posx + " 110, w 30");
-        this.add(score2, "pos " + team2posx + " 110, w 30");
+        this.add(team1, "pos " + team1PosX + " " + (90));
+        this.add(team2, "pos " + team2PosX + " " + (90));
+        this.add(score1, "pos " + team1PosX + " 110, w 30");
+        this.add(score2, "pos " + team2PosX + " 110, w 30");
         this.add(changeLocation, "pos 90 160");
         this.add(location, "pos 150 160, w 150");
         this.add(changeTime, "pos 90 190");

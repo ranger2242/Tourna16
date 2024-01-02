@@ -10,42 +10,33 @@ class BinaryTree implements Serializable {
     private BinaryNode root;
 
     public BinaryTree() {
-        root = new BinaryNode(new Game("", ""),0);
+        root = new BinaryNode(0);
     }
 
     public BinaryTree(BinaryNode b) {
         root = b;
     }
 
-    public static boolean contains(BinaryNode testNode, BinaryNode targetNode) {
-        if (testNode == null)
-            return false;
-        if (testNode == targetNode)
-            return true;
-        return contains(targetNode, testNode.left)
-                || contains(targetNode, testNode.right);
-    }
 
-    public static void addBalancedLeaf(BinaryNode bt, Game g,int index) {
+
+    public static void addBalancedLeaf(BinaryNode bt,int index) {
         int a = getSize(bt.left);
         int b = getSize(bt.right);
         if (a + b == 0) {
-            bt.setLeft(new BinaryNode(g,index));
+            bt.setLeft(new BinaryNode(index));
         } else if (a + b == 1) {
-            bt.setRight(new BinaryNode(g,index));
+            bt.setRight(new BinaryNode(index));
         } else {
-            if (b < a) addBalancedLeaf(bt.right, g,index);
-            else addBalancedLeaf(bt.left, g,index);
+            if (b < a) addBalancedLeaf(bt.right, index);
+            else addBalancedLeaf(bt.left, index);
         }
     }
-
-
-    public static void breadthTraverse(BinaryNode root) {
-        if (root == null)
-            return;
-
-        breadthTraverse(root.left);
-        breadthTraverse(root.right);
+    ArrayList<Game> asList(){
+        ArrayList<Game> wsl = new ArrayList<>();
+        for (ArrayList<Game> w : this.getListsByLevel()) {
+            wsl.addAll(w);
+        }
+        return wsl;
     }
 
     public static int height(BinaryNode b) {
@@ -66,11 +57,10 @@ class BinaryTree implements Serializable {
         return 1 + getSize(root.left) + getSize(root.right);
     }
 
-    public static BinaryTree createWinnerBracket(int n) {
+    public static BinaryTree createWinnerBracket() {
         BinaryTree tree = new BinaryTree();
         for (int i = 0; i < 30; i++) {
-            Game g = new Game( "", "");
-            BinaryTree.addBalancedLeaf(tree.getRoot(), g,i);
+            BinaryTree.addBalancedLeaf(tree.getRoot(),i);
 
         }
 
@@ -78,13 +68,13 @@ class BinaryTree implements Serializable {
         return tree;
     }
 
-    public static BinaryTree createLoserBracket(int games) {
+    public static BinaryTree createLoserBracket() {
         BinaryTree losersBracket = new BinaryTree();
         ArrayList<BinaryNode> nodes = new ArrayList<>();
         for (int i = 0; i < 30; i++) {
-            Game g = new Game("", "");
-            g.w = false;
-            BinaryNode b = new BinaryNode(g,i);
+            Game g = new Game();
+            BinaryNode b = new BinaryNode(i);
+            b.game = g;
             g.node = b;
             nodes.add(b);
         }
@@ -143,20 +133,11 @@ class BinaryTree implements Serializable {
         }
         try {
             list.get(i - 1).add(b.game);
-        } catch (IndexOutOfBoundsException e) {
+        } catch (IndexOutOfBoundsException ignored) {
         }
-        if (b == null)
-            return list;
-
-        b.game.round = i;
         return list;
     }
 
-    public void insertRootLeft(BinaryNode b) {
-        BinaryNode b1 = root;
-        root = b;
-        root.setLeft(b1);
-    }
 
     public BinaryNode getRoot() {
         return root;
@@ -182,28 +163,5 @@ class BinaryTree implements Serializable {
         }
         return list;//
     }
-
-    public ArrayList<Game> getGameList() {
-        ArrayList<Game> out = new ArrayList<>();
-        for (ArrayList<Game> arr : getListsByLevel()) {
-            for (Game g : arr) {
-                out.add(g);
-            }
-        }
-        return out;
-    }
-
-    public BinaryNode contains(Game g, BinaryNode node) {
-        if (node == null)
-            return null;
-        else if (node.game.equals(g))
-            return node;
-        else {
-            contains(g, node.left);
-            contains(g, node.right);
-        }
-        return null;
-    }
-
 
 }
