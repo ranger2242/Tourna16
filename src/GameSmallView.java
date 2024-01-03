@@ -27,23 +27,15 @@ public class GameSmallView extends JPanel {
         score2.setOpaque(true);
 
         JButton gameNumberButton = new JButton("" + game.index);
-        JPopupMenu gameMenuPopup = new JPopupMenu();
-        JMenuItem itemGameOptions = new JMenuItem("Game Options");
-        itemGameOptions.addMouseListener(new MouseAdapter() {
-            public void mousePressed(MouseEvent e) {
-                new GameDetailFrame(game);
-            }
-        });
+
         gameNumberButton.addMouseListener((new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
-                gameMenuPopup.show(e.getComponent(), gameNumberButton.getX(),
-                        gameNumberButton.getY() + gameNumberButton.getHeight());
+                new GameDetailFrame(game);
             }
         }));
 
         this.setLayout(new MigLayout());
         this.setBorder(border);
-        gameMenuPopup.add(itemGameOptions);
         this.add(team1, "cell 1 0, w 100px");
         this.add(team2, "cell 1 1, w 100px");
         this.add(score1, "cell 2 0, w 10px");

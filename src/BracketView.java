@@ -28,7 +28,8 @@ public class BracketView extends JPanel {
         int x = 20 + (tree.getListsByLevel().size() * w);
         if (tree.equals(Global.bracket.losers))
             once = true;
-        int y =  tree.equals(Global.bracket.losers) ?(int) (this.getHeight() *.66): this.getHeight()/2;
+        //int y =  tree.equals(Global.bracket.losers) ?(int) (this.getHeight() *.66): this.getHeight()/2;
+        int y =   this.getHeight()/2;
         place(rt, x - md.getWidth(),y, 1);
         refreshGameButtonLinks();
         drawLines();
@@ -85,34 +86,25 @@ public class BracketView extends JPanel {
             place(node.left, x2, y, level);
 
         } else {
-            if (node.left != null) {
-                place(node.left, x2,  (int) (y - d), level + 1);
-            }
-            if (node.right != null) {
-                place(node.right, x2,  (int) (y + d), level + 1);
+            if(node.countChildren()==1){
+                if (node.left != null) {
+                    place(node.left, x2, y, level + 1);
+                }
+                if (node.right != null) {
+                    place(node.right, x2, y, level + 1);
+                }
+            }else {
+                if (node.left != null) {
+                    place(node.left, x2, (int) (y - d), level + 1);
+                }
+                if (node.right != null) {
+                    place(node.right, x2, (int) (y + d), level + 1);
+                }
             }
         }
 
     }
 
-    void placeGames() {
-
-
-        ArrayList<ArrayList<Game>> list = tree.getListsByLevel();
-        for (int i = 0; i < list.size(); i++) {
-            for (int j = 0; j < list.get(i).size(); j++) {
-                Game g = list.get(i).get(j);
-                JPanel panel = g.getSmallGameModule();
-                Insets insets = this.getInsets();
-                Dimension size = panel.getPreferredSize();
-                int yOffset = (this.getPreferredSize().height / (list.get(i).size() + 1));
-                panel.setBounds(20 + (i * 200) + (insets.left), ((j + 1) * (yOffset)) + (insets.top) - size.height, size.width, size.height);
-                this.add(panel);
-            }
-        }
-
-
-    }
 
     void refreshGameButtonLinks() {//send in only JPanels containing Game modules
         for (Component c : this.getComponents()) {

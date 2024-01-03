@@ -7,9 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="new main view layout">
+    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="highlight winner of game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BracketView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BracketView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameDetailFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameDetailFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameDetailView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameDetailView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameSmallView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameSmallView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -525,7 +527,7 @@
       <workItem from="1703966633839" duration="595000" />
       <workItem from="1704230702506" duration="6751000" />
       <workItem from="1704267387738" duration="1577000" />
-      <workItem from="1704268991268" duration="9882000" />
+      <workItem from="1704268991268" duration="14188000" />
     </task>
     <task id="LOCAL-00001" summary="finally with working bracket generation">
       <created>1479317015470</created>
@@ -680,7 +682,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704278317262</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="highlight winner of game">
+      <option name="closed" value="true" />
+      <created>1704279187236</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1704279187236</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -801,7 +811,8 @@
     <MESSAGE value="connected team lists" />
     <MESSAGE value="remove out dir" />
     <MESSAGE value="new main view layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="new main view layout" />
+    <MESSAGE value="highlight winner of game" />
+    <option name="LAST_COMMIT_MESSAGE" value="highlight winner of game" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
