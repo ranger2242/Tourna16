@@ -7,14 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="remove out dir">
+    <list default="true" id="63a8f49c-ca19-418a-8c28-bb0000ab314c" name="Default" comment="new main view layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BracketView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BracketView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Global.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameSmallView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameSmallView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -529,7 +525,7 @@
       <workItem from="1703966633839" duration="595000" />
       <workItem from="1704230702506" duration="6751000" />
       <workItem from="1704267387738" duration="1577000" />
-      <workItem from="1704268991268" duration="9198000" />
+      <workItem from="1704268991268" duration="9882000" />
     </task>
     <task id="LOCAL-00001" summary="finally with working bracket generation">
       <created>1479317015470</created>
@@ -676,7 +672,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704271347252</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="new main view layout">
+      <option name="closed" value="true" />
+      <created>1704278317262</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1704278317262</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -796,18 +800,8 @@
     <MESSAGE value="fixed team placement and bracket connection. removed warnings" />
     <MESSAGE value="connected team lists" />
     <MESSAGE value="remove out dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove out dir" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BracketView.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="new main view layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="new main view layout" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

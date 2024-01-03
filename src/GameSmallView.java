@@ -3,6 +3,7 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -20,6 +21,11 @@ public class GameSmallView extends JPanel {
         team2 = new JLabel(game.teamName(2));
         score1 = new JLabel(game.score1);
         score2 = new JLabel(game.score2);
+        team1.setOpaque(true);
+        team2.setOpaque(true);
+        score1.setOpaque(true);
+        score2.setOpaque(true);
+
         JButton gameNumberButton = new JButton("" + game.index);
         JPopupMenu gameMenuPopup = new JPopupMenu();
         JMenuItem itemGameOptions = new JMenuItem("Game Options");
@@ -50,5 +56,7 @@ public class GameSmallView extends JPanel {
         team2.setText(game.teamName(2));
         score1.setText(game.score1);
         score2.setText(game.score2);
+
+
     }
 }

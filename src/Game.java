@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -40,7 +41,20 @@ class Game implements Serializable {
         } catch (Exception e) {
             Global.error("Invalid Scores", "Scores must be integer");
         }
+
+        GameSmallView smv= getSmallGameModule();
+
         boolean t1Wins = s1 > s2;
+        if(t1Wins){
+            smv.score1.setBackground(Color.GREEN);
+            smv.team1.setBackground(Color.GREEN);
+
+        }else{
+            smv.score2.setBackground(Color.GREEN);
+            smv.team2.setBackground(Color.GREEN);
+
+        }
+        smv.invalidate();
         if (node.next != null) {
             Game nextGame = node.next.game;
 
@@ -121,5 +135,21 @@ class Game implements Serializable {
 
     public Game next() {
         return node.next.game;
+    }
+    public Team getWinner(){
+        int s1 = 0;
+        int s2 = 0;
+        try {
+            s1 = Integer.parseInt(score1);
+            s2 = Integer.parseInt(score2);
+        } catch (Exception e) {
+            Global.error("Invalid Scores", "Scores must be integer");
+        }
+
+        if( s1 > s2){
+            return team1;
+        }else{
+            return team2;
+        }
     }
 }
