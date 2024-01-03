@@ -6,8 +6,8 @@ import java.util.Date;
 class Game implements Serializable {
     String time = "12:00:00";
     String location = "--";
-    String team1;
-    String team2;
+    Team team1;
+    Team team2;
     int index;
     Date date = new Date();
     String score1 = "0";
@@ -16,8 +16,6 @@ class Game implements Serializable {
     GameSmallView view;
 
     Game() {
-        team1 = "";
-        team2 = "";
     }
 
     @Override
@@ -26,7 +24,7 @@ class Game implements Serializable {
     }
 
 
-    JPanel getSmallGameModule() {
+    GameSmallView getSmallGameModule() {
         if (view == null) {
             view = new GameSmallView(this);
         }
@@ -42,11 +40,11 @@ class Game implements Serializable {
         } catch (Exception e) {
             Global.error("Invalid Scores", "Scores must be integer");
         }
-        // Global.print(node.next);
-        if (node.next != null){
+        boolean t1Wins = s1 > s2;
+        if (node.next != null) {
             Game nextGame = node.next.game;
 
-            if (s1 > s2) {
+            if (t1Wins) {
                 if (node.isLeft) {
                     nextGame.team1 = team1;
                 } else {
@@ -62,37 +60,59 @@ class Game implements Serializable {
             nextGame.view.changeValues();
 
         }
-        if(node.nextLoss != null){
+        if (node.hassLossNode()) {
             Game loss = node.nextLoss.game;
-            if (s1 > s2) {
-                if (loss != null)
-                    if (loss.team1.isEmpty()) {
-                        loss.team1 = team2;
-                    } else {
-                        loss.team2 = team2;
-                    }
+            String l1 = loss.teamName(1);
+            if (l1.equals("L" + index)) {
+                if (t1Wins) {
+                    loss.team1 = team2;
+                } else {
+                    loss.team1 = team1;
+                }
             } else {
-                if (loss != null)
-
-                    if (loss.team1.isEmpty()) {
-                        loss.team1 = team1;
-                    } else {
-                        loss.team2 = team1;
-                    }
-
+                if (t1Wins) {
+                    loss.team2 = team2;
+                } else {
+                    loss.team2 = team1;
+                }
             }
 
-            if (loss != null) {
-                loss.getSmallGameModule();
-                loss.view.changeValues();
-            }
+            loss.getSmallGameModule();
+            loss.view.changeValues();
+
         }
-            Global.print(s1, s2);
-
+        Global.print(s1, s2);
 
 
         view.changeValues();
         Global.mainFrame.invalidate();
     }
+
+    public boolean hasTeam1() {
+        return team1 != null;
+    }
+
+    public boolean hasTeam2() {
+        return team2 != null;
+
+    }
+
+    public boolean teamSpotOpen(int t) {
+        if (t == 1) return !this.hasTeam1() && this.node.right == null;
+        return !this.hasTeam2() && this.node.left == null;
+
+    }
+
+    public String teamName(int t) {
+        if (t == 1 && hasTeam1()) {
+            return team1.name;
+        } else if (t == 2 && hasTeam2()) {
+            return team2.name;
+
+        }
+        return "";
+
+    }
+
 
 }

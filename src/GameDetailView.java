@@ -22,8 +22,8 @@ public class GameDetailView extends JPanel {
         timeSpinner.setValue(new Date());
         timeEditor.getTextField().setText(game.time);
 
-        JLabel team1 = new JLabel(game.team1);
-        JLabel team2 = new JLabel(game.team2);
+        JLabel team1 = new JLabel(game.team1.name);
+        JLabel team2 = new JLabel(game.team2.name);
         JLabel time = new JLabel(game.time);
         JTextField location = new JTextField(game.location);
         JTextField score1 = new JFormattedTextField(integerFormat);

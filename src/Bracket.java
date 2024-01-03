@@ -4,14 +4,15 @@ public class Bracket {
     BinaryTree winners;
     BinaryTree losers;
 
-    public Bracket(int nTeams) {
+    public Bracket(int n) {
         winners = BinaryTree.createWinnerBracket();
         losers = BinaryTree.createLoserBracket();
-        winners = trim(winners.getRoot(), nTeams - 2);
-        losers = trim(losers.getRoot(), nTeams - 2);
+        winners = trim(winners.getRoot(), n - 2);
+        losers = trim(losers.getRoot(), n - 2);
         labelGames();
         connectTrees();
-        placeTeams(nTeams);
+        createTeams(n);
+        placeTeams();
     }
 
     private void labelGames() {
@@ -38,21 +39,24 @@ public class Bracket {
 
     }
 
-
-    void placeTeams(int n) {
-        ArrayList<ArrayList<Game>> ws = winners.getListsByLevel();
-        ArrayList<String> names = new ArrayList<>();
-        for(int i = 1 ; i<= n ; i++){
-            names .add("Team " + i);
+    void createTeams(int n) {
+        for (int i = 1; i <= n; i++) {
+            Team t = new Team("Team " + i);
+            Global.teamList.add(t);
         }
+    }
+
+    void placeTeams() {
+        ArrayList<ArrayList<Game>> ws = winners.getListsByLevel();
+
+        int cnt = 0;
         for (ArrayList<Game> wLevel : ws) {
             for (Game g : wLevel) {
-                if (g.team1.isEmpty() && !names.isEmpty() && g.node.right == null) {
-                    g.team1 = names.remove(0);
+                if (g.teamSpotOpen(1) && cnt < Global.teamCount) {
+                    g.team1 = Global.teamList.get(cnt++);
                 }
-                if (g.team2.isEmpty() && !names.isEmpty() && g.node.left == null) {
-                    g.team2 = names.remove(0);
-
+                if (g.teamSpotOpen(2) && cnt < Global.teamCount) {
+                    g.team2 = Global.teamList.get(cnt++);
                 }
             }
         }
@@ -67,17 +71,17 @@ public class Bracket {
                 boolean flip = level % 2 == 1;
                 Game g;
                 if (flip)
-                    g = lLevel.get(lLevel.size()-1-gi);
+                    g = lLevel.get(lLevel.size() - 1 - gi);
                 else
                     g = lLevel.get(gi);
-                if (g.team1.isEmpty() && !wsl.isEmpty() && g.node.right == null) {
+                if (!g.hasTeam1() && !wsl.isEmpty() && g.node.right == null) {
                     Game wg = wsl.remove(0);
-                    g.team1 = "L" + wg.index;
+                    g.team1 = new Team("L" + wg.index);
                     wg.node.nextLoss = g.node;
                 }
-                if (g.team2.isEmpty() && !wsl.isEmpty() && g.node.left == null) {
+                if (!g.hasTeam2() && !wsl.isEmpty() && g.node.left == null) {
                     Game wg = wsl.remove(0);
-                    g.team2 = "L" + wg.index;
+                    g.team2 = new Team("L" + wg.index);
                     wg.node.nextLoss = g.node;
                 }
             }

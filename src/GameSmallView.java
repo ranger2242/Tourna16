@@ -16,8 +16,8 @@ public class GameSmallView extends JPanel {
     GameSmallView(Game g1) {
         game = g1;
         Border border = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
-        team1 = new JLabel(game.team1);
-        team2 = new JLabel(game.team2);
+        team1 = new JLabel(game.teamName(1));
+        team2 = new JLabel(game.teamName(2));
         score1 = new JLabel(game.score1);
         score2 = new JLabel(game.score2);
         JButton gameNumberButton = new JButton("" + game.index);
@@ -46,8 +46,8 @@ public class GameSmallView extends JPanel {
     }
 
     public void changeValues() {
-        team1.setText(game.team1);
-        team2.setText(game.team2);
+        team1.setText(game.teamName(1));
+        team2.setText(game.teamName(2));
         score1.setText(game.score1);
         score2.setText(game.score2);
     }

@@ -76,4 +76,8 @@ public class BinaryNode implements Serializable {
             return root + " (" + left + ", " + right + ")";
         }
     }
+
+    public boolean hassLossNode() {
+        return nextLoss != null;
+    }
 }

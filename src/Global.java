@@ -12,7 +12,9 @@ public class Global {
     public static Bracket bracket;
     public static int teamCount = 8;
     public static MainFrame mainFrame;
-    public static final ArrayList<String> teamList = new ArrayList<>();
+    public static final ArrayList<Team> teamList = new ArrayList<>();
+    public static BracketView winnerPanel ;
+    public static       BracketView loserPanel ;
 
 
     public static void centreWindow(Window frame) {

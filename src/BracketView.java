@@ -26,6 +26,15 @@ public class BracketView extends JPanel {
         this.invalidate();
         this.setVisible(true);
     }
+    void refresh(){
+        ArrayList<ArrayList<Game>> list = tree.getListsByLevel();
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = 0; j < list.get(i).size(); j++) {
+                Game g = list.get(i).get(j);
+                g.getSmallGameModule().changeValues();
+            }
+        }
+    }
 
     void placeGames() {
         ArrayList<ArrayList<Game>> list = tree.getListsByLevel();
