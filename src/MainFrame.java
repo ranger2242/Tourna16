@@ -17,9 +17,10 @@ public class MainFrame extends JFrame {
 
         //define the main view
         MainView view = new MainView();
-        JScrollPane scrollPane = new JScrollPane(view, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
-                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
-        this.add(scrollPane, BorderLayout.CENTER);
+        /*JScrollPane scrollPane = new JScrollPane(view, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
+                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);*/
+        this.add(view, BorderLayout.CENTER);
+        this.pack();
 
         //force redraw to recalculate new borders after adding component
         this.repaint();

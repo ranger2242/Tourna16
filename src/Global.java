@@ -15,6 +15,8 @@ public class Global {
     public static final ArrayList<Team> teamList = new ArrayList<>();
     public static BracketView winnerPanel ;
     public static       BracketView loserPanel ;
+    public static int scrWidth = 1920;
+    public static int scrHeight = 1080;
 
 
     public static void centreWindow(Window frame) {

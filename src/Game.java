@@ -115,4 +115,11 @@ class Game implements Serializable {
     }
 
 
+    public boolean hasNext() {
+        return node.next != null;
+    }
+
+    public Game next() {
+        return node.next.game;
+    }
 }

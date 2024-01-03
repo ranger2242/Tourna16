@@ -80,4 +80,16 @@ public class BinaryNode implements Serializable {
     public boolean hassLossNode() {
         return nextLoss != null;
     }
+
+    public int countChildren() {
+        if (left == null && right == null)
+            return 0;
+        else if (left != null && right == null)
+            return 1;
+        else if (left == null && right != null)
+            return 1;
+        else
+            return 2;
+
+    }
 }
